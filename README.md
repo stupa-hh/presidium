@@ -3,10 +3,10 @@
 ## Issues
 
 You can create issues to describe problems you have with the presidium.
-This can be used for anything related to the formal duties of the presidium.
+This can be used for anything related to the duties of the presidium.
 
-Furthermore you can use this to ask the presidium to do something. The last
-thing you can do is asking the presidium for information.
+Furthermore you can use this to ask the presidium to do something (basically a "feature" wish). 
+The last thing you can do is asking the presidium for information.
 
 ## Protocols
 
@@ -18,3 +18,8 @@ reduces the time to approval.
 ## Summaries
 
 The summaries will also be available in their LaTeX form.
+
+## Wiki
+
+The wiki will be used to showcase the general roadmap plan of the presidium.
+You want to know what the guiding principles of the presidium are? Look there.
