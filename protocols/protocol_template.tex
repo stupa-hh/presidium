@@ -1,0 +1,281 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 1. Sitzung des Studierendenparlaments vom 14. April 2016}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Geoffrey N. Youett, Jim Martens}\\
+    \textbf{Ort: HWP-Hörsaal}\\
+    \textbf{Beginn: 18.25 Uhr}\\
+    \textbf{Ende: 0.50 Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger, Antonia Niecke, Ramin Shakiba, \\
+                            & Jennifer Maack, Benjamin Welling \\
+             CampusGrün (14 Sitze): & Laura Franzen, Geoffrey Youett, Elena Rysikova, \\
+                                   & Philipp Droll, Yasemin Günther, Melf Johannsen,\\
+                                   & Tahnee Herzig, Mario Moldenhauer, Jim Martens,\\
+                                   & Svenja Horn, Mirzo Ulugbek Khatamov, Armin Günther,\\
+                                   & Martin Sievert \\
+             Bier-Liste (2 Sitze) : & Jakob Pape \\
+             WiWi (2 Sitze): & Claas-Friso Hente, Kay Zöllmer \\
+             Unicorns (5 Sitze): & Katharina Kucza, Johannes Peplow, Annkathrin Löffler, \\
+                                 & Andreas Hartkamp, Marielle Hermstrüwer \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): & Samet Gunay, Ajdina Karahasan \\
+             MIN (4 Sitze): & Ailina Salten, Lotte Rullkötter, Thea Wahlers, Jan Detampel \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Timo Zeimet, Dominic Laumer \\
+             LHG (1 Sitz): & Tobias Heisig \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): & Karima Schulze, Henri Weber \\
+            & \\
+        Entschuldigt: & Freya Schmitz (CampusGrün)\\
+                                &\\
+        Unentschuldigt abwesend: & Karen Martirosian (Bier), Johann Baumhoefener (Jura) \\
+                                &\\
+        Rücktritte: & Lasse Kleinlützum (MIN-Liste) \(\rightarrow\) Thea Wahlers \\
+                    & Kerstin Riecke (CampusGrün) \(\rightarrow\) Blerta Vila \(\rightarrow\) Martin Sievert\\
+                    & Elvis Milojevic (HWP-Liste) \(\rightarrow\) Samet Gunay
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Geschäftsordnung (V1617-005, V1617-009)
+        \item Wahl des StuPa-Präsidiums
+        \item RIS-Wahl
+            % Beispiel für einen TOP mit 2 Unterpunkten
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift (V1617-003)
+                \item Bestätigung der Referentinnen (V1617-003A01)
+            \end{enumerate}
+        \item Queer-Wahl
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift (V1617-006)
+                \item Bestätigung der Referent*innen
+            \end{enumerate}
+        \item Wahl des Satzungs-, Wahlordnungs-, und Geschäftsordnungsausschusses
+        \item Wahl des Ausschusses gegen Rechts
+        \item Wahl des Haushaltsausschusses
+        \item Wahl des Wirtschaftsrats
+        \item
+            \begin{enumerate}
+                \item Verfahren zur Wahl zum Ältestenrat
+                \item Wahl des Ältestenrats
+            \end{enumerate}
+        \item
+            \begin{enumerate}
+                \item Rechenschaftsbericht des amtierenden AStA
+                \item Fragen und Diskussion
+                \item Entlastung des AStA
+            \end{enumerate}
+        \item Wahl des neuen AStA-Vorstandes
+            \begin{enumerate}
+                \item Diskussion VS-Thesen
+                \item Wahl des AStA-Vorstandes
+            \end{enumerate}
+        \item Bestätigung der AStA-Referent*innen
+        \item \#uhh hilft (V1617-007)
+        \item Gegen Rechts (V1617-008)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    % Beispiel-GO-Handlung
+    \textit{Die Überprüfung der Beschlussfähigkeit ergibt, dass das Parlament
+    mit 42 anwesenden Parlamentarier*innen beschlussfähig ist.}
+
+    \subsubsection{Anfragen an den AStA}
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    \subsubsection{Aktuelle Stunde (falls entsprechender Antrag vorliegt)}
+
+    % Bei Anführungsstrichen einfach die normalen auf der Tastatur verwenden.
+    % Beim Kompilieren werden diese durch typographische ersetzt.
+    Der Antrag "Gegen Rechts" wird im Rahmen der aktuellen Stunde diskutiert.
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Gegen Rechts (V1617-008)
+        \item Geschäftsordnung (V1617-005, V1617-009)
+        \item Wahl des StuPa-Präsidiums
+        \item RIS-Wahl
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift (V1617-003)
+                \item Bestätigung der Referentinnen (V1617-003A01)
+            \end{enumerate}
+        \item Queer-Wahl
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift (V1617-006)
+                \item Bestätigung der Referent*innen
+            \end{enumerate}
+        \item Wahl des Satzungs-, Wahlordnungs-, und Geschäftsordnungsausschusses
+        \item Wahl des Ausschusses gegen Rechts
+        \item Wahl des Haushaltsausschusses
+        \item Wahl des Wirtschaftsrats
+        \item
+            \begin{enumerate}
+                \item Verfahren zur Wahl zum Ältestenrat
+                \item Wahl des Ältestenrats
+            \end{enumerate}
+        \item \#uhh hilft (V1617-007)
+        \item
+            \begin{enumerate}
+                \item Rechenschaftsbericht des amtierenden AStA
+                \item Fragen und Diskussion
+                \item Entlastung des AStA
+            \end{enumerate}
+        \item Wahl des neuen AStA-Vorstandes
+            \begin{enumerate}
+                \item Diskussion VS-Thesen
+                \item Wahl des AStA-Vorstandes
+            \end{enumerate}
+        \item Bestätigung der AStA-Referent*innen
+        \item Verschiedenes
+    \end{enumerate}
+
+    \subsubsection{Feststellung der Beschlussfähigkeit}
+
+    \subsubsection{Genehmigung der Protokolle der vorangegangenen Sitzungen}
+
+    \vspace{1cm}
+    {\Large \underline{Teil B}}
+
+    % Teil B beginnt
+    % Dieser wird sich für jede Sitzung unterscheiden.
+    % Jeder TOP ist eine subsection.
+    % Vorhandene Beispiele anfangs entfernen und durch tatsächliche TOPs ersetzen
+
+    % Folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x mit
+    % der Zahl des zuletzt behandelten TOPs ersetzen.
+    %\setcounter{subsection}{x}
+
+    \subsection{Gegen Rechts}
+
+    % Beispiel für einen Verweis auf etwas noch nicht protokolliertes
+    % TODO: Anhang anfügen
+    Ramon Weilinger stellt einen Ersatzungsantrag zur AfD vor (siehe Anhang).
+
+    \subsection{Wahl des StuPa-Präsidiums}
+
+    Geoffrey Youett und Fabian Schnack übernehmen die Wahlleitung.
+
+    Es werden 2 Listen eingereicht:
+
+    % Beispiel für eine nummerierte Liste bei Wahlen
+    \underline{Liste 1}
+    \begin{enumerate}
+        \item Jim Martens
+        \item Gunhild Berdal
+        \item Henri Weber
+    \end{enumerate}
+
+    \underline{Liste 2}
+    \begin{enumerate}
+        \item Ramon Weilinger
+        \item Ajdina Karahasan
+    \end{enumerate}
+
+    Die Kandidierenden stellen sich vor und beantworten Fragen.
+    Es werden 41 Stimmzettel ausgegeben.
+    Auf Liste 1 entfallen 28 Stimmen, auf Liste 2 entfallen 13 Stimmen.
+
+    Damit sind Jim Martens und Gunhild Berdal von Liste 1 und Ramon Weilinger
+    von Liste 2 in das Präsidium gewählt.
+
+    Um sich zu besprechen, schlägt das neue Präsidium eine Pause von 15 Minuten
+    bis 23.55 Uhr vor.
+
+    \subsection{Wahl des Satzungs-, Wahlordnungs- und Geschäftsordnungsausschusses}
+
+    % Beispiel für eine nicht nummerierte Liste von Kandidierenden bei Wahlen
+    \underline{Liste der Kandidierenden}
+    \begin{itemize}
+        \item Laura Franzen
+        \item Matthias Krupse
+        \item Ramon Weilinger
+        \item Vincent Orth
+        \item Melf Johannsen
+        \item Kevin Högy
+        \item Artur Brückmann
+        \item Merzo Khatamov
+        \item Kolja Kolb
+    \end{itemize}
+
+    Philipp Droll schlägt vor, dass der SWOGA 9 Mitglieder hat. Es gibt keinen
+    Widerspruch.
+
+    Die Kandidierenden gehen nach vorne und stellen sich vor. Es gibt keine
+    Fragen.
+
+    Sie werden einstimmig gewählt.
+
+\end{document}
