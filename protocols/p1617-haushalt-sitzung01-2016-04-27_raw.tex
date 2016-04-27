@@ -1,0 +1,97 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\usepackage{pdfpages}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE %%%%
+    \section*{Protokoll der 1. Sitzung des Haushaltsausschusses vom 27. April 2016}
+
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: VMP 5 3017}\\
+    \textbf{Beginn: 16.25 Uhr}\\
+    \textbf{Ende: 16.38 Uhr}
+
+    Nico Scharfe
+
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & Ramon Weilinger, Melf Johannsen, Oliver Vornfeld \\
+                  & Malte Jahn, Tobias Berking, Ajdina Karahasan\\
+                  & \\
+        Entschuldigt: & Claas-Friso Hente \\
+                      &\\
+        Unentschuldigt abwesend: & Nico Scharfe \\
+    \end{tabular}
+
+    %%% Tagesordnung %%%
+    \underline{Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \item Begrüßung durch ein Mitglied des Präsidiums
+        \item Konstituierung des Ausschusses
+        \item Arbeitsplanung für die Wahlperiode 2016/2017
+        \item Verschiedenes
+    \end{enumerate}
+
+    \textit{Beschlussfähigkeit mit 7 von 8 Mitgliedern festgestellt.}
+
+    \subsection{Begrüßung durch ein Mitglied des Präsidiums}
+
+    Ramon begrüßt die Mitglieder.
+
+    \subsection{Konstituierung des Ausschusses}
+
+    Melf ist einstimmig zum Vorsitzenden gewählt. Es gab
+    keine weiteren Vorschläge. Abstimmung per Handzeichen.
+    Melf nimmt die Wahl an.
+
+    Oliver schlägt Tobias Berking für die Stellvertretung vor.
+    Tobias Berking ist einstimmig zur Stellvertretung gewählt worden.
+    Er nimmt die Wahl an.
+
+    \subsection{Arbeitsplanung für die Wahlperiode 2016/2017}
+
+    Tobias schlägt vor, dass Melf eine leicht verständliche Übersicht
+    zur Zeitplanung anlegt. Es gibt keinen Widerspruch.
+
+    Tobias sagt, dass der Ausschuss eine vorbereitende Aufgabe für
+    das Parlament hat und dementsprechend vernünftige Pakete schnüren
+    sollte. Ausschusssitzungen sollen nicht ermüdend sein.
+
+    Melf sagt, dass sich der Ausschuss wieder trifft, wenn der/die
+    Finanzreferent*In des AStA einen Haushalt vorlegt.
+
+    \subsection{Verschiedenes}
+
+    Es besteht kein Widerspruch gegen den Vorschlag den Verteiler zu
+    öffnen.
+
+\end{document}
