@@ -1,0 +1,121 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\usepackage{pdfpages}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE %%%%
+    \section*{Protokoll der 1. Sitzung des SWOGA vom 27. April 2016}
+
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: VMP 5 3017}\\
+    \textbf{Beginn: 17.00 Uhr}\\
+    \textbf{Ende: 17. Uhr}
+
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & Melf Johannsen, Merzo Khatamov, Ramon Weilinger \\
+                  & Kolja Kolb, Kevin Högy, Vincent Orth\\
+                  & Artur Brückmann, Matthias Krupse (17:08) \\
+                  & \\
+        Entschuldigt: & Laura Franzen \\
+                      &\\
+        Unentschuldigt abwesend: &  \\
+    \end{tabular}
+
+    %%% Tagesordnung %%%
+    \underline{Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \item Begrüßung durch ein Mitglied des Präsidiums
+        \item Arbeitsplanung für die Wahlperiode 2016/2017
+        \item Konstituierung des Ausschusses
+        \item Verschiedenes
+    \end{enumerate}
+
+    \textit{Beschlussfähigkeit mit 7 von 9 Mitgliedern festgestellt.}
+
+    \subsection{Begrüßung durch ein Mitglied des Präsidiums}
+
+    Ramon begrüßt die Mitglieder. Vincent hat eine Vorstellungsrunde
+    vorgeschlagen. Diese wird durchgeführt.
+
+    \subsection{Arbeitsplanung für die Wahlperiode 2016/2017}
+
+    Ramon erinnert daran, dass die Zusammensetzung des Ältestenrats
+    Thema des Ausschusses sein sollte.
+
+    Ramon fragt Artur, ob er noch Unterlagen von der Klausursitzung zu
+    diesem Thema hat. Artur sagt, dass er nur ein Bild gemacht hat.
+    Alle wollen noch einmal schauen, ob sie noch Unterlagen dazu finden
+    können.
+
+    Artur sagt, dass ein Kernkonflikt sein kann, ob im Ältestenrat
+    die Mehrheitsverhältnisse des StuPa abgebildet werden sollen.
+    Ramon sagt, dass RCDS grundsätzlich dafür ist, dass nicht einfach
+    nur die Mehrheit abgebildet werden sollte. Allerdings sieht er
+    das Problem darin, dass nur das StuPa den Ältestenrat wählen kann.
+
+    Melf meint, dass man erst einmal Rücksprache mit den Fraktionen
+    halten sollte, da interne Positionen noch nicht klar sind. Vincent
+    findet es nicht so sinnvoll, erst einmal in die Gruppen zu gehen
+    und dann erst im Ausschuss darüber zu sprechen. Melf sagt, dass
+    es durchaus sinnvoll ist sich erst einmal im Ausschuss auszutauschen
+    und dann in die Gruppen zu gehen.
+
+    \textit{Terminfindung: Nächstes Treffen Mittwoch 11. Mai 18.30 Uhr}
+
+    Vincent fragt, ob es weitere Themen gibt, mit denen sich der Ausschuss
+    beschäftigen kann. Artur meint, dass man erst einmal das Thema
+    Ältestenrat fertig machen sollte, bevor man weitere Themen festzurrt.
+
+    Melf sagt, dass sich der Ausschuss die Vertretungsregelung ansehen
+    sollte. Außerdem könnte man sich auch die Wahlzeit ansehen.
+
+    Vincent meint, dass man sich auf jeden Fall die Fachschaftsrahmenordnung
+    ansehen und eine Realitätsanpassung machen sollte.
+
+    Es gibt keinen Widerspruch sich zunächst ausschließlich mit dem
+    Ältestenrat zu befassen.
+
+    \subsection{Konstituierung des Ausschusses}
+
+    Vincent kandidiert für den Vorsitz. Wahl per Handzeichen.
+    Vincent wird einstimmig gewählt. Er nimmt die Wahl an.
+
+    Melf kandidiert für den stellvertretenden Vorsitz. Wahl per Handzeichen.
+    Melf wird einstimmig gewählt. Er nimmt die Wahl an.
+
+    \subsection{Verschiedenes}
+
+    Es gibt keinen Widerspruch gegen den Vorschlag den Verteiler
+    zu öffnen.
+
+\end{document}
