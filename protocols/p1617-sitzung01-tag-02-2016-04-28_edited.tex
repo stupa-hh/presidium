@@ -1,0 +1,891 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\usepackage{pdfpages}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE %%%%
+    \section*{Protokoll der 1. Fortsetzung der 1. Sitzung des Studierendenparlaments vom 28. April 2016}
+
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: Raum S08 in der ehemaligen HWP }\\
+    \textbf{Beginn: 18.25 Uhr}\\
+    \textbf{Ende: 23.41 Uhr}
+
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger, Antonia Niecke, Ramin Shakiba, \\
+                            & Jennifer Maack, Benjamin Welling \\
+             CampusGrün (14 Sitze): & Laura Franzen, Geoffrey Youett, Elena Rysikova, \\
+                                   & Philipp Droll, Yasemin Günther (später), Melf Johannsen,\\
+                                   & Tahnee Herzig, Mario Moldenhauer, Freya Schmitz, \\
+                                   & Jim Martens, Svenja Horn, Mirzo Ulugbek Khatamov \\
+                                   & Martin Sievert, Armin Günther \\
+             Bier-Liste (2 Sitze) : & Karen Martirosian \\
+             WiWi (2 Sitze): & Claas-Friso Hente, Kay Zöllmer \\
+             Unicorns (5 Sitze): & Katharina Kucza, Johannes Peplow, Annkathrin Löffler, \\
+                                 & Andreas Hartkamp \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): & Samet Gunay, Ajdina Karahasan \\
+             MIN (4 Sitze): &  \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Dominic Laumer \\
+             LHG (1 Sitz): & Tobias Heisig \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): &  \\
+             AL (2 Sitze): & Karima Schulze, Henri Weber \\
+            & \\
+        Entschuldigt: & Lotte Rullkötter (MIN), Timo Zeimet (Bart), Thea Wahlers (MIN)\\
+                      & Jan Detampel (MIN), Jakob Pape (Bier), Ailina Salten (MIN)\\
+                      & \\
+        Unentschuldigt abwesend: &  Marielle Hermstrüwer (Unicorns), Johann Baumhoefener (Jura)\\
+                                &\\
+        Rücktritte: & \\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \setcounter{enumi}{10}
+        \item Bestätigung des RBCS-Referenten (V1617-010)
+        \item \#uhh hilft (V1617-007,V1617-012)
+        \item
+            \begin{enumerate}
+                \item Rechenschaftsbericht des amtierenden AStA
+                \item Fragen und Diskussion
+                \item Entlastung des AStA
+            \end{enumerate}
+        \item Wahl des neuen AStA-Vorstandes
+            \begin{enumerate}
+                \item Diskussion VS-Thesen (V1617-011)
+                \item Wahl des AStA-Vorstandes
+            \end{enumerate}
+        \item Bestätigung der AStA-Referent*innen
+        \item Antrag Ältestenrat zur Beauftragung des SWOGA (V1617-013)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \newpage
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \subsubsection{Geschäftsbericht des Präsidiums}
+
+    Ramon berichtet, dass das Präsidium sich als gleichberechtigt wahrnimmt und
+    daher die Posten Präsident*In, Vizepräsident*In und Schriftführer*In nicht
+    verteilt hat.
+
+    Ferner erklärt Ramon, dass das Präsidium in Bezug auf den Verlust des Mandates
+    einen Sitzungstag und nicht etwa eine Sitzung als das wichtige
+    Entscheidungskriterium ansieht.
+
+    Ausschusskonstituierungen sind durch und Ergebnisse können auf der StuPa-Website
+    eingesehen werden. Sofern die Zusammenarbeit mit den Ausschüssen funktioniert,
+    werden auch in Zukunft die Protokolle auf der Website erscheinen.
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    Ramon schlägt vor, dass die Bestätigung des RBCS-Referenten dann stattfindet,
+    wenn dieser anwesend ist und der dann stattfindene TOP fertig ist.
+
+    Till fragt nach, ob TOP 13 als einheitlicher TOP gesehen wird. Ramon antwortet,
+    dass das Präsidium dies so sieht.
+
+    Danach kein Widerspruch zum Vorschlag.
+
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \setcounter{enumi}{10}
+        \item Bestätigung des RBCS-Referenten (V1617-010)
+        \item \#uhh hilft (V1617-007,V1617-012)
+        \item
+            \begin{enumerate}
+                \item Rechenschaftsbericht des amtierenden AStA
+                \item Fragen und Diskussion
+                \item Entlastung des AStA
+            \end{enumerate}
+        \item Wahl des neuen AStA-Vorstandes
+            \begin{enumerate}
+                \item Diskussion VS-Thesen (V1617-011)
+                \item Wahl des AStA-Vorstandes
+            \end{enumerate}
+        \item Bestätigung der AStA-Referent*innen
+        \item Antrag Ältestenrat zur Beauftragung des SWOGA (V1617-013)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \newpage
+    \setcounter{subsection}{10}
+    \vspace{1cm}
+    {\Large \underline{Teil B}}
+
+    \subsection{Bestätigung des RBCS-Referenten}
+
+    Dieser TOP wurde, wie bei der Feststellung der Tagesordnung beschlossen,
+    aufgerufen nachdem Lars anwesend und der dann behandelte TOP fertig war.
+    Konkret war dies der Fall nach TOP 13.
+
+    \subsubsection{Bestätigung der Wahlniederschrift}
+
+    Geoffrey stellt die Wahlniederschrift vor. Es gab leider eine geringe
+    Wahlbeteiligung.
+
+    Keine Fragen zum Protokoll.
+
+    Die Wahlniederschrift wird einstimmig angenommen.
+
+    \subsubsection{Bestätigung des Referenten}
+
+    Lars Dierksen stellt sich vor. Wahlbeteiligung ist seit längerer Zeit gering.
+    Problem ist, dass die Gruppe sehr divers und schwer zu zentralisieren
+    ist.
+
+    Beratung wird stark frequentiert. Lars hat im vergangenen Semester
+    einen Schwerpunkt auf Beratung gelegt. Bisher zwei Beraterinnen,
+    die auf eigenen Wunsch ehrenamtlich arbeiten. RBCS versucht mehr
+    Projektkräfte zu bekommen, um mehr Veranstaltungen anbieten zu können.
+
+    Ergonomiekurs war ausgebucht. Selbstverteidigung für Frauen war jedoch
+    von nur 3 Teilnehmerinnen besucht.
+
+    Dieses Semester ist die größte Veranstaltung der Berater*Innen-Workshop
+    für ungefähr 10 Studierende. Workshop findet an einem Wochenende
+    Anfang Juni statt. Nächsten Monat findet auch das Ergonomieseminar noch einmal
+    statt.
+
+    Till sagt, dass Beratung und "Stellvertreterpolitik" Grund für geringe
+    Beteiligung sind. Hat das RBCS vor in Zukunft mehr politische Arbeit
+    zu machen?
+
+    Artur sagt, dass aktuelle politisch-kulturelle Situation dazu führt, dass
+    sich Leute ungern der Gruppe der Behinderten und chronisch-kranken
+    Studierenden (BCS) zuordnen.
+
+    Golnar fragt, ob es sinnvoll wäre sich mit der Geschichte in dem Bereich
+    BCS auseinanderzusetzen.
+
+    Lars sagt, dass er es ähnlich sieht, wie Till, Artur und Golnar. Das RBCS
+    setzt sich durchaus auch politisch ein. Mehr politische Arbeit ist
+    geplant, aber es sei immer schwer Leute zu erreichen.
+
+    \textit{Zeitansage: 21.00 Uhr}
+
+    Lars wird einstimmig als Referent bestätigt.
+
+    \subsection{\#uhh hilft}
+
+    Golnar stellt den Antrag V1617-007 zu \#uhh hilft vor.
+
+    Jennifer stellt den Ersetzungsantrag V1617-012 zu \#uhh hilft vor.
+
+    Geoffrey fragt aus welcher Motivation heraus der Ersetzungsantrag kommt.
+    Ihm fehlt die Situationsanalyse in dem Ersetzungsantrag und fragt die
+    Antragssteller*Innen, ob dies beabsichtigt ist und bittet sie generell
+    darauf einzugehen.
+
+    Till erläutert, warum die Situationsanalyse und Begründung wichtig sind und
+    ruft dabei Punkte aus der Situationsanalyse und Begründung auf.
+
+    Jennifer erklärt, dass sie das Ergebnis des Antrags gut finden, aber nicht
+    die Annahmen und deswegen haben sie einen Ersetzungsantrag gemacht.
+
+    Golnar sagt, dass sich dann die Frage stellt, warum das Ergebnis gut gefunden
+    wird, wenn die Annahmen nicht geteilt werden. Sie erläutert, was die inhaltliche
+    Ausrichtung der AG Flüchtlinge ist. Sie sagt, dass eine politische Begründung
+    des Antrags notwendig ist, um das Programm auch durchzusetzen.
+
+    Gunhild findet es bemerkenswert, dass die Uni gegen das Prinzip des teile
+    und herrsche vorgeht. Sie findet es verlogen zu sagen, dass man die Ziele
+    des Antrags unterstützt, aber nicht bereit ist die Politik der Bundesregierung
+    inhaltlich zu kritisieren. Sie führt fort, dass DaF eine historische Bedeutung
+    an der Uni hat und wieder in der Germanistik angesiedelt werden sollte.
+    Das Anfängerniveau sollte massiv ausgebaut werden. Gunhild findet, dass dieser
+    Ausbau von DaF allen zugute kommt - gerade vor dem Hintergrund, dass häufig
+    Flüchtlinge als Quell vielen Übels gesehen werden.
+
+    Franziska findet es bemerkenswert, dass das Programm (\#uhh Hilft) die Flüchtlinge
+    in alle Facetten der Universität aufnimmt. Sie hat das Programm so verstanden,
+    dass es u.a. beabsichtigt Flüchtlingen einen Überblick über die politische
+    Situation in Deutschland zu verschaffen. Sie meint, dass der Ausblick, dass dieses
+    Programm nur den Anfang einer Bewegung darstellen kann, in dem Ersetzungsantrag
+    fehlt. Man habe eine Position erreicht, in der dieses Programm richtig und gut
+    sei, die Welt aber noch nicht.
+
+    Golnar hat Änderungsantrag eingereicht, welcher von den Antragsstellern
+    übernommen wird. Der Antrag besagt, dass nach Zeile 36 folgendes eingefügt
+    werden soll:
+
+    \blockquote{Darüber hinaus fordert das Stupa die Bürgerschaft auf, den Hamburger
+    Hochschulen für den bedarfsgerechten Ausbau von DaF und die Durchführung
+    der Studien(vorbereitungs)programme für Geflüchtete
+    dauerhaft bedarfsgerechte Mittel zusätzlich zuzuweisen.}
+
+    Es kommt zur Abstimmung. Dabei wird der Ersetzungsantrag zuerst abgestimmt,
+    da dieser der weitgehendste Änderungsantrag ist.
+
+    Mit 6:Mehrheit:1 ist der Ersetzungsantrag nicht angenommen.
+
+    Es kommt zur Abstimmung des Gesamtantrags. Bei 2 Enthaltungen wird
+    der Antrag einstimmig angenommen.
+
+    \textit{Zeitansage: 18.57 Uhr}
+
+    \textit{Ramon stellt fest, dass Lars noch nicht anwesend ist.}
+
+    \subsection{Entlastung des AStA}
+
+    \subsubsection{Rechenschaftsbericht des AStA}
+
+    Moritz hält seinen Rechenschaftsbericht. Er "warnt" davor, dass dieser
+    Dinge aus 2 Legislaturperioden enthalten könnte.
+    Moritz erläutert, wie die Rechenschaftsberichte aufgeteilt sind. Seiner
+    ist hauptsächlich aus der Vorstandsperspektive heraus verfasst.
+
+    Anschließend stellt Moritz die Gliederung seines Rechenschaftsberichts
+    vor. Dieser ist in vier Punkte unterteilt. Ergänzend möchte er am Ende noch
+    etwas zu Baufragen sagen.
+
+    \begin{enumerate}
+        \item Formale Aufgaben
+        \item inhaltliche Richtung andiskutieren und vorbereiten (politischer
+        Vorstand)
+        \item Repräsentation des AStA gegenüber der Uni
+        \item Repräsentation des AStA gegenüber der Stadt
+    \end{enumerate}
+
+    \textbf{1. Formale Aufgaben}
+
+    Der Vorstand verlässt sich auf die Festangestellten. Daher muss der Vorstand
+    eigentlich nur Sonderfälle behandeln. Regelfälle werden "quasi wie von selbst"
+    durch die Festangestellten übernommen.
+
+    Es bestand die Zielsetzung die Urlaube so zu legen, dass immer mindestens ein
+    Zeichnungsberechtigter anwesend war.
+
+    Für Rechtsstreitigkeiten musste viel Zeit aufgewendet werden. Vor diesem
+    Hintergrund hat Moritz einige Überlegungen angestellt:
+
+    \begin{enumerate}
+        \item Eine der Festangestellten (z.B. Maike) sollte sich mit
+        Arbeitsrecht beschäftigen. Ansonsten ist es schwer im AStA an Kompetenz
+        für Arbeitsrecht zu kommen.
+        \item Der AStA sollte öfter darüber diskutieren, warum die VS etwas tun
+        sollte. Danach ist es häufig einfacher zu sagen, warum die VS etwas tun
+        darf. Diese Überlegung steht vor dem Hintergrund, dass es häufig
+        Rechtsstreitigkeiten über das politische Mandat der Verfassten Studierendenschaft
+        gibt.
+        \item Erfahrungen weitergeben.
+    \end{enumerate}
+
+    \textbf{2. inhaltliche Richtung andiskutieren und vorbereiten (politischer
+    Vorstand)}
+
+    Der Vorstand hätte Konflikte mehr im Vornherein besprechen müssen.
+    Der politische Vorstand sollte in Zukunft stärker genutzt werden.
+
+    \textbf{3. Repräsentation des AStA gegenüber der Uni}
+
+    Die Repräsentation war einfacher, da man sich nicht mehr vorstellen musste.
+    Der AStA ist ein wichtiger Gesprächspartner in der Uni. Der Kontakt zu den
+    Lehrenden sollte weiter ausgebaut werden. Es wurde Anerkennung erworben und
+    man der AStA wird geschätzt. Selbst Leute, die dem AStA inhaltlich nicht
+    zustimmen, freuen sich über eine aktive VS.
+
+    \textbf{4. Repräsentation des AStA gegenüber der Stadt}
+
+    Mit NOlympia wurde ein großer Eindruck hinterlassen. Außerdem waren
+    Schulklassen auf dem Campus und der AStA war auch in Schulveranstaltungen.
+    Eigene inhaltliche Veranstaltungen sind aber noch ausbaufähig.
+    Als positives Beispiel von eigenen Veranstaltungen wird "Kapitalismus und
+    Nachhaltigkeit" genannt.
+
+    \textbf{Bau}
+
+    Wie angekündigt berichtet Moritz am Ende noch über Baufragen.
+    Dem AStA war es wichtig die Nutzerinteressen in dem Verfahren zu verankern
+    und alle Gruppen an entsprechenden Gesprächen zu beteiligen.
+    Dabei ist die Bündelung der Interessen und eine Vermittlung ebenfalls wichtig.
+    Moritz hat dieser Part am meisten Spaß gemacht.
+
+    \hrule
+
+    Vincent fährt fort mit seinem Rechenschaftsbericht.
+    Der Vorstand vertritt den AStA nach innen und außen. Er hat formale und
+    politische Verantwortung. Vincent sieht den Finanzvorstand als Kristallationspunkt
+    zwischen formalen Vorgaben und inhaltlicher Ausrichtung. Vincent hat viel
+    zu Arbeitsrecht und Finanzrichtlinien gelernt.
+
+    Linker AStA eckt auch an, aber das ist wichtig. Bürgerschaftsanfragen und
+    Klagen sind nicht immer spaßig, aber teilweise notwendig. Dabei ist es wichtig
+    relevante Rechtsangelegenheiten von unwichtigen zu unterscheiden, um die
+    relevanten Angelegenheiten führen zu können.
+
+    Vincent listet einige Punkte der inhaltlichen Arbeit des AStA auf. Der Vorstand
+    hat in vielen Bündnissen mitgearbeitet. Eine engere Zusammenarbeit mit dem fzs
+    sollte angestrebt werden.
+
+    Das Amt als Vorsitzender ist sehr vereinnahmend. Vincent ist seinem Anspruch
+    eine Balance zwischen formalen Vorgaben und egalitärer Arbeitsteilung zu finden,
+    nicht immer gerecht geworden.
+
+    \hrule
+
+    Es folgt der Rechenschaftsbericht des politischen Vorstands, welcher durch
+    Franziska gehalten wird. Sie sagt, dass im vergangenen Jahr vieles
+    erreicht wurde. Beispielhaft dafür wird der Dies Academicus erwähnt.
+    Als Leitspruch ihres Rechenschaftsberichts lässt sich festhalten,
+    dass AStA Arbeit sich immer wie eine Dies Academicus Vorbereitung anfühlen
+    und jeder Tag an der Universität wie ein Dies Academicus sein sollte.
+
+    \hrule
+
+    Timo hält seinen Rechenschaftsbericht als Finanzreferent. Er wurde erst im
+    Januar Referent und sein Bericht kann dadurch nur die letzten 3 Monate umfassen.
+    Er ruft noch einmal den Anspruch auf, mit dem er antrat: "so inhaltlich wie
+    möglich, so formal wie nötig". Anfangs hatte er nur theoretisches Wissen
+    über die Vorgänge im Finanzreferat. Durch eine Große Anfrage der FDP hat
+    er viel gelernt.
+
+    Timo ist sich nicht sicher, ob das Finanzreferat das kommunikativste Referat
+    ist, allerdings hat er jeden mal gesehen und gesprochen.
+
+    Es folgt eine kurze Darstellung der finanzielle Situation. Alle Töpfe sind im
+    Plus, außer der Topf des Präsidiums.
+
+    Er hat nicht das Gefühl, dass Leute auf der Strecke bleiben wegen Bürokratie.
+
+    \hrule
+
+    Es folgt der Rechenschaftsbericht des HoPo-Referats. Dieser wird von Philipp
+    und Mena gehalten.
+
+    Philipp sagt, dass sich aufgrund der langen Zusammenarbeit viel Handlungsfähigkeit
+    erarbeitet wurde. NOlympia sei dafür ein gutes Beispiel. Es gibt gute
+    Möglichkeiten der Zusammenarbeit mit anderen Studierendenschaften in Hamburg
+    (z.B. über die LandesAStenKonferenz). Diese gute Zusammenarbeit sollte auf
+    die fzs übertragen werden - gerade vor dem Hintergrund, dass die VS der Uni
+    Hamburg im bundesweiten Vergleich sehr viel Möglichkeiten hat.
+
+    \textit{Zeitansage: 19:30}
+
+    Mena meint, dass vieles bereits gesagt wurde. Sie findet die Ausrede "ich
+    muss noch lernen" sehr schlecht. Lernen sollte etwas Positives sein. Die Ausrede
+    zeuge von einem degenerierten Verständnis von Lernen. Sie erwähnt in dem
+    Zusammenhang die Rahmenprüfungsordnung (RPO), welche letztes Jahr entwickelt wurde
+    und sich jetzt im Endprozess befindet. Mit der RPO sei eine Verbesserung der
+    Studienbedingungen möglich.
+
+    Ferner sieht sie ein Verbesserungspotenzial im AStA bzgl. der grundlegenden
+    inhaltichen Ausrichtung. In Zukunft sollte gemeinsames Lehren und Lernen
+    weiter angegangen werden.
+
+    \hrule
+
+    Es folgt der Rechenschaftsbericht von Artur aus dem Referat für Soziales.
+
+    Zu Beginn liest Artur einen Artikel von der ZEIT zu Olympia vor und bewertet
+    diesen anschließlich. Außerdem geht er noch einmal auf die Arbeit des AStA
+    zu Olympia ein. In Zukunft sollten wissenschaftlich-aufklärerische Argumente
+    stärker in die Gesellschaft getragen werden.
+
+    Artur zitiert die AStA-Leitlinien von 2015 und geht inhaltlich auf die
+    genannten Punkte ein.
+
+    Er sieht Schwierigkeiten dabei das Verhältnis zwischen Hilfe im Bestehenden
+    und strukturelle Verbesserung gut hinzubekommen. Zudem hätten
+    Auseinandersetzungen z.B. mit dem Studierendenwerk zu häufig im Hinterzimmer
+    stattgefunden.
+
+    Insgesamt müsse der AStA stärker herauskommen und inhaltliche Arbeit
+    stärker verallgemeinern.
+
+    \hrule
+
+    Mario folgt mit dem Rechenschaftsbericht für das Referat für Ökologie
+    und Nachhaltige Entwicklung.
+
+    Mario hat im Oktober als Quereinsteiger im Referat für Ökologie und
+    Nachhaltige Entwicklung begonnen. Anfangs musste er sich erst einmal
+    in die inhaltliche Arbeit des Referats einarbeiten und dankt allen,
+    die ihm dabei geholfen haben.
+
+    Er hat zusammen mit dem restlichen Referat die bereits geplanten Veranstaltungen
+    umgesetzt. Neue Veranstaltungen konnten leider nicht im angedachten
+    Umfang durchgeführt werden.
+
+    In Bezug auf seinen Anspruch zieht er ein gemischtes Fazit. Mario findet
+    die anstehende Zusammenlegung des Referates sinnvoll.
+
+    \hrule
+
+    Abschließend folgt der Rechenschaftsbericht von Stefan Seld.
+    Unter anderem geht Seld dabei auf ein Radio ein, bei dem Themen des AStA
+    diskutiert werden. Dieses Radio wird Freies Senderkombinat genannt.
+
+    \hrule
+
+    Ramon schlägt vor jetzt die Beschlussfähigkeit festzustellen und anschließend
+    eine Präsidiumspause zu machen. Während der Pause sollen die Rechenschaftsberichte
+    von Till Mehrpohl und Carina gedruckt werden, sodass das Parlament diese
+    zur Kenntnis nehmen kann.
+
+    Till sagt, dass es sinnvoll wäre die Bericht jetzt schon zu drucken, um sie
+    dann in der Pause lesen zu können.
+
+    Moritz schlägt vor, dass er die Berichte ausdrucken kann, da er für die
+    Beschlussfähigkeit nicht erheblich ist.
+
+    Da einer der Berichte per LibreOffice nicht gelesen werden kann,
+    wird technisch bedingt dem Vorschlag Ramons gefolgt.
+
+    \textit{Beschlussfähigkeit mit 35 von 47 Parlamentarier*Innen gegeben.}
+
+    \textit{Präsidiumspause bis 20.20 Uhr}
+
+    Es ergibt sich in der Pause, dass Carinas Rechenschaftsbericht
+    auch per Word nicht geöffnet werden kann.
+
+    Oliver Vornfeld liest den Rechenschaftsbericht von Till Mehrpohl vor.
+    Der Bericht kann dem Anhang entnommen werden.
+
+    \subsubsection{Fragen und Diskussion}
+
+    Till stellt eine Frage an Moritz und Vincent: An welchen Stellen habt
+    ihr den Widerspruch zwischen formaler Hierarchie und egalitärer
+    Arbeitsweise gesehen?
+
+    an Moritz: Wie kann die "Kür" der inhaltlichen Arbeit stärker in der
+    Arbeit des Vorstandes stattfinden?
+
+    an Moritz: Ziehst du die Konsequenz die FSRK stärker in den AStA einzubinden?
+
+    an Vincent: Wieso siehst du einen Widerspruch zwischen "Reformismus"
+    und "Aktionismus"?
+
+    an Timo: Hast du eine Vorstellung, wie aus dem Umstand des Überblicks
+    über alle Referate, etwas Sinnvolles gemacht werden kann?
+
+    Moritz beantwortet die ersten beiden Fragen. Die Aufgabe des Vorstandes
+    ist es an allen Stellen mitzuarbeiten. Service ist nur solange Sklaverei,
+    solange man nicht an inhaltlicher Arbeit beteiligt ist. Strukturelle
+    Arbeit wurde im Vorstand gebündelt, weil Arbeitsteilung manchmal auch
+    sinnvoll ist.
+
+    Moritz beantwortet die Frage zur FSRK und sagt, dass die Beteiligung der FSRe
+    in Hamburg im Vergleich zu anderen Städten nicht optimal gelöst ist. Eine
+    Lösung könne jedoch nicht an der FSRK festgemacht werden. Die ideale Lösung
+    sei noch unklar, es bestehe aber klarer Handlungsbedarf.
+
+    \textit{Zeitansage: 20.30 Uhr}
+
+    Anschließend beantwortet Vincent die Frage zum Verhältnis damit, dass er
+    zu Beginn seiner Vorstandsarbeit viel zum Verhältnis gelernt habe.
+    Gerade das Verhältnis zu den Festangestellten sei dabei zu nennen.
+    Außerdem müsse zwischen Amt und Person unterschieden werden. Der Vorstand als
+    Amt ist Arbeitgeber der Festangestellten -- nicht die Personen im Vorstand.
+
+    Vincent beantwortet die Frage zum Widerspruch zwischen "Reformismus"
+    und "Aktionismus".
+
+    Timo beantwortet die Frage zur Übersicht, die man als Finanzreferent*In
+    hat.
+
+    Gunhild fragt, wo die Gewichtung liegt (Anerkennung oder Anecken).
+
+    Till sagt, dass das Finanzreferat der Ort sei, wo potentielle Konflikte
+    oder Herausforderungen rechtzeitig thematisiert werden könnten.
+    Bei allem, was man tut, ginge es um Menschen. Gremien seien daher kein
+    Selbstzweck, sondern für Menschen da.
+
+    Moritz kann die Frage von Gunhild nicht beantworten, da er den Widerspruch
+    nicht sieht. Er ist der Meinung, dass man sich Anerkennung durch ein sinnvolles
+    Maß an Anecken erarbeite.
+    Beispielhaft führt er eine Diskussion um eine Ordnung an, wo es keinen Sinn
+    mache pauschal gegen eine Ordnung zu sein.
+
+    Vincent meint, dass es sinnvoll sei immer eine Gesprächsgrundlage mit
+    Leuten zu haben.
+
+    \textit{Zeitansage: 20.46 Uhr}
+
+    \subsubsection{Entlastung des AStA}
+
+    Bei einigen Gegenstimmen und 3 Enthaltungen wird der AStA
+    mehrheitlich entlastet.
+
+    \subsection{Wahl des neuen AStA-Vorstandes}
+
+    \subsubsection{Diskussion VS-Thesen}
+
+    Franziska macht einen Aufschlag zur Diskussion und stellt
+    den Antrag vor.
+
+    Philipp geht auf die Bemühungen um Kapazitätsrecht und Exzellenzinitiative,
+    sowie die historische Entwicklung um Wissenschaftsauffassung ein.
+
+    Es soll unter TOP 15 keine einzelnen Vorstellungen der Referent*Innen geben.
+
+    \textit{Fraktionspause vom RCDS im Umfang von 10 Minuten bis 21.25 Uhr}
+    \textit{Pause wird durch dynamisch genommene Präsidiumspause bis 21.35 Uhr
+    verlängert.}
+
+    Mena, Geoffrey und Janis gehen nach vorne. Mena sagt, dass wir uns in einer
+    Entscheidungssituation befänden. Diese Situation solle sich auch auf Aktivitäten
+    im Hochschulumfeld auswirken. Dies sei im VS-Thesentext so beschrieben.
+
+    Es wird erklärt, dass HoPo, Kultur und Öffentlichkeitsarbeit thematisch
+    zusammengelegt werden. Die Universität sei als Lebensraum zu betrachten.
+    Dementsprechend sei sie ein Lebensmittelpunkt, in dem man sich begegnete,
+    sowie sich und letztendlich auch die Welt verändere.
+
+    Janis sagt etwas zum kulturpolitischen Bereich. Wichtig dabei sei, dass sich
+    der AStA nicht als Dienstleister sondern als Impulsgeber verstehe.
+    Der AStA könne insofern als Katalysator gesehen werden und die zentrale
+    Stelle nutzen, um alle Bestrebungen zu fördern.
+
+    Geoffrey stellt die Öffentlichkeitsarbeit vor. Ein Paradebeispiel für sein
+    Konzept sei die Holzwirtschaft, die davor steht abgewickelt zu werden. Es
+    müsse daraufhin gewirkt werden, dass das Silodenken ("mein Studium, meine Fakultät")
+    überwunden wird. In dem Sinne erinnert Geoffrey an die Demo am 3.5., wo es
+    nicht nur um die Holzwirtschaft, sondern um die Finanzlage an der Uni insgesamt
+    geht. Er schließt damit, dass eine gemeinsame Position nicht durch eine
+    Website entstehe, sondern durch das gemeinsame Gespräch.
+
+    Als nächstes hält Seld einen Redebeitrag. Er hebt hervor, dass es in dem
+    Thesenpapier um Solidarität gehe. Er liest in dem Papier auch, dass sich die
+    verschiedenen Kämpfe miteinander verbinden lassen.
+
+    \textit{Zeitansage: 21.45 Uhr}
+
+    Seld sagt, dass wir in einer Umwelt leben, die stark von Menschen beeinflusst
+    wird. Er möchte eine Kampagne anstoßen, um den HVV kostenlos zu machen.
+
+    Franziska hält einen Redebeitrag. Unter anderem sagt sie, dass mit dem Text
+    eine wichtige Analyse getroffen worden sei, die auch für die zukünftige
+    Arbeit Relevanz habe.
+
+    Jacob Petersein geht auf den "antifaschistischen Impetus" des Textes
+    ein.
+
+    Till geht auf den letzten Absatz des Textes ein. Er stellt die Radikalität
+    des Vorsatzes dar, die Solidarität auszubauen. Er geht auf zwei Personen
+    ein, die früher Teil eines ausgesprochen antilinken AStAs waren, aber erkannt
+    hätten, dass die Arbeit in der VS extrem befreiend sei. Till findet es wichtig
+    zu reflektieren, wie wichtig Anerkennung sein darf, da es den Anerkennenden
+    eine Institution zuspreche. Die Alternative zur kapitalistischen Gestaltung
+    der Umgebung müsse die menschenwürdige Gestaltung der Umgebung sein. Eine
+    Absage zu der Dialektik (Anecken vs. Anerkennung) sorge dafür, dass
+    man in eine reaktionäre Argumentation abrutschen könne. Dies sollte vom
+    AStA berücksichtigt werden.
+
+    Armin findet, dass die ökologischen Fragen in Zukunft eine größere Rolle
+    einnehmen sollten.
+
+    \textit{Zeitansage: 22.00 Uhr}
+
+    Artur sagt, dass man sich jeglicher rechter Hetze zur Wehr setzen müsse.
+    Studierende ließen sich noch zu häufig einreden, dass sie privilegiert
+    seien und das Engagement in AStA und Co. nur vorübergehend und eine Phase
+    sei. Er geht auf den US-Wahlkampf mit Donald Trump und Bernie Sanders ein.
+    Studierende sollten es als gemeinsamen Kampf verstehen, wenn z.B. die
+    Krankenschwestern von einem Krankenhaus streiken.
+    Artur verweist auch noch einmal auf NOlympia und die laufenden Anstrengungen
+    die Arbeiten ins Italienische zu übertragen, damit die Errungenschaften
+    in Hamburg auch auf Rom übertragen werden können. Dort soll es jetzt auch
+    ein Referendum zu Olympia geben.
+
+    Franziska hält einen weiteren Redebeitrag. Sie geht auf die Beeinflussbarkeit
+    der Hamburger Regierung ein und erwähnt die Enthaltung von Fegebank
+    bei der Exzellenzinitiative.
+
+    Es folgt die Abstimmung über den Text. Bei einigen Gegenstimmen wird der
+    Text mehrheitlich angenommen.
+
+    Es wird eine persönliche Erklärung von Ramin, Jennifer, Claas-Friso
+    und einigen mehr, deren Unterschrift nicht entziffert werden konnte, vorgelesen:
+
+    \blockquote{Wir halten die Diskussion der VS-Thesen wie vorgetragen für die
+    Vorstellung des jeweiligen Parteiprogramms und fordern, dass sie auch dementsprechend
+    benannt werden.}
+
+    Anschließend wird eine persönliche Erklärung von Geoffrey verlesen:
+    \blockquote{Die Opposition wieder verkennt\\
+    die Wichtigkeit vom Argument,\\
+    denn will man wirklich überzeugen\\
+    hilfts nicht sich unterm Tisch zu beugen.\\
+    Denn nur durchs Reden, Diskutieren\\
+    wird inhaltlich etwas passieren.
+
+    Eine Erklärung zum Finale\\
+    wird gern auch Klingelstreich genannt.\\
+    Man klopft und lächelt etwas fahle\\
+    doch geht die Tür auf wird gerannt.}
+
+    \subsubsection{Wahl des AStA-Vorstandes}
+
+    Es gibt eine Kandidaturliste:
+
+    \begin{enumerate}
+        \item Vorstand: Philipp Droll
+        \item Vorstand: Franziska Hildebrandt
+    \end{enumerate}
+
+    Philipp, Franziska und Timo stellen sich vor.
+
+    Till stellt die Frage an Philipp, warum ausgerechnet
+    Philipp Vorstand macht.
+
+    Till stellt eine Frage an Philipp und Franziska, welche Punkte sie
+    von dem Rechenschaftsbericht von Vincent und Moritz übernommen haben.
+
+    Philipp beantwortet die Frage, warum er Vorstand macht damit, dass
+    er hofft, dass es noch andere Gründe gibt, als dass er bei CampusGrün ist.
+    Außerdem habe er die Arbeit im AStA sehr positiv wahrgenommen. Vor dem
+    Hintergrund seiner gewonnenen Erkenntnisse sieht er es daher als sinnvoll an,
+    dass er in den Vorstand geht. Er möchte tendenziell der Empfehlung von Vincent
+    folgen, stärker im fzs zu arbeiten.
+
+    Franziska geht in vielen Punkten auf die Arbeit des AStA ein.
+
+    Es gibt keine Personaldebatte.
+
+    Die Wahl findet offen statt.
+
+    Mit 28:11:0 ist der AStA-Vorstand gewählt. Philipp und Franziska nehmen
+    die Wahl an.
+
+    \subsection{Bestätigung der AStA-Referent*Innen}
+
+    Es folgt der Vorschlag des gewählten AStA-Vorstands für die zu bestätigenden
+    Referent*Innen.
+
+    \textbf{Finanzreferent:}\\
+    Timo Tomanek
+
+    \textbf{HoPo, Öffentlichkeitsarbeit, Kultur:}
+    \begin{itemize}
+        \item Mena Winkler
+        \item Geoffrey Youett
+        \item Janis Franken
+        \item Kim Wiesenberg
+    \end{itemize}
+
+    \textbf{Soziales, Ökologie, Soziale Bewegung:}
+    \begin{itemize}
+        \item Artur Brückmann
+        \item Armin Günther
+        \item Stefan Seld
+    \end{itemize}
+
+    \textbf{Antifaschismus, Antidiskriminierung, Kritische Wissenschaft:}
+    \begin{itemize}
+        \item Karima Schulze
+        \item Mario Moldenhauer
+        \item Annkathrin Löffler
+    \end{itemize}
+
+    \textit{Zeitansage: 22.30 Uhr}
+
+    \textit{GO-Antrag von Melf auf Verlängerung der Sitzung bis nach TOP 17.
+    Kein Widerspruch.}
+
+    Es folgt die Vorstellung der Referent*Innen. Kim Wiesenberg ist aus
+    gesundheitlichen Gründen leider nicht anwesend. Janis stellt daher Kim vor.
+    Bei seiner eigenen Vorstellung erwähnt Janis Debatten, die im Bereich der
+    Kultur anstünden.
+
+    An die Vorstellung schließt sich eine Fragerunde an.
+
+    Till stellt die Frage, an welcher Stelle in der Referatsstruktur die
+    Beschäftigung mit der Friedensentwicklung verortet sein soll.
+
+    Till stellt die Frage, welche Bedeutung die Personen aus Antifa und Antidis
+    dem sozialen Konflikt zumessen.
+
+    Till findet, dass die Wörter "halt" und "irgendwie" dafür sprechen, dass sich
+    Seld cool findet. Gibt es Punkte, die Seld wirklich inhaltlich teilt?
+
+    Golnar hat die Frage, was die Referent*Innen unbedingt anpacken wollen.
+
+    Die Beantwortung dieser Fragen beginnt mit Seld.
+
+    Seld hat Probleme mit dem Thesenpapier, v.a. mit dem Duktus und der
+    Entstehungsgeschichte. Dabei geht er u.a. auf die Schuldenbremse ein.
+
+    Annkathrin geht auf Tills Frage zu Antifa und Antidis ein. Sie sieht
+    den sozialen Konflikt auch als Problem an.
+
+    \textit{Zeitansage: 23.00 Uhr}
+
+    Artur meint, dass Frieden ein Querschnittsthema sein sollte. Der AStA sollte
+    den imperialistischen Impuls zurückweisen. Artur will unbedingt ändern,
+    dass Studierenden eingeredet wird, dass sie an den neoliberalen Zuständen
+    Schuld seien.
+
+    Mena sagt, dass die Friedensfrage überall aufgehoben sein sollte.
+    Sie möchte daran arbeiten, dass weniger nebeneinander her studiert und
+    gearbeitet wird.
+
+    Geoffrey sagt auch, dass Frieden übergreifend bearbeitet werden muss.
+    Strukturell solle die Diskussion zur Zivilklausel weiter vorangetrieben werden.
+    Kein Mensch sollte unter Kriegsbedingungen leben. Die Friedensthematik
+    sei nicht nur Aufgabe des AStA, sondern der gesamten Gesellschaft.
+    Geoffrey möchte als erstes die Denkweise ändern, wie Referate übergreifend
+    zusammenarbeiten können. Er stellt die Frage, wie man wieder eine Universität
+    hinbekommt, an der man zusammenarbeitet und nicht in Scheuklappen denkt.
+
+    Karima antwortet für das Referat und möchte die Zusammenarbeit mit den
+    teilautonomen Referaten verbessern. Außerdem soll die Arbeit des AStA
+    auch außerhalb der AStA-Räumlichkeiten stattfinden und in die Universität
+    getragen werden. Mario sagt, dass Frieden übergreifend ist und die Zivilklausel
+    in der Kritischen Wissenschaft verortet sei.
+
+    Es schließt sich eine zweite Fragerunde an.
+
+    Eine Studentin namens Lena fragt, inwiefern der AStA das Thema
+    Feminismus vertritt.
+
+    Golnar fragt, wie sich der AStA zur Frage der Inklusion verhält. Desweiteren
+    fragt sie, wie alle das Verhältnis von StuPa zu AStA sehen. Sie fragt ferner,
+    welche Debatten im Bereich der Kultur anstünden. Golnar fragt alle Referate,
+    wie sich diese an der Anti-ExzellenzIni-Kampagne beteiligen möchten.
+
+    Karima beginnt die Antwortrunde auf diese Fragen. Sie beantwortet die Frage
+    zur Diskriminierung. Es kann Personen geben, die sowohl diskriminiert werden
+    als auch selber diskriminieren.
+
+    Mario erklärt das Verhältnis von StuPa zu AStA damit, dass die Referent*innen
+    vom StuPa bestätigt werden und das Verhältnis besser nicht beschrieben werden
+    könne.
+
+    Seld geht auf die Frage zu Feminismus ein. Dabei erwähnt er mehrere
+    Frauenbewegungen.
+
+    Artur sagt, dass die formale Frage, wer Referent oder Referentin ist,
+    nicht relevant sei, da Frauke Petri und Beatrix von Storch beides Frauen sind,
+    aber sehr frauenfeindlich agierten.
+
+    Armin und Seld stellen klar, dass es keine Referatsmeinung zu dem
+    Thema gibt und es unterschiedliche Positionen im Referat dazu gibt.
+
+    Janis beantwortet die Frage zu den anstehenden Debatten. Beispielsweise
+    stelle sich die Frage, ob "tanzen gegen rechts" genug sei.
+
+    Mena geht auf die ExzellenzIni ein.
+
+    \textit{Zeitansage: 23.30 Uhr}
+
+    Beispielsweise geht sie darauf ein, dass eine Person ihr gesagt hat, dass
+    sie über die ExellenzIni über die Klozeitschrift des AStA herausgefunden hat.
+
+    Die Bestätigung findet offen statt. 7 der Referent*Innen sind stimmberechtigt
+    im StuPa.
+
+    Es gibt 16 Stimmen für die Referent*Innen. Da sieben der Referent*Innen
+    stimmberechtigt, aber nicht anwesend sind, werden ihre Stimmen zu ihren
+    Gunsten gerechnet. Damit ergeben sich 23 Stimmen, die eine Bestätigung
+    befürworten. Es gibt 6 Gegenstimmen und keine Enthaltungen.
+
+    Die Referent*Innen sind damit bestätigt.
+
+    \subsection{Antrag Ältestenrat zur Beauftragung des SWOGA}
+
+    Geoffrey erklärt den Antrag vom Ältestenrat.
+
+    Melf sagt, dass sich der SWOGA am 11. Mai um 18:30 das nächste Mal
+    trifft.
+
+    Der Antrag wird bei einer Enthaltung einstimmig angenommen.
+
+    \subsection{Verschiedenes}
+
+    Till erinnert, dass das StuPa beim letzten Mal einen Aufruf zur Teilnahme
+    an der Erinnerung an das Bücherverbrennen beschlossen hat. Das findet am
+    10. Mai am Kaiser-Friedrich-Ufer statt. Alle sind dazu aufgerufen daran
+    teilzunehmen.
+
+    Vincent erinnert daran, dass der AStA zusammen mit anderen Gruppen
+    für den 1. Mai aufruft. Am 3. Mai findet die Demonstration gegen
+    die Schließung der Holzwirtschaft statt. Sie startet um 15:30 beim
+    Dammtorbahnhof.
+
+    Artur verweist auf eine Veranstaltung von Torsten Bultmann.
+    Diese findet am 10. Mai um 18 Uhr statt.
+
+    \textit{Die Sitzung wird um 23.41 Uhr geschlossen.}
+
+    \newpage
+
+    \section*{Rechenschaftsbericht von Till Meerpohl}
+
+    Vor ca. einem Jahr sind wir als AStA gewählt worden, der sich in puncto
+    Öffentlichkeitsarbeit vorgenommen hatte, in Publikationen über
+    Auseinandersetzungen und Geschehnisse in Stadt und Universität kritisch zu
+    berichten und erfolgreich weitere Menschen an der Praxis des AStA teilhaben
+    zu lassen.
+
+    So sinnvoll dieser Anspruch auch sein mag, glaube ich, dass wir eine ganz
+    andere Herausforderung unterschätzt haben, aber aus der wir bestimmt einiges
+    mitnehmen und lernen können. Das Referat für Öffentlichkeitsarbeit hat sich
+    im letzten Jahr allerlei technischen Herausforderungen stellen müssen, bei
+    denen der gestalterische Anteil manchmal etwas kurz gekommen ist.
+
+    Die Herausforderung, dass es auf der einen Seite notwendige Arbeit gibt, wie
+    das Layouten von Publikationen, die Pflege von Homepage und Facebook sowie das
+    Verteilen der Publikationen und auf der anderen Seite den Anspruch eigene
+    Ideen und ein Verständnis von Gesellschaft und Kritik an selbiger zu entwickeln
+    und nach außen zu tragen sowie gestalterisch tätig zu sein, wurde häufig
+    zugunsten ersterer beantwortet.
+
+    So haben wir einen, wie ich finde, sehr guten Kalendasta, der sowohl in seiner
+    optischen Präsenz als auch inhaltlich sehr gut war, konzipiert, uns immer
+    wieder Gedanken zu der Strukturierung neuer Stiller Wörtchen gemacht und uns
+    zum Relaunch der Homepage lange beraten, wie wir das, was der AStA tut und
+    vertritt, besser im Webauftritt verdeutlichen können. Auch wenn das nicht
+    immer nur etwas mit Gesellschaftskritik zu tun hatte, waren das Situationen
+    in denen wir gemeinsam Dinge entwickelt haben und sich nicht das Gefühl von
+    dem Abarbeiten von Aufgaben zur Erhaltung des laufenden AStA-Betriebs einstellte.
+
+    Ich glaube, dass die Klärung des Umgangs mit solchen Aufgaben, die zweifelsfrei
+    notwendig sind und getan werden müssen, die Arbeit im Referat für
+    Öffentlichkeitsarbeit beleben könnte.
+
+    Auch wenn das Augenmerk gerade mehr auf dem zu verbessernden lag, möchte ich
+    doch noch einmal ganz besonders Oli und Wiebke für eine gute und schöne Zeit
+    danken. Ich habe den Umgang mit euch immer sehr geschätzt und glaube auch
+    viel von euch gelernt zu haben.
+
+\end{document}
