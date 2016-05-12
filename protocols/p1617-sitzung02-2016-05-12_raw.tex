@@ -1,0 +1,178 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 2. Sitzung des Studierendenparlaments vom 12. Mai 2016}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: S08 in der ehemaligen HWP}\\
+    \textbf{Beginn: 18.15 Uhr}\\
+    \textbf{Ende:  Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger, Antonia Niecke, Ramin Shakiba, \\
+                            & Jennifer Maack, Benjamin Welling \\
+             CampusGrün (14 Sitze): & Laura Franzen, Geoffrey Youett, Elena Rysikova, \\
+                                   & Philipp Droll, Melf Johannsen,\\
+                                   & Tahnee Herzig, Mario Moldenhauer, Jim Martens,\\
+                                   & Svenja Horn, Mirzo Ulugbek Khatamov,\\
+                                   & Martin Sievert \\
+             Bier-Liste (2 Sitze) : & Jakob Pape, Karen Martirosian \\
+             WiWi (2 Sitze): & Claas-Friso Hente, Kay Zöllmer \\
+             Unicorns (5 Sitze): & Katharina Kucza, Johannes Peplow, Annkathrin Löffler, \\
+                                 & Andreas Hartkamp, Marielle Hermstrüwer \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): & Samet Gunay, Ajdina Karahasan \\
+             MIN (4 Sitze): & Ailina Salten, Thea Wahlers, Jan Detampel \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Timo Zeimet, Dominic Laumer \\
+             LHG (1 Sitz): & Tobias Heisig \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): & Karima Schulze, Henri Weber \\
+            & \\
+        Entschuldigt: & Freya Schmitz (CampusGrün), Yasemin Günther (CG), Armin Günther, \\
+                      & Lotte Rullkötter (MIN) \\
+                                &\\
+        Unentschuldigt abwesend: & Johann Baumhoefener (Jura) \\
+                                &\\
+        Rücktritte: & \\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Alle Frauen*-Wahl
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift (V1617-020)
+                \item Bestätigung der Referent*innen (V1617-019)
+            \end{enumerate}
+        \item Gründung des FSR kath. Theologie (V1617-017) (10 Min.)
+        \item Antrag auf VV (V1617-018) (30 Min.)
+        \item EM 2016 (V1617-014) (30 Min.)
+        \item Verlegung der StuPa-Wahl in das Sommersemester (V1617-015) (30 Min.)
+        \item Umgang mit der AfD (V1617-016) (30 Min.)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    \subsubsection{Anfragen an den AStA}
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    \subsubsection{Aktuelle Stunde (falls entsprechender Antrag vorliegt)}
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Alle Frauen*-Wahl
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift (V1617-020)
+                \item Bestätigung der Referent*innen (V1617-019)
+            \end{enumerate}
+        \item Gründung des FSR kath. Theologie (V1617-017) (10 Min.)
+        \item Antrag auf VV (V1617-018) (30 Min.)
+        \item EM 2016 (V1617-014) (30 Min.)
+        \item Verlegung der StuPa-Wahl in das Sommersemester (V1617-015) (30 Min.)
+        \item Umgang mit der AfD (V1617-016) (30 Min.)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \subsubsection{Feststellung der Beschlussfähigkeit}
+
+    \subsubsection{Genehmigung der Protokolle der vorangegangenen Sitzungen}
+
+    \vspace{1cm}
+    {\Large \underline{Teil B}}
+
+    % Teil B beginnt
+    % Dieser wird sich für jede Sitzung unterscheiden.
+    % Jeder TOP ist eine subsection.
+    % Vorhandene Beispiele anfangs entfernen und durch tatsächliche TOPs ersetzen
+
+    % Folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x mit
+    % der Zahl des zuletzt behandelten TOPs ersetzen.
+    %\setcounter{subsection}{x}
+    \subsection{Alle Frauen*-Wahl}
+
+    a) Bestätigung der Wahlniederschrift
+
+    b) Bestätigung der Referent*Innen
+
+    \subsection{Gründung des FSR kath. Theologie}
+
+    \subsection{Antrag auf VV}
+
+    \subsection{EM 2016}
+
+    \subsection{Verlegung der StuPa-Wahl in das Sommersemester}
+
+    \subsection{Umgang mit der AfD}
+
+    \subsection{Verschiedenes}
+
+\end{document}
