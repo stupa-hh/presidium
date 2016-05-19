@@ -1,0 +1,74 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    \section*{Beschluss des Studierendenparlamentes vom 12. Mai 2016}
+    \subsection*{Herren-Fußball-Europameisterschaft 2016 – und wieder
+    Großsportveranstaltung}
+
+    Spätestens seit der Auseinandersetzung um Olympische Spiele liegt für die
+    meisten Hamburger offen, dass derartige kommerzielle Großevents vor allem
+    ein großes Geschäft für Veranstalter, Sponsoren, Ausstatter und Wettbüros
+    sind, auf Kosten der großen Mehrheit der Bevölkerung – kulturell begleitet
+    von Leistungsideologie, Doping und nationalen Gefühlen.
+
+    Und Medienhype: Keine Zeitung, die nicht mit Torjubel titelt, keine
+    Nachrichten, ohne die neusten Informationen aus den Umkleidekabinen. Die
+    gnadenlose Suggestion lautet: hältst Du Fußball (oder Handball, oder Laufen,
+    oder Schießen, oder was auch immer) nicht für das wichtigste der Welt, bist
+    Du ein durchgeknallter Freak. Ein Brief einer offensichtlich konservativen
+    Leserin an die FAZ vom 17. Juni 2006 fasste das so zusammen:
+
+    \blockquote[Renate Jansen, Düsseldorf]{Bitte, reduzieren Sie die Berichterstattung über diese duselige WM, ansonsten
+    überlege ich mir ernsthaft, für die Zeit der WM eine F.A.Z.-Pause einzulegen.
+    Mich interessieren einzelne oder ganze Körperteile von Spielern nicht,
+    ebensowenig die Tipergebnisse von Ministern (haben die sonst nichts zu tun?)
+    Bieten Sie bitte seriösen Journalismus, decken Sie die Schwächen der Regierung
+    egal welcher Farbe auf und machen Sie vernünftige Vorschläge, wie die Karre
+    Deutschland wieder aus dem Dreck kommt.}
+
+    Der AStA der Uni Hamburg wird sich an dieser Gehirnwäsche nicht beteiligen,
+    mit der den Menschen vorgeschrieben werden soll, was sie zu denken haben:
+    dass ihnen ein Sportereignis das wichtigste im Leben sein möge.
+
+    Um eine kulturelle Alternative zu schaffen, organisiert der AStA kurzfristig
+    eine Veranstaltungsreihe. Angestrebt wird, rund um die Spieltage der
+    Mannschaft aus Deutschland, jeweils einen Referenten aus dem Land der
+    gegnerischen Mannschaft zu gewinnen, der von den dortigen sozialen
+    Auseinandersetzungen berichtet.
+
+    Darüber hinaus soll der AStA sich weiterhin bemühen, den Breitensport zu
+    fördern und in diesem Zusammenhang die Durchführung eines
+    AStA-Breitensport-Fussballturniers prüfen.
+\end{document}
