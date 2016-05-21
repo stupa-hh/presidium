@@ -1,0 +1,484 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 2. Sitzung des Studierendenparlaments vom 12. Mai 2016}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Gunhild Berdal}\\
+    \textbf{Ort: S08 in der ehemaligen HWP}\\
+    \textbf{Beginn: 18.40 Uhr}\\
+    \textbf{Ende: 0.02 Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger, Antonia Niecke, Ramin Shakiba, \\
+                            & Jennifer Maack \\
+             CampusGrün (14 Sitze): & Geoffrey Youett, Philipp Droll, Melf Johannsen, \\
+                                   & Tahnee Herzig, Mario Moldenhauer, Jim Martens,\\
+                                   & Mirzo Ulugbek Khatamov, Armin Günther, Martin Sievert\\
+             Bier-Liste (2 Sitze) : & Jakob Pape \\
+             WiWi (2 Sitze): & Claas-Friso Hente \\
+             Unicorns (5 Sitze): & Johannes Peplow, Annkathrin Löffler, \\
+                                 & Andreas Hartkamp, Marielle Hermstrüwer \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): & Samet Gunay, Ajdina Karahasan \\
+             MIN (4 Sitze): & \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Dominic Laumer \\
+             LHG (1 Sitz): & Tobias Heisig \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): & Karima Schulze, Henri Weber \\
+            & \\
+        Entschuldigt: & Benjamin Welling (RCDS), Elena Rysikova, Yasemin Günther,\\
+                      & Freya Schmitz, Svenja Horn (alle Campus Grün), Karen Martirosian (Bier), \\
+                      & Kay Zöllmer (WiWi), Katharina Kucza (Unicorns), Ailina Salten, \\
+                      & Lotte Rullkötter, Thea Wahlers (alle MIN), Timo Zeimet (Bart)\\
+                      &\\
+        Unentschuldigt abwesend: & Laura Franzen (Campus Grün), Jan Detampel (MIN), \\
+                                & Johann Baumhoefener (Jura)\\
+                                &\\
+        Rücktritte: & \\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Alle Frauen*-Wahl
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift (V1617-020)
+                \item Bestätigung der Referent*innen (V1617-019)
+            \end{enumerate}
+        \item Gründung des FSR kath. Theologie (V1617-017) (10 Min.)
+        \item Antrag auf VV (V1617-018) (30 Min.)
+        \item EM 2016 (V1617-014) (30 Min.)
+        \item Verlegung der StuPa-Wahl in das Sommersemester (V1617-015) (30 Min.)
+        \item Umgang mit der AfD (V1617-016) (30 Min.)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \textit{Jim eröffnet die Sitzung um 18.40 Uhr.}
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    Das Präsidium hat sich über eine Verbesserung der Öffentlichkeitsarbeit
+    verständigt. Insbesondere eine Berichterstattung an FSRe und andere
+    Interessierte über Diskussionen und Beschlüsse des StuPas soll versucht
+    werden, z.B. über einen Newsletter. Die neue Website wird ständig erweitert.
+
+    Wissenschaftssenatorin Fegebank soll nach dieser Sitzung mit dem Beschluss
+    zur VV gegen die Exzellenz-Initiative eingeladen werden.
+
+    Was die Sitzungsplanung betrifft: Am 23. Juni finden gleich drei
+    hochschulpolitisch wichtige Termine statt: die Tagung in der
+    Erziehungswissenschaft zu Noten,  der APH sowie eine Sitzung des
+    Wissenschaftsausschusses. Der Tag ist daher für eine StuPa-Sitzung nicht so
+    gut geeignet. Es wird daher überlegt, die Sitzung vom 23. Juni auf den 16.
+    Juni vorzuverlegen.
+
+    Daraus würden sich diese Sitzungstermine ab dem 16. Juni ergeben:
+    \begin{itemize}
+        \item 16. Juni
+        \item 30. Juni
+        \item 14. Juli (bei Bedarf)
+    \end{itemize}
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    Keine
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    \textbf{Philipp (Vorstand)} berichtet, dass der AStA sich konstituiert hat:
+    Die Referatszuschnitte sind neu, Organisatorisches hat viel Zeit in Anspruch
+    genommen.
+
+    Die Veranstaltung mit Torsten Bultmann (BdWi) war gut: Es wurde insbesondere
+    die die steigende Abhängigkeit der Hochschulen von Drittmitteln und die
+    strukturelle Scheinautonomie der Hochschulen kritisiert.
+
+    In der Frage Akkreditierung von Hochschulen und Studiengängen hat der AStA
+    noch keine Linie: Die Vereinheitlichung sei eher positiv zu bewerten, negativ
+    hingegen, dass die BA/MA-Studiengänge gefestigt werden.
+
+    \textbf{Franziska (Vorstand)} berichtet von der Demo gegen die Kürzungen in
+    Holzwirtschaft, von „Uni für alle statt Exzellenz“. Eine Demo gegen die
+    Exzellenzinitiative soll am 14. Juni stattfinden und eine Vollversammlung
+    am 2. Juni.
+
+    Sie berichtet weiter kritisch von der Einrichtung von Gebührensatzungen für
+    die Studiengänge "Master of International Taxation" (oder besser Master of
+    Panama Papers), "Master of legal Studies" (oder auch Troika-Master) und
+    "Master der kriminologischen Studis".
+
+    Zur Rahmenprüfungsordnung soll es einen Diskussionstag in der vorlesungsfreien
+    Zeit geben.
+
+    Die Studierenden im AS haben eine Initiative für einen Ausschuss für
+    internationale Angelegenheiten gestartet.
+
+    \textbf{Timo (Finanzen)} berichtet, dass es erste Überlegungen für den
+    Haushalt der VS gibt.
+
+    \textbf{Artur (Soziales, Ökologie, Soziale Bewegung)} zitiert
+    Bundespräsident a.D., Horst Köhler, aus dem Jahr 2010, der zurücktreten
+    musste, weil er ausgeplaudert hat, dass die Bundeswehr in aller Welt zur
+    Sicherung von Rohstoffen und Transportwegen Krieg macht. Dem AStA sei es
+    gelungen, die Bundeswehr von der Jobmesse des Stellenwerks auszuladen.
+
+    Der AStA macht eine Veranstaltung mit Mitarbeiter*innen der Charité in
+    Berlin, die mehr Personal für die Pflege durchgesetzt haben.
+
+    \textbf{Armin (Soziales, Ökologie, Soziale Bewegung)} kündigt an, dass der
+    AStA eine kritische Veranstaltung zu Tierversuchen vorhat und zu Recycling
+    in der Stadt arbeitet.
+
+    \textbf{Geoffrey (HoPo, Öffentlichkeitsarbeit, Kultur)} berichtet von viel
+    organisatorischem Kram und von der Absicht, besser mit den Kommiliton*innen
+    in Kontakt zu kommen.
+
+    \textbf{Kim (HoPo, Öffentlichkeitsarbeit, Kultur)} berichtet, dass der AStA
+    die EM problematisieren und kritisieren will.
+
+    \textbf{Janis (HoPo, Öffentlichkeitsarbeit, Kultur)} erzählt, dass die
+    Kulturkurse funktionieren, was nicht so gut läuft, wird geprüft.
+
+    \textbf{Mario (Antifaschismus, Antidiskriminierung, Kritische Wissenschaft)}
+    berichtet, dass das Referat viele Projekte hat, aber noch keine richtigen
+    Konzepte.
+
+    \textbf{Oliver} berichtet aus dem \textbf{Ausschuss gegen Rechts}, dass die
+    Lesung "Bücherverbrennung nie wieder" sehr gut war: Gutes Wetter, viel Besuch,
+    gute Texte, es wurde viel gelacht. Nicht nur Pazifismus und Antimilitarismus
+    und Sozialismus und so, sondern auch Humor war den Nazis ein Dorn im Auge.
+    Der Ausschuss plant den "Tag gegen Rechts".
+
+    \subsubsection{Anfragen an den AStA}
+
+    Es gibt Fragen insbesondere zu den Themenbereichen: Ausrichtung der Aktivitäten
+    des AStA gegen die EM und gemeinsame Vorhaben des neuen AStA.
+
+    Antworten: Der Kulturbereich eigne sich gut zur Mobilisierung gegen Rechts.
+    Die Aktivitäten gegen die Exzellenzinitiative sei das Wichtigste in der
+    kommenden Zeit.
+
+    \textit{Zeitansage: 19.30 Uhr}
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    Keine
+
+    \subsubsection{Aktuelle Stunde (falls entsprechender Antrag vorliegt)}
+
+    Es lag kein Antrag vor.
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    Antrag Till: TOP 5 "Verlegung der StuPa-Wahl in das Sommersemester" und
+    TOP 6 "Umgang mit der AfD" tauschen, damit die Gegen-Rechts-Themen im
+    Zusammenhang behandelt werden.
+
+    Mit m:9:0 angenommen.
+
+    Antrag Claas-Friso: TOP 5 zu TOP 4 machen. Mit 2:m:3 abgelehnt.
+
+    Antrag Claas-Friso: TOP 5 zu TOP 1 machen. Mit 8:m:1 abgelehnt.
+
+    Die so geänderte Tagesordnung wird mehrheitlich angenommen.
+
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Alle Frauen*-Wahl
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift (V1617-020)
+                \item Bestätigung der Referent*innen (V1617-019)
+            \end{enumerate}
+        \item Gründung des FSR kath. Theologie (V1617-017) (10 Min.)
+        \item Antrag auf VV (V1617-018) (30 Min.)
+        \item EM 2016 (V1617-014) (30 Min.)
+        \item Umgang mit der AfD (V1617-016) (30 Min.)
+        \item Verlegung der StuPa-Wahl in das Sommersemester (V1617-015) (30 Min.)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \subsubsection{Feststellung der Beschlussfähigkeit}
+
+    \textit{Beschlussfähigkeit ist mit 31 von 47 Parlamentarier*Innen gegeben.}
+
+    \subsubsection{Genehmigung der Protokolle der vorangegangenen Sitzungen}
+
+    Till problematisiert die verkürzte Zusammenfassung einzelner Redebeiträge im
+    Protokoll des 1. Teils der ersten StuPa-Sitzung, z.B. auf S. 10 "Jakob
+    Petersein erwidert...". Das Präsidium ändert die Stelle und das Protokoll
+    wird bestätigt.
+
+    Till beantragt die Vertagung des Protokolls vom 2. Teil der ersten
+    StuPa-Sitzung mit der Bitte, ähnliche Stellen entsprechend zu ändern -- kein
+    Widerspruch.
+
+    \textit{Präsidiumspause bis 20.09 Uhr}
+
+    \vspace{0.5cm}
+    {\Large \underline{Teil B}}
+
+    % Teil B beginnt
+    % Dieser wird sich für jede Sitzung unterscheiden.
+    % Jeder TOP ist eine subsection.
+    % Vorhandene Beispiele anfangs entfernen und durch tatsächliche TOPs ersetzen
+
+    % Folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x mit
+    % der Zahl des zuletzt behandelten TOPs ersetzen.
+    %\setcounter{subsection}{x}
+    \subsection{Alle Frauen*-Wahl}
+
+    a) Bestätigung der Wahlniederschrift
+
+    Franziska, Mena und Paula stellen die Wahlniederschrift vor. Es gibt keine
+    Fragen. Sie wird mit m:0:2 angenommen.
+
+    b) Bestätigung der Referent*Innen
+
+    Referentinnenvorschlag:
+    \begin{itemize}
+        \item Melina Toelle (Referentin)
+        \item Louisa Escher (Stellvertreterin)
+    \end{itemize}
+
+    Melina und Louisa stellen sich vor. Sie legen dar, dass sie vom feministischen
+    Standpunkt aus arbeiten: Die gesellschaftliche Ungleichheit werde durch
+    Ausbeutung und Machtgefälle im Kapitalismus stabilisiert. Es gelte, patriarchale
+    Strukturen aufzubrechen. Konkurrenz verschärfe die Ungleichheit. Aktuelle
+    Fragen seien: Wie (sozial) offen ist die Uni? Sexualisierte Gewalt sichtbar
+    machen, ein solidarisches Miteinander schaffen. Den "Tag gegen Rechts"
+    mitgestalten.
+
+    Es gibt eine engagierte Fragerunde u.a. zu: (Nicht-)Besetzung leerer Stellen
+    mit Frauen, zum behaupteten Ausbeutungsverhältnis zwischen Mann und Frau, zu
+    positiver Diskriminierung und der Karte für den Campus, auf der Orte
+    sexueller Belästigung gekennzeichnet werden, sowie zu Patriotismus, Sexismus
+    und (männlicher) Leistungsideologie bei der EM.
+
+    Die Referentinnen betonen, dass sie vor allem die Strukturen der Ausbeutung
+    kritisieren, die niemandem gut tun. Wichtig sei die Erkenntnis, dass man nicht
+    alleine ist.
+
+    Es wird offen abgestimmt. Die Referentinnen werden mit m:0:9 bestätigt.
+
+    \textit{Zeitansage: 20.50 Uhr}
+
+    \subsection{Gründung des FSR kath. Theologie}
+
+    Geoffrey stellt den Antrag vor.
+
+    Es entsteht eine kritische Diskussion über das (katholische) Verständnis von
+    Fachschaftsrat-Arbeit, Laizismus und Religionsunterricht in den Schulen.
+    Einige plädieren dafür, die Gründung des FSRs erstmal zu beschließen und
+    dann zu diskutieren. Es wird auch vorgeschlagen, dass jemand vom AStA mit
+    den Antragsstellern/Aktiven spricht, wie man FSR-Arbeit machen kann.
+
+    Änderungsantrag: Nicht der "Fachschaftsrat", sondern die "Fachschaft" soll
+    eingerichtet werden (in Überschrift und Text). Es gibt keinen Widerspruch
+    gegen den Änderungsantrag.
+
+    Der eigentliche Antrag wird mit m:0:3 angenommen.
+
+    \textit{Zeitansage: 21.04 Uhr}
+
+    \subsection{Antrag auf VV}
+
+    Franziska stellt den Antrag vor: Die Kritik an der Exzellenzinitiative nehme
+    bundesweit zu, überall sei sie Thema, z.B. bei der Diskussion über den
+    Studiengang "Neuropsychologie". Es gehe darum, mit so vielen wie möglich
+    darüber zu sprechen, daher die VV.
+
+    Es gibt Fragen vom RCDS: Soll mit der Kampagne nur verhindert werden, dass
+    die Exini weitergeführt wird, oder soll es um mehr Geld für die Uni gehen?
+    Es sei richtig, gegen Kürzungen zu sein, aber warum solle man gegen die
+    Unterstützung wichtiger Forschung, z.B. Klimaforschung, sein? Die Naturwissenschaften
+    bräuchten eben mehr Geld, DESY sei z.B sehr erfolgreich.
+
+    Es wird entgegnet, das Konzept der Exini sei absurd, ihre Fortsetzung sei
+    die Verschärfung der Konkurrenz. Die Exzellenz sei selbstreferenziell, ihre
+    Kriterien seien Quantität und Verwertungstauglichkeit. Es gehe bei der
+    Forderung nach ausreichender Grundfinanzierung der Hochschulen nicht um
+    Gleichmacherei, sondern um Bedarf.
+
+    Der Antrag wird mit m:8:0 angenommen.
+
+    \textit{Präsidiumspause bis 21.50 Uhr}
+
+    \subsection{EM 2016}
+
+    Jakob Pape begründet den Antrag der Oppositionslisten "EM 2016 – Public
+    Viewing auf dem Campus ermöglichen" und nimmt dabei auch Bezug auf den Antrag
+    von Liste LINKS und anderen: Das Verbindende bei Fußball sei wichtig. In
+    Israel hätten palästinensische und israelische Mädchen zusammen gespielt.
+    Auch hierzulande könnten Flüchtlinge und andere durch Fußball dieselbe
+    Sprache sprechen. Die Medien seien auch mal kritisch, z.B. in Brasilien. Man
+    könnte Veranstaltungen machen, wo zuerst die Spiele angeguckt werden und dann
+    kritisch diskutiert wird.
+
+    Dagegen wird vielfältig Kritik an der EM unter den Gesichtspunkten
+    Nationalismus, Rassismus, Antisemitismus, Verdrängung der sozialen Frage und
+    Großevent auf dem Campus geäußert.
+
+    Aus der Opposition wird behauptet, einige wollten die EM verbieten, was nicht
+    gegen Antisemitismus helfe und nicht zum Frieden führe.
+
+    Es wird erwidert, es gehe nicht ums Verbieten, sondern darum, als VS etwas
+    Alternatives zur Aufklärung zu machen.
+
+    \textit{GO-Antrag von Melf: Verlängerung der Sitzung bis nach TOP 7.
+    Kein Widerspruch}
+
+    Die Frage kommt auf, wie mit dem Ersetzungsantrag von Liste LINKS
+    u.a. umzugehen ist: Ist es ein Änderungsantrag oder werden die beiden Anträge
+    alternativ abgestimmt? Es wird sich darauf geeinigt, so wie mit dem Antrag
+    des RCDS zur AfD auf der letzten Sitzung zu verfahren -- den Ersetzungsantrag
+    zuerst abstimmen und dann den Hauptantrag -- das Präsidium soll die Frage bis
+    zum nächsten Mal dann grundsätzlich klären.
+
+    Der Ersetzungsantrag (siehe Anhang) wird mit m:6:3 angenommen.
+
+    Der Gesamtantrag wird mit m:7:0 angenommen.
+
+    \textit{Präsidiumspause bis 23 Uhr}
+
+    \subsection{Umgang mit der AfD}
+
+    Ramin stellt den Antrag "Auseinandersetzung mit der AfD" vor.
+
+    Till spricht gegen den Antrag und jeden einzelnen Absatz und stellt einen
+    Änderungsantrag vor.
+
+    Es entsteht eine Debatte über Antifaschismus, Satire und Humor (mit positivem
+    Bezug zur Lesung "Bücherverbrennung nie wieder") auf der einen und die "Sorge
+    um innere Sicherheit" (Antrag) auf der anderen Seite.
+
+    \textit{Ein GO-Antrag von Melf auf Schließung der Redeliste wird mit 11:9:4
+    angenommen.}
+
+    \newpage
+    Änderungsantrag LL/harte Zeiten/SDS*:
+    \blockquote{Das StuPa bekräftigt, dass der
+    Ausschuss gegen Rechts in Zusammenarbeit mit dem AStA einen "Tag gegen Rechts"
+    entwickeln, planen und durchführen möge und wird dies nach Kräften unterstützen.
+    Insbesondere möge vorbereitet werden, dass sich an diesem Tag mit der AfD
+    kritisch-analytisch auseinandergesetzt wird. Auf der Grundlage der Erkenntnisse
+    des "Tages gegen Rechts" soll der Ausschuss gegen Rechts eine politische
+    Stellungnahme gegen die AfD ausarbeiten, die dem StuPa zur Beschlussfassung
+    vorgelegt wird.}
+
+    Änderungsantrag mit m:7:0 angenommen.
+
+    Gesamtabstimmung: Der so geänderte Antrag wird mit m:0:6 angenommen.
+
+    \subsection{Verlegung der StuPa-Wahl in das Sommersemester}
+
+    \textit{Melf beantragt, den TOP auf die nächste Sitzung zu vertagen. Das
+    wird mit m:5:3 angenommen.}
+
+    \subsection{Verschiedenes}
+
+    Franziska kündigt die neue Veranstaltung zur Zivilklausel am 6. Juni 2016 an.
+
+    \newpage
+
+    \section*{Ersetzungsantrag von LiLi und anderen zu EM 2016}
+
+    \subsection*{Herren-Fußball-Europameisterschaft 2016 – und wieder
+    Großsportveranstaltung}
+
+    Spätestens seit der Auseinandersetzung um Olympische Spiele liegt für die
+    meisten Hamburger offen, dass derartige kommerzielle Großevents vor allem
+    ein großes Geschäft für Veranstalter, Sponsoren, Ausstatter und Wettbüros
+    sind, auf Kosten der großen Mehrheit der Bevölkerung – kulturell begleitet
+    von Leistungsideologie, Doping und nationalen Gefühlen.
+
+    Und Medienhype: Keine Zeitung, die nicht mit Torjubel titelt, keine
+    Nachrichten, ohne die neusten Informationen aus den Umkleidekabinen. Die
+    gnadenlose Suggestion lautet: hältst Du Fußball (oder Handball, oder Laufen,
+    oder Schießen, oder was auch immer) nicht für das wichtigste der Welt, bist
+    Du ein durchgeknallter Freak. Ein Brief einer offensichtlich konservativen
+    Leserin an die FAZ vom 17. Juni 2006 fasste das so zusammen:
+
+    \blockquote[Renate Jansen, Düsseldorf]{Bitte, reduzieren Sie die Berichterstattung über diese duselige WM, ansonsten
+    überlege ich mir ernsthaft, für die Zeit der WM eine F.A.Z.-Pause einzulegen.
+    Mich interessieren einzelne oder ganze Körperteile von Spielern nicht,
+    ebensowenig die Tipergebnisse von Ministern (haben die sonst nichts zu tun?)
+    Bieten Sie bitte seriösen Journalismus, decken Sie die Schwächen der Regierung
+    egal welcher Farbe auf und machen Sie vernünftige Vorschläge, wie die Karre
+    Deutschland wieder aus dem Dreck kommt.}
+
+    Der AStA der Uni Hamburg wird sich an dieser Gehirnwäsche nicht beteiligen,
+    mit der den Menschen vorgeschrieben werden soll, was sie zu denken haben:
+    dass ihnen ein Sportereignis das wichtigste im Leben sein möge.
+
+    Um eine kulturelle Alternative zu schaffen, organisiert der AStA kurzfristig
+    eine Veranstaltungsreihe. Angestrebt wird, rund um die Spieltage der
+    Mannschaft aus Deutschland, jeweils einen Referenten aus dem Land der
+    gegnerischen Mannschaft zu gewinnen, der von den dortigen sozialen
+    Auseinandersetzungen berichtet.
+
+    Darüber hinaus soll der AStA sich weiterhin bemühen, den Breitensport zu
+    fördern und in diesem Zusammenhang die Durchführung eines
+    AStA-Breitensport-Fussballturniers prüfen.
+
+\end{document}
