@@ -1,0 +1,354 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 3. Sitzung des Studierendenparlaments vom 26. Mai 2016}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: S08 in der ehemaligen HWP}\\
+    \textbf{Beginn: 18.39 Uhr}\\
+    \textbf{Ende: Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger, Antonia Niecke, Ramin Shakiba, \\
+                            & Jennifer Maack \\
+             CampusGrün (14 Sitze): & Laura Franzen, Geoffrey Youett, Philipp Droll, \\
+                                   & Tahnee Herzig, Svenja Horn, Jim Martens,\\
+                                   & Mirzo Ulugbek Khatamov, Armin Günther, Martin Sievert\\
+                                   & Elena Rysikova, Yasemin Günther \\
+             Bier-Liste (2 Sitze) : & Jakob Pape, Karen Martirosian \\
+             WiWi (2 Sitze): & Claas-Friso Hente \\
+             Unicorns (5 Sitze): & Johannes Peplow, Annkathrin Löffler, \\
+                                 & Andreas Hartkamp, Marielle Hermstrüwer \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): & Ajdina Karahasan \\
+             MIN (4 Sitze): & \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Timo Zeimet, Dominic Laumer \\
+             LHG (1 Sitz): & \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): & Karima Schulze, Henri Weber \\
+            & \\
+        Entschuldigt: & Benjamin Welling (RCDS),\\
+                      & Melf Johannsen, Mario Moldenhauer (CG), Samet Gunay,\\
+                      & Kay Zöllmer (WiWi), Katharina Kucza (Unicorns), Ailina Salten, \\
+                      & Lotte Rullkötter, Thea Wahlers (alle MIN), Tobias Heisig (LHG)\\
+                      &\\
+        Unentschuldigt abwesend: & Jan Detampel (MIN), \\
+                                & Johann Baumhoefener (Jura)\\
+                                &\\
+        Rücktritte: & Freya Schmitz (CG) \rightarrow Sandra Fietz\\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Keine Werbung von/für Bundeswehr (V1617-023) (60 Min.)
+        \item Akkreditierung (V1617-024) (60 Min.)
+        \item Verlegung der StuPa-Wahl in das Sommersemester (V1617-015) (60 Min.)
+        \item Prüfauftrag: Wahl-O-Mat bei StuPa-Wahlen (V1617-022) (30 Min.)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    Gunhild eröffnet Sitzung um 18:39.
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    Freya Schmitz ist zurückgetreten.
+
+    Katharina Fegebank kommt wahrscheinlich am 30. Juni um 19 Uhr.
+
+    StuPa-Sitzungen am 16. und 30. Juni.
+
+    Gunhild berichtet über Präsidiumsstand zu Ersetzungsanträgen.
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    Droll sagt, dass es am 9. Juni ein Freiraumfestival gibt. Das ist
+    problematisch.
+
+    Till merkt an, dass man die StuPa-Sitzung in den Festivaltag
+    integrieren könnte.
+
+    Till sagt, dass man Protokolle kürzer fassen könnte und auf die Videos
+    verweisen könnte.
+
+    Keine weiteren Fragen.
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    Droll, Franzi und Timo halten Geschäftsbericht.
+
+    Es gab Gespräche mit Kanzler und weiteren Leuten. Dabei war mehr
+    Anerkennung als Anecken vorhanden. Dabei kam es schnell zur Verständigung,
+    sodass die Freiräume das Festival durchführen können.
+    Auch Haushaltsplan des Café Knallhart wurde besprochen.
+
+    AStA 0029 könnte zum Gremienraum werden. Regelung für FSRe im Philturm
+    könnte auf andere Gebäude übertragen werden. WiWi-Bunker soll wohl
+    schon sicher sein. Auch VMP 8 (Erzwiss) angedacht.
+
+    Nutzungsberechtigung für Philturm nur bis Ende 2016 ausgegeben.
+    Baubeginn für Philturm könnte nicht Anfang 2017 sein. Es wird wohl
+    Möglichkeiten geben Räume in den alten Postgebäuden anzumieten.
+
+    In 1,5 Wochen gibt es Gespräche mit dem Architekten der Uni.
+    Vorplatz des ESA soll umgebaut werden. Schuldenuhr soll weiterhin
+    stehenbleiben. Diskussion über Ästhetik mit Kanzler.
+
+    Kampagne gegen ExIni geht weiter und viele Unterschriftenlisten aus
+    den Fachbereichen zurückgekommen. Einigung bis zum 16.6. zu ExIni
+    unwahrscheinlich. Nächste Woche am 2.6. VV über ExIni in Phil 6.
+
+    In der letzten VL-Woche soll es eine Konferenz zu HealthEconomics geben.
+    Die Veranstaltungen im ESA-Flügel sollen ausfallen. Ermäßigter Preis
+    für Studierende beträgt 300€.
+
+    Eine Veranstaltung mit Frau Leopold kommt nicht zustande, weil sie
+    keine Zeit hat.
+
+    Es gibt eine BA/MA-Reform in der KMK. Das erste Jahr soll notenfrei
+    sein.
+
+    Timo berichtet über die Finanzen. Nächste Woche soll der erste Entwurf
+    AStA-intern vorgelegt werden.
+
+    Geoffrey hält Bericht aus dem Referat ÖffKulturHoPo. Es wurde Postverteiler
+    aufgebaut, über den den FSRen alle 2 Wochen Material zugeschickt werden soll.
+    Es wird sich Gedanken gemacht, wie man die FSRe besser in die inhaltliche
+    Arbeit und Demos einbeziehen kann.
+
+    Es soll Fotoaktion zur Frage geben "Was bedeutet Uni für dich?". Es wurde
+    sich überlegt, was an Veranstaltungen zur EM gemacht werden kann.
+
+    Es gab immer Frage, wie Campus OpenAir gestaltet werden soll. Freiraum-Festival
+    ist im Prinzip genau das: Ein studentisch organisiertes Festival ohne externe
+    Firma. AStA als Kooperationspartner auf Plakaten drauf. Ab 16 Uhr beginnt
+    das Festival. Ab 18 Uhr wird mehr Musik gemacht bis 22 Uhr. Evtl. Sondergenehmigung
+    um bis 24 Uhr Musik machen zu können. Es wird auch Stände geben
+
+    AStA hat sich überlegt, wie er sich dort einbringen kann. Idee ist sich mit
+    EM-Veranstaltungen einzubringen.
+
+    19:14
+
+    Kulturkurse laufen alle. Es gibt einige Kinderkrankheiten. Es soll das Buchungssystem
+    optimiert werden und eine neue Website gemacht werden. Im nächsten Semester soll
+    es noch besser und fruchtbarer ablaufen.
+
+    Jacob berichtet aus Antidis/Anfifa/Krit. Wiss. Referat kann bislang
+    nicht wirklich durchstarten, da viele Personen nicht da sind.
+
+    Übergreifendes Programm sind EM-Veranstaltungen. Das Ziel ist es die
+    Länder der gegnerischen Mannschaften vorzustellen und parallel zu
+    den Spielen ein OpenAir-Kino anzubieten. Überlegung zu verschiedenen
+    Veranstaltungsarten. Am 9.7. soll es ein Fußballturnier in Kooperation
+    mit Refugees Welcome Karoviertel stattfinden.
+
+    Die Veranstaltung zum NS-Studentenbund war gut besucht und hat eine
+    heterogene Zuschauermenge angezogen. Jacob fasst die Veranstaltung
+    zusammen.
+
+    Artur berichtet vom AS. Vertreter für den HR wurden gewählt. Nöth
+    wurde in den HR gewählt. Platzer macht weiter. Bei Ziel- und Leistungsvereinbarungen
+    hat sich Unileitung und Behörde darauf geeinigt die quantitativen Kriterien
+    niedrig anzusetzen, sodass diese tatsächlich erfüllbar sind. Dies sei der
+    erste Schritt auf dem Weg zu qualitativen Kriterien.
+
+    AS beschließt mit 16:0:2, dass der Aufruf der Wissenschaftler*Innen
+    für Frieden unterzeichnet wird.
+
+    Mit dem Studierendenwerk wurde vereinbart, dass die WissenschaftsA-Sitzung
+    gemeinsam vorbereitet wird.
+
+    Am 30.5. findet im ESA B die letzte Veranstaltung der Reihe "ich konsumiere,
+    du konsumierst, wir kritisieren" statt.
+
+    Es wird eine Veranstaltung zum Thema ExIni geben - zusammen mit WiMis
+    der Uni Jena.
+
+
+    Olli berichtet aus dem Ausschuss gegen Rechts. Am 5.7. wird es den Tag
+    gegen Rechts geben.
+
+    \subsubsection{Anfragen an den AStA}
+
+    Till interessiert sich dafür, was für ein Termin die Ausschusssitzung
+    mit dem Studierendenwerk ist.
+
+    Franzi erklärt, wie es zur Sitzung gekommen ist. Artur ergänzt.
+
+    19:30
+
+    Vor dem Hintergrund "Form follows Function" fragt Till, inwieweit
+    das ÖffRef die Form bzgl. des zu verbreitenden Inhalts reflektiert
+    hat.
+
+    Till erwähnt, dass nicht alle FSRe mit der Regelung im Philturm
+    zufrieden sind. Von daher ist die Verallgemeinerung dessen nicht
+    per se sinnvoll. Zum Beispiel die FSRE im Erzwiss müssen eingebunden
+    werden.
+
+    An Geoffrey geht die Frage, was mit dem Begriff Freiraumkultur gemeint
+    ist.
+
+    Geoffrey beantwortet die Frage von Till zu den Formen. Der Fokus
+    bei Veranstaltungen soll der persönliche Kontakt sein.
+
+    Das Referat ist erst spät in die Diskussion um das Festival eingestiegen.
+    Es gab Einigkeit bei Gesprächen, dass es politischen Hintergrund gibt, dass
+    Freiräume existieren. Man hat sich in Bezug zum Festival vorgenommen,
+    diese Diskussion was Freiraumkultur ist in den folgenden Monaten
+    fortzuführen.
+
+    Franzi findet die Regelung im Philturm auch nicht ideal. Sie sei ein
+    Zwischenstand. Zwischen den FSRen verläuft die Konfliktlinie, wofür längerer
+    Zugang benötigt wird. Die einen wollen arbeiten, die anderen Partys feiern.
+    In Bezug zu VMP 8 gibt es Gespräche.
+
+    19:47
+
+    Feststellung Beschlussfähigkeit: 25/47
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    Keine.
+
+    \subsubsection{Aktuelle Stunde (falls entsprechender Antrag vorliegt)}
+
+    Keine.
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    Jacob möchte TOP 4 und 3 tauschen. 15:3:4
+
+    Tagesordnung wurde angenommen ohne Widerspruch.
+
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Keine Werbung von/für Bundeswehr (V1617-023) (60 Min.)
+        \item Akkreditierung (V1617-024) (60 Min.)
+        \item Prüfauftrag: Wahl-O-Mat bei StuPa-Wahlen (V1617-022) (30 Min.)
+        \item Verlegung der StuPa-Wahl in das Sommersemester (V1617-015) (60 Min.)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \subsubsection{Feststellung der Beschlussfähigkeit}
+
+    Schon geschehen.
+
+    \subsubsection{Genehmigung der Protokolle der vorangegangenen Sitzungen}
+
+    Protokoll vom 1. Fortsetzung mit einer Enthaltung und 0 Gegenstimmen
+    angenommen.
+
+    Protokoll 2. Sitzung bei 3 Enthaltungen angenommen.
+
+    20:00
+
+    Pause bis 20:10, verlängert bis 20:15
+
+    \vspace{0.5cm}
+    {\Large \underline{Teil B}}
+
+    % Teil B beginnt
+    % Dieser wird sich für jede Sitzung unterscheiden.
+    % Jeder TOP ist eine subsection.
+    % Vorhandene Beispiele anfangs entfernen und durch tatsächliche TOPs ersetzen
+
+    % Folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x mit
+    % der Zahl des zuletzt behandelten TOPs ersetzen.
+    %\setcounter{subsection}{x}
+    \subsection{Keine Werbung von/für Bundeswehr}
+
+    Franzi stellt den Antrag vor.
+
+    Tobias möchte, dass die beiden Absätze des Antrags getrennt werden
+    und eigenständig behandelt werden. Außerdem hat er einen Änderungsantrag:
+
+    Zeile 4 von Universität bis Zeile 5 werden ersetzen durch:
+    Wissenschaft hat die Aufgabe, die Wahrheit für die menschenwürdige
+    Entwicklung der Welt zu bestimmen und zur Wirklichkeit zu machen. Die
+    Wahrheit stirbt jedoch im Krieg bekanntlich zuerst.
+
+    Artur hält einen Redebeitrag und erklärt den historischen Zusammenhang
+    der Gründung der Uni Marketing GmbH.
+
+    20:32
+
+    Gunhild möchte "künftigen" in Zeile 7 streichen. Am 11. Juni findet
+    der Tag der Bundeswehr statt. Gunhild befürwortet die Teilung des Antrags.
+
+    Ramin stellt GO-Antrag auf Feststellg. der Beschlussfähigkeit. Till beantragt
+    eine Fraktionspause für Liste Links von 20 Minuten bis 21:03.
+
+    In dieser Zeit wird weiter diskutiert.
+
+    Geoffrey hat eine persönliche Erklärung abgegeben:
+
+    Sinnbildlich spiegeln die gähnend leeren Sitzplätze der Opposition
+    wider, was hinter ihren Wahlprogrammen steckt -- nichts.
+
+    Jetzt folgt die Abstimmung: Mit 22 Parlamentarier*Innen nicht beschlussfähig.
+
+    Sitzung ist abgebrochen um 21:08. Nächste Sitzung am 9. Juni.
+\end{document}
