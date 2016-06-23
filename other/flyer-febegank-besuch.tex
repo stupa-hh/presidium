@@ -1,0 +1,70 @@
+%!TEX program = lualatex
+\documentclass[a5paper,ngerman,headheight=80pt,10pt,DIV=calc]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[footskip=20pt,bottom=50pt]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.1cm}\includegraphics[scale=0.3]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[]{V.i.S.d.P. Gunhild Berdal, Jim Martens, Ramon Weilinger\\Von-Melle-Park 5, 20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg\\
+    Tel.: 040/450 204 39 · stupa@uni-hamburg.de
+
+    \subsection*{Einladung zur Sitzung des Studierendenparlaments am 30. Juni}
+    \subsubsection*{Diskussion mit Wissenschaftssenatorin Katharina Fegebank}
+
+    Bereits zu ihrem Antritt als Zweite Bürgermeisterin Hamburgs und Senatorin
+    für Wissenschaft, Forschung und Gleichstellung hat Katharina Fegebank eine
+    hohe Kommunikationsbereitschaft gegenüber den Hochschulen signalisiert. Doch
+    die Gestaltung von Wissenschaftspolitik vollzieht sich heute in einem
+    großen Spannungsfeld: Auf der einen Seite stehen der gesellschaftliche
+    Auftrag der Wissenschaft, den globalen Herausforderungen gerecht zu werden,
+    sowie zur Bildung mündiger Menschen beizutragen. Auf der anderen Seite stehen
+    die chronische Unterfinanzierung der Hochschulen und der wachsende
+    Konkurrenzdruck.
+
+    Wir haben die Wissenschaftssenatorin eingeladen, um in dieser bisweilen
+    konfliktreichen Lage mit den Studierenden zu diskutieren, was die jeweiligen
+    Vorstellungen und Ansprüche für die Entwicklung der Wissenschaft(en) sind.
+    Die Themen, die uns hauptsächlich beschäftigen werden, sind die
+    Exzellenzstrategie, die Finanzierung der Hochschulen und die mögliche Schaffung
+    einer "Zivilklausel" für die Forschung.
+
+    Ihr seid herzlich eingeladen an der Diskussion teilzunehmen.
+    \textbf{Die Sitzung ist öffentlich und alle haben Rederecht.}
+
+    \begin{center}
+        \textbf{
+        Donnerstag, 30. Juni 2016,\\
+        19-20 Uhr\\
+        im Raum S28 der ehemaligen HWP\\
+        (Von-Melle-Park 9, 20146 Hamburg)}
+    \end{center}
+    Auf der Tagesordnung der StuPa-Sitzung stehen danach u.a. die Verabschiedung
+    des Haushalts der Verfassten Studierendenschaft, ein Antrag zur Verlegung
+    der StuPa-Wahl ins Sommersemester sowie weitere aktuelle Themen.
+\end{document}
