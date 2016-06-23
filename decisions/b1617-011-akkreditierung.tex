@@ -1,0 +1,93 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    \section*{Beschluss des Studierendenparlamentes vom 16. Juni 2016}
+    \subsection*{Demokratische Bildung durch Wissenschaft statt Akkreditierung!}
+
+    \blockquote[Heidelberger Aufruf gegen die Akkreditierung]{Im Jahr 1999 aber
+    kam der Bologna-Prozess, und mit ihm kam die Verkündigung, es dürfe keinen
+    Studiengang mehr geben, der nicht zuvor die Gnade einer privatwirtschaftlich
+    organisierten Akkreditierungsagentur gefunden habe. So wurde es uns eingeredet,
+    und so wurde es von den Landesregierungen in allen Bundesländern oktroyiert.
+    Seither drehen sich die Universitäten pausenlos im Akkreditierungsrad. Eine
+    Evaluation jagt die nächste.}
+
+    Im März diesen Jahres hat das Bundesverfassungsgericht die Unvereinbarkeit
+    des aktuellen Akkreditierungs(un)wesens mit der im deutschen Grundgesetz
+    entwickelten Wissenschaftsfreiheit (Art. 5) festgestellt. Damit steht ein
+    weiteres Instrument aus dem Bologna-Werkzeugkasten heftig in der öffentlichen
+    Kritik und kurz davor, auf seinen Platz als Randnotiz in einem Katalog
+    (überkommener) hochschulpolitischer Verirrungen verwiesen zu werden.
+
+    In der Folge der Bologna-Reform wurde das bis dato gebräuchliche System von
+    Rahmenprüfungsordnungen, die in Aushandlungsprozessen zwischen Wissenschaft
+    und Ministerien erarbeitet wurden, durch ein dezentrales Akkreditierungssystem
+    ersetzt. Damit sollte dem wettbewerblichen Umbau des Hochschulwesens Vorschub
+    geleistet werden.
+
+    Seitdem gibt es einen durch die Bundesländer eingerichteten Akkreditierungsrat,
+    dessen Aufgabe die Akkreditierung sog. Akkreditierungsagenturen ist, welche
+    wiederrum Studiengänge ("Programmakkreditierung") oder ganze Hochschulen
+    ("Systemakkreditierung") akkreditieren. Das klingt umso wahnsinniger, wenn
+    man noch berücksichtigt, dass diese Agenturen privatwirtschaftlich organisiert
+    sind und zum Teil bspw. durch Arbeitgeberverbände getragen werden. Ihre Aufgabe
+    ist dabei die Beurteilung der Qualität von Studiums, wobei in erster Linie
+    dessen Form -- es ist in Credit Points ausgemessen, in Modulen portioniert,
+    in Bachelor und Master geteilt und mit Prüfungen überfrachtet -- einer
+    Betrachtung unterzogen wird.
+
+    Die Kritik des obersten deutschen Gerichts setzt genau hier an: Diese Praxis
+    widerspricht offensichtlich dem Grundsatz des Freiheit von Wissenschaft,
+    Forschung und Lehre, da Private ohne gesetzlich hinreichend abgesteckte
+    Grenzen über Form und Inhalt des Hochschulstudiums entscheiden. Der Gesetzgeber
+    hat die Frage, welche Klammer die derzeit über 17.000 Studiengänge im Gebiet
+    der Bundesrepublik verbinden soll, aus der Hand gegeben.
+
+    Dadurch verlieren die demokratischen Hochschulgremien und Landesparlamente
+    an legitimer Gestaltungshoheit, wobei sowohl zusätzlich enorme Kosten bei
+    den Agenturen anfallen, als auch unzählige Unimitarbeiter*innen mit nichts
+    anderem beschäftigt sind, als tausende Seiten Papier zu füllen und Begutachter
+    zu bezirzen.
+
+    Vor dem Hintergrund der immer breiter vertretenen Kritik an der Bologna-Reform
+    und ihren Begleiterscheinungen, so bspw. die Exzellenzinitiative, gerät die
+    Vorstellung "unternehmerischer" Hochschulen, verwertbarer Wissenschaft und
+    einem arbeitsmarktorientierten Studium mehr und mehr in die Defensive --
+    das zeigt sich auch am Akkreditierungswesen. Bereits in den vergangenen Jahren
+    wurde das ursprüngliche Modell der Akkreditierungen durch den Protest von
+    Seiten der Studierendenschaft, der Lehrenden und der Hochschulleitungen
+    (in Form der HRK) stark geschliffen. Jetzt ist die Zeit reif, sich ihm ganz
+    zu entledigen.
+\end{document}
