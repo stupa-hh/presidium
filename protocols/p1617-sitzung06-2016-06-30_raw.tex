@@ -1,0 +1,551 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 6. Sitzung des Studierendenparlaments vom 30. Juni 2016}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: S28 in der ehemaligen HWP}\\
+    \textbf{Beginn: 18.15 Uhr}\\
+    \textbf{Ende: Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger, Antonia Niecke, Ramin Shakiba, \\
+                            & Jennifer Maack \\
+             CampusGrün (14 Sitze): & Laura Franzen, Geoffrey Youett, Philipp Droll, \\
+                                   & Tahnee Herzig, Svenja Horn, Jim Martens,\\
+                                   & Mirzo Ulugbek Khatamov, Armin Günther, Martin Sievert\\
+                                   & Elena Rysikova, Yasemin Günther \\
+             Bier-Liste (2 Sitze) : & Jakob Pape, Karen Martirosian \\
+             WiWi (2 Sitze): & Claas-Friso Hente \\
+             Unicorns (5 Sitze): & Johannes Peplow, Annkathrin Löffler, \\
+                                 & Andreas Hartkamp, Marielle Hermstrüwer \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): & Ajdina Karahasan \\
+             MIN (4 Sitze): & \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Timo Zeimet, Dominic Laumer \\
+             LHG (1 Sitz): & \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): & Karima Schulze, Henri Weber \\
+            & \\
+        Entschuldigt: & Benjamin Welling (RCDS),\\
+                      & Melf Johannsen, Mario Moldenhauer (CG), Samet Gunay,\\
+                      & Kay Zöllmer (WiWi), Katharina Kucza (Unicorns), Ailina Salten, \\
+                      & Lotte Rullkötter, Thea Wahlers (alle MIN), Tobias Heisig (LHG)\\
+                      &\\
+        Unentschuldigt abwesend: & Jan Detampel (MIN), \\
+                                & Johann Baumhoefener (Jura)\\
+                                &\\
+        Rücktritte: & Freya Schmitz (CG) \rightarrow Sandra Fietz\\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Diskussion mit Wissenschaftssenatorin Katharina Fegebank (60 Min.)
+        \item Haushalt 2016/2017 (V1617-025, V1617-030) (75 Min.)
+        \begin{enumerate}
+            \item 2. Lesung (70 Min.)
+            \item 3. Lesung (5 Min.)
+        \end{enumerate}
+        \item Nachtragshaushalt 2015/2016 (V1617-026, V1617-030) (25 Min.)
+        \begin{enumerate}
+            \item 2. Lesung (20 Min.)
+            \item 3. Lesung (5 Min.)
+        \end{enumerate}
+        \item Feministischer Juristinnentag 2017 in Hamburg (V1617-028) (30 Min.)
+        \item Weiter initiativ mit der Strategie "Uni für Alle statt Exzellenz" (V1617-029) (30 Min.)
+        \item Verlegung der StuPa-Wahl in das Sommersemester (V1617-015) (60 Min.)
+        \item Verschiedenes
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \textit{Gunhild eröffnet die Sitzung um 18.24 Uhr.}
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    Haben uns Gedanken über Diskussion gemacht. Exzellenzstrategie und
+    Finanzierung der Hochschulen werden in ein Themenblock zusammengefasst.
+    Senatorin wird kurz etwas vortragen, das Ziel ist schnell in Diskussion zu
+    kommen.
+
+    Wir haben vor uns in den nächsten Wochen Gedanken über die Wahlen
+    zu machen. Auch im Bereich Öffentlichkeitsarbeit steht noch einiges an.
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    Keine Fragen an das Präsidium.
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    Franzi hält den Geschäftsbericht des AStA. Letzte Woche Do war
+    Wissenschaftsausschusssitzung. Artur und Moritz waren auf der Senatsbank
+    und konnten einige gute Punkte fürs Studierendenwerk anbringen.
+
+    Das Em-Begleitprogramm kommt gut voran. In dem Zusammenhang Treffen mit
+    franz. Studis.
+
+    6.7.
+    9.7. Here to stay
+    14.7. em und nationalismus
+
+    AstA hat Exzellenzstrategie ausgewertet.
+    Am 7.7. gibts Veranstaltung zu Ex-Ini mit libertären Mauerkaninchen.
+    Alternativen zu Drittmittel.
+
+    Studentische Arbeit gegen Rechts. Beteiligung an Anti-Afd-Veranstaltung
+    in Rahlstedt. Flugblätter wurden verteilt.
+    Am 5.7. findet Abend gg Rechts statt, veranstaltet von Ausschuss gg rechts.
+
+    AStA-Klausur zur Frage "Wie gegen rechts arbeiten" wird in den nächsten
+    Wochen stattfinden.
+
+    18:30
+
+    Golnar berichtet aus dem Ris. Russische Linke und ihre Lage im aktuellen
+    Russland von Putin. Ein Metallarbeiter war zu Gast. Veranstaltung war
+    im HWP-Hörsaal und gut besucht. Es wird politische VV stattfinden. Akute
+    Abschiebungsbedrohung von vielen ausländischen Studierenden.
+    Nächsten Monat gibt es Termin mit Harburger Ausländerbehörde.
+
+    Meta: Geoffrey steckt das VGA-Kabel um. Geoffrey führt ein Video von der
+    Anti-ExIni-Demo vor.
+
+    \subsubsection{Anfragen an den AStA}
+
+    Till fragt, ob sich die Studierenden der franz. Gewerkschaft zum Verhältnis
+    von gewerkschaft zu Studibewegung geäußert haben und inwieweit das für das
+    Rotstiftbündnis angewendet werden kann.
+
+    Artur: In Frankreich gibt es nicht an jeder Hochschule eine pol. Gruppe, sondern
+    nationale gewerkschaften. Größte ist unef. Sie begreifen Studierende als
+    intellektuelle Arbeiter. Pflegen Nähe zu Gewerkschaften. Es wurde sich
+    intensiv mit Arbeitsgesetz auseinandergesetzt. Nach langer Phase von Beschäftigung
+    mit Gesetz wurde breites Bündnis gegen das Gesetz gegründet. Studi hat gesagt,
+    dass bei bereits abflauenden Aktivitäten alle Gewerkschaften 2 Demos pro
+    Woche machen sollen.
+
+    Golnar: Aktionsformen der Studis in Frankreich unterscheiden sich nicht
+    grundlegend von unseren Aktivitäten. Es ist somit Haltungsfrage. Sie machen
+    sich nicht Gedanken, ob es die konkrete Klientel etwas angeht. Es sei
+    Gesellschaftspolitik und geht somit alle was an. Sie würden sich zu wenig
+    mit Militarismus auseinandersetzen und seien zu sehr aktionistisch unterwegs.
+    Positivorientierung fehlt.
+
+    Till fragt: Gab es besondere Erkenntnisse bei den EM-Alternativ-Veranstaltungen?
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    Keine.
+
+    \subsubsection{Aktuelle Stunde (falls entsprechender Antrag vorliegt)}
+
+    Keine.
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    Vorziehen von Nachtragshaushalt vor Haushalt. Kein Widerspruch.
+
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Diskussion mit Wissenschaftssenatorin Katharina Fegebank (60 Min.)
+        \item Nachtragshaushalt 2015/2016 (V1617-026, V1617-030) (25 Min.)
+        \begin{enumerate}
+            \item 2. Lesung (20 Min.)
+            \item 3. Lesung (5 Min.)
+        \end{enumerate}
+        \item Haushalt 2016/2017 (V1617-025, V1617-030) (75 Min.)
+        \begin{enumerate}
+            \item 2. Lesung (70 Min.)
+            \item 3. Lesung (5 Min.)
+        \end{enumerate}
+        \item Weiter initiativ mit der Strategie "Uni für Alle statt Exzellenz" (V1617-029) (30 Min.)
+        \item Verlegung der StuPa-Wahl in das Sommersemester (V1617-015) (60 Min.)
+        \item Verschiedenes
+    \end{enumerate}
+
+    TO wurde angenommen.
+
+    \subsubsection{Feststellung der Beschlussfähigkeit}
+
+    28. ParlamentarierInnen anwesend und beschlussfähig.
+
+    \subsubsection{Genehmigung der Protokolle der vorangegangenen Sitzungen}
+
+    Protokoll ist genehmigt.
+
+    19:00
+
+    \vspace{0.5cm}
+    {\Large \underline{Teil B}}
+
+    % Teil B beginnt
+    % Dieser wird sich für jede Sitzung unterscheiden.
+    % Jeder TOP ist eine subsection.
+    % Vorhandene Beispiele anfangs entfernen und durch tatsächliche TOPs ersetzen
+
+    % Folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x mit
+    % der Zahl des zuletzt behandelten TOPs ersetzen.
+    %\setcounter{subsection}{x}
+    \subsection{Diskussion mit Wissenschaftssenatorin Katharina Fegebank}
+
+    Fegebank trifft 3 min vor 19 Uhr ein.
+
+    Fegebank begrüßt und macht ein paar einleitende Worte. Sie hat zur Kenntnis
+    genommen, dass vom AStA und StuPa Unterstützung für die Hamburger Haltung
+    gegen ExIni gegeben wurde. Sie klärt Missverständnis zu ihrer Position auf.
+    Sie war nie gegen ExIni, sondern nur gegen konkrete Ausgestaltung. Fegebank
+    feiert die Verhandlung bzgl. Exini als Erfolg für gesamte Hochschullandschaft
+    und Standort Hamburg. Hamburger Uni könne mit viel Selbstbewusstsein in die
+    nächste Runde gehen. Uni habe schon 2 Exzellenzcluster.
+
+    Kurzum: Exzellenzwerbung und warum das alles geil ist. Neoliberales Blabla.
+    Keine Substanz, sondern nur Redephrasen.
+
+    Dies sei Einstieg in die Erhöhung der Grundfinanzierung und würde häufig
+    über 3\%, manchmal 4\% entsprechen. Sie geht auf destruktive Wirkung der
+    Exini ein. Forschungsförderung soll diese Binnenwirkung der Exini verhindern.
+
+    Es werden Gespräche für "Aufwuchs" in TUHH und HAW geführt. HSP-Mittel sollen
+    verstetigt werden.
+
+    --
+
+    Gunhild dankt für einführende Worte.
+
+    --
+
+    Till führt an, dass es Kritik aus Uni gab entgegen Aussage von HR.
+    Er spricht FAZ-Artikel an.
+    Warum muss Exzellenz sein und schafft nicht für alle eine bessere
+    Bedingung? Welches Verständnis von wissenschaftlicher Qualität steckt
+    dahinter? Woher kommt Verständnis, dass Wissenschaft am besten funktioniert,
+    wenn es Gewinner und Verlierer gibt?
+
+    19:15
+
+    Jochen erzählt über Berliner TU. In Hamburg ist TU sehr stark
+    ingenieurwissenschaftlich. Wenn TU wächst, sollte die gesellschaftliche
+    Bedeutung von Technologie evaluiert werden können.
+
+    Franziska weist auf den Double Speak hin. Antragsprosa aber hinter
+    vorgehaltener Hand wird sich stark beschwert. Im Imbodenbericht wird
+    erwähnt, dass Wimis in ihren produktivsten Jahren sich mit Antragsschreiben
+    und hinterherhecheln von wenigen Festanstellungen beschäftigen.
+
+    Laura fragt, wie man sich an einer Uni mit Exini und wenigen Festanstellungen
+    eine Familie vorstellen kann.
+
+    Fegebank findet es nicht schlecht, dass es Wettbewerb gibt. Sehr viel
+    Standortideologie. Dissens bleibt wohl bestehen.
+
+    19:30
+
+    Leistung, dass Elbe in HH bereits im Juni über die Ufer tritt.
+    Sie arbeitet an Entfristung.
+
+    Lehre als Alleinstellungsmerkmal?
+
+    --
+
+    Tobias stellt die Notwendigkeit von Exini in Frage. Bewerbungsverfahren
+    ist Erziehungsverfahren. Wissenschaft muss Bestehendes in Frage stellen.
+    Warum Wettbewerb und nicht Kooperation?
+
+    Gunhild erinnert sich an Brecht. Besser im Wettbewerb ist nicht unbedingt
+    besser für Menschheit. Gunhild versteht Zusammenhang zwischen Vielfalt
+    und Exzellenz nicht. Drittmittel sind ein Problem bei Unabhängigkeit von
+    Forschung.
+
+    Artur weist darauf hin, dass die Exini eine Mainstreamisierung verursacht.
+    Hauptsächlich wird auf Mittel geachtet, die Inhalte sind nachgelagert.
+
+    Golnar merkt an, dass es ein Demokratiedefizit in dem Verfahren gibt.
+    Wie steht Fegebank zu Demokratiedefizit? Golnar fragt, wie Vielfalt und
+    Exini zusammenpassen.
+
+    19:46
+
+    Golnar weist auf Ambivalenz im deutschen Hochschulsystem hin.
+
+    Ramon befürwortet Exini. Ist Exzellenzbegriff nicht zu nat.wiss.lastig.
+    War Kritik nicht zu spät?
+
+    Fegebank sagt, dass HH seit Beginn an Kritik geäußert hat. Sie hat noch keine
+    Infos zu Wissenschaftsratsbegehung.
+
+    Sie entgegnet kritische Anmerkungen mit Frage, was denn passieren würde, wenn
+    man der Uni auf einen Schlag 0,5 Mrd. geben würde.
+    Sichtbarkeit spielt eine große Rolle bei der Hochschulfinanzierung.
+    Es gibt Leute, die hinterfragen, warum so viel Geld in die Hochschulen
+    geht.
+
+    Ailina fragt über Arbeitssicherheit und Kosten für Investitionen.
+    Es gibt in der Biologie viele kaputte Labore.
+
+    Till zieht Zwischenfazit.
+
+    Fegebank schaut sich gerne die Biologie an.
+
+    20:08
+
+    Pause bis 20:20, verlängert bis 20:25
+
+    \subsection{Nachtragshaushalt 2015/2016}
+    \subsubsection{2. Lesung}
+
+    Ramon erklärt das Prozedere für die Abstimmungen. Melf stellt das erste
+    Paket für den NHH vor.
+
+    Keine Gegenrede zum Paket.
+
+    Einstimmig wird der Beschlussempfehlung gefolgt.
+
+    Melf stellt das zweite Paket vor. Keine Gegenrede. Einstimmig wird der
+    Beschlussempfehlung gefolgt.
+
+    \subsubsection{3. Lesung}
+
+    M:1:0 wird NHH angenommen.
+
+    \subsection{Haushalt 2016/2017}
+
+    \subsubsection{2. Lesung}
+
+    Melf stellt die Pakete für den Haushalt 16/17 vor. Melf stellt das erste
+    Paket für den Haushalt genauer vor. Nico hält die Fürrede für den Antrag
+    den Topf für PKs zu erhöhen.
+
+    Tobias hält Fürrede für Antrag den Topf für ReferentInnen zu erhöhen. Er
+    steigt ein in Debatte.
+
+    20:40
+
+    Karima fragt Till, ob er sich nicht um die Pluralität Sorgen macht, wenn
+    7 1/2 PK-Stellen für 2 Ref-Stellen wegfallen.
+
+    Till möchte nicht, dass bei PKs und Refs über Stellen gesprochen wird.
+    Er ist der Meinung, dass Geld auf Dauer keine Lösung ist.
+
+    Tobias verweist auf AStA in Lüneburg, der keine PKs hat.
+
+    M:5:4 für Beschlussempfehlung.
+
+    Melf stellt zweites Paket vor. Er stellt seine Meinung zum ÄA zu Aktionen
+    vor. Er stellt auch den Punkt Vereinsmitgliedschaften FSRe vor.
+
+    Tobias hält Fürrede für Antrag zu Aktionen und Veranstaltungen der VS.
+
+    Melf hält Plädoyer für einen realistischen Haushalt, wo nur so viel
+    Geld in Posten gesteckt wird, wie benötigt wird.
+
+    Till hält Plädoyer für eine Erhöhung des Aktivitätentopfes.
+
+    M:8:2 für Beschlussempfehlung.
+
+    Melf stellt das dritte Paket FZS vor und hält eine Fürrede. Vincent hält
+    eine Gegenrede zu den Anträgen und sagt, dass Vollmitglied = Vollmitglied
+    bedeuten muss. Erhöhung im Personalbereich aber sinnvoll.
+
+    Geoffrey pflichtet Vincent bei, dass es sinnvoll wäre einen Ref zu haben.
+    Der Betrag sollte nicht verringert werden. Er geht auch auf das Argument ein,
+    dass andere Studierendenschaften weniger zahlen. Dies lässt sich nicht
+    eindeutig verifizieren.
+
+    21:00
+
+    Artur geht auf den europäischen Zusammenhang ein.
+
+    Till führt eine Schauspielleistung vor und sagt, dass Geschacher reines
+    Marktprinzip und daher abzulehnen ist.
+
+    Nach Protesten gegen Rechte in Sachsen wurden die Studierendenschaften
+    in Sachsen mit den Stimmen der NPD verboten und degradiert auf reine
+    Vereinsebene.
+
+    6:M:2 gegen Beschlussempfehlung.
+    7:M:2 gegen Antrag Mitgliedsbeitrag zu senken.
+    1:14:viele gegen Erhöhung Aufwandsentschädigung.
+
+    Melf stellt viertes Paket vor. Till bittet in Zukunft zu bedenken Begründungen
+    so zu verfassen, dass sie verständlich sind.
+
+    M:0:1 für Beschlussempfehlung.
+    M:1:4 für Haushalt
+
+    21:17
+
+    Pause bis 21:30, 21:35
+
+    \subsection{Weiter initiativ mit der Strategie "Uni für Alle statt Exzellenz"}
+
+    \textit{Fraktionspause Liste Links 3 Minuten}
+
+    Till stellt den Antrag vor.
+
+    21:45
+
+    Artur meint, dass es eine weitere Entstellung zur Kenntlichkeit
+    gegeben hat.
+    Differenz zwischen "Trockenschwimmen" und sinnvoller Forschung muss
+    herausgestellt werden. Fegebanks Punkt über die Sichtbarkeit der Uni hat
+    einen wahren Kern. Allerdings sollte es in der Sichtbarkeit nicht um
+    Sonderforschungsbereiche, sondern um qualitativ sinnvolle Aktionen wie z.B.
+    Engagement für Flüchtlinge gehen.
+    Man muss besser klarmachen, dass eine Alternative zur Exini real
+    möglich ist. Man könnte von der Bewegung um Bernie Sanders lernen.
+
+    Tobias stellt historische Zusammenhänge dar.
+
+    Armin meint, dass man generell das Drittmittelsystem bekämpfen müsste.
+
+    Till befürwortet eine solche allgemeine Kritik. Er geht auf die Diskussion
+    mit Fegebank ein. Sie soll deutlich ins Schwimmen geraten sein. Vor allem
+    habe sie mit dem Versprechen von 500 Mio. Euro einen Fehler begangen, den
+    man als Senatorin nicht machen sollte. Abfolge:
+    An sich ist Mittelerhöhung richtig, oh das darf ich nicht sagen, habe ich
+    gar nicht erst gemeint.
+    Till würde gerne die Diskussion mit Fegebank auswerten.
+
+    Mario unterstützt Ansicht von Armin und möchte vor Abstimmung genauen
+    Text wissen.
+
+    Geoffrey findet ihr Beispiel mit den 500 Mio. Euro zynisch, dass das Geld
+    zu wenig wäre und die aktuelle Situation daher besser. Vor allem die Profilbildung
+    macht ihm Sorgen.
+
+    22:05
+
+    Yasemin hat den Eindruck, dass sie sehr unter Druck stand. Sie ist ein
+    wenig enttäuscht von dem Besuch. Fegebank hat überhaupt nicht
+    gesagt, dass soziale Wissenschaften wichtig sind.
+
+    Jim hält einen Redebeitrag. Fegebank hat mit neoliberalem Werbebeitrag
+    begonnen und ist langsam in eine echte Diskussion eingestiegen.
+    Sie schien ein bisschen gefangen zu sein zwischen Senatsvertretung und
+    persönlicher Ambition.
+
+    Laura äußert sich über die Profiloberstufe und wie desaströs das gelaufen
+    ist. Fegebank hat kein einziges Mal Effizienz gesagt, obwohl sie eigentlich
+    nichts anderes getan hat.
+
+    Armin: Fegebank hat häufig betont, dass in dem Haushalt eine Erhöhung
+    der Grundfinanzierung um 3\% bis 4\% geplant sei, obwohl die Summe lächerlich
+    ist. Man sollte sie zu einer Veranstaltung zum Clisep? einladen.
+
+    Golnar weist darauf hin, dass sie am Anfang auf Till entgegnete, dass
+    man eben zwei unterschiedliche Religionen habe. Sie hat dann aber herausgefunden,
+    dass an der Uni mit echten Argumenten gearbeitet wird.
+    Man dürfe jetzt nicht mit dem Kämpfen aufhören, obwohl es kleine Geldgeschenke
+    gibt.
+
+    Till verweist auf die Demo gegen Exini und den Zusammenhang zwischen
+    Rathaus und Börse/Handelskammer. Fegebank sei eine junge Senatorin und könne
+    sich dem Argument nicht komplett verschließen. Außerdem sei sie sehr
+    druckanfällig für beide Seiten.
+
+    Till stellt ÄA vor.
+
+    Artur stellt seinen ÄA vor.
+
+    22:30
+
+    Till erklärt historischen Werdegang von Rap und HipHop.
+
+    M:2:0 für Annahme des Antrags.
+
+    \subsection{Verlegung der StuPa-Wahl in das Sommersemester}
+
+    \textit{wurde zurückgezogen}
+
+    \subsection{Verschiedenes}
+
+    Ramon fragt, ob es den Wunsch gibt am 14. Juli eine Stupa-Sitzung zu machen.
+
+    Franzi spricht sich für eine Sitzung des Parlaments aus.
+
+    Melf sieht keine Notwendigkeit für eine Sitzung.
+
+    Till spricht sich für eine Sitzung aus. Er sieht keinen Zusammenhang
+    zwischen Franzis Aussage und Melfs Aussage. Man sollte eine Sitzung machen,
+    um noch einmal viel vor dem WS zu machen.
+
+    Jim spricht sich grundsätzlich für eine Sitzung aus, sieht aber Probleme
+    bei der Beschlussfähigkeit.
+
+    Tobias meint, dass eine solche Sitzung mit Beschlussfähigkeit möglich ist,
+    wenn man es darauf anlegt.
+
+    Gunhild spricht sich für eine Sitzung aus und findet, dass Personen, die nicht
+    kommen können, sich nicht gegen eine Sitzung aussprechen sollten.
+    Gunhild appelliert, dass die Ausschüsse wieder mehr arbeiten sollten.
+
+    Melf spricht sich erneut gegen eine Sitzung aus, findet aber einzelne
+    Treffen in der VL-freien Zeit sinnvoll.
+
+    Till findet es wichtig, dass man es auf eine Sitzung anlegt.
+
+    Ramon schlägt vor ein Stimmungsbild zu machen. 10:12:1 für eine weitere Sitzung.
+
+    Ramon schließt um 22:57 die Sitzung.
+
+\end{document}
