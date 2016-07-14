@@ -1,0 +1,271 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 7. Sitzung des Studierendenparlaments vom 14. Juli 2016}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: B136 in der ehemaligen HWP}\\
+    \textbf{Beginn: 18.22 Uhr}\\
+    \textbf{Ende: 19.21 Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger, Antonia Niecke, Ramin Shakiba, \\
+                            & Jennifer Maack \\
+             CampusGrün (14 Sitze): & Laura Franzen, Geoffrey Youett, Philipp Droll, \\
+                                   & Tahnee Herzig, Svenja Horn, Jim Martens,\\
+                                   & Mirzo Ulugbek Khatamov, Armin Günther, Martin Sievert\\
+                                   & Elena Rysikova, Yasemin Günther \\
+             Bier-Liste (2 Sitze) : & Jakob Pape, Karen Martirosian \\
+             WiWi (2 Sitze): & Claas-Friso Hente \\
+             Unicorns (5 Sitze): & Johannes Peplow, Annkathrin Löffler, \\
+                                 & Andreas Hartkamp, Marielle Hermstrüwer \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): & Ajdina Karahasan \\
+             MIN (4 Sitze): & \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Timo Zeimet, Dominic Laumer \\
+             LHG (1 Sitz): & \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): & Karima Schulze, Henri Weber \\
+            & \\
+        Entschuldigt: & Benjamin Welling (RCDS),\\
+                      & Melf Johannsen, Mario Moldenhauer (CG), Samet Gunay,\\
+                      & Kay Zöllmer (WiWi), Katharina Kucza (Unicorns), Ailina Salten, \\
+                      & Lotte Rullkötter, Thea Wahlers (alle MIN), Tobias Heisig (LHG)\\
+                      &\\
+        Unentschuldigt abwesend: & Jan Detampel (MIN), \\
+                                & Johann Baumhoefener (Jura)\\
+                                &\\
+        Rücktritte: & Freya Schmitz (CG) \rightarrow Sandra Fietz\\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Auswertung der Diskussion mit Katharina Fegebank  (45 Min.)
+        \item Einstieg ins Wintersemester unter besonderer Berücksichtigung des Hamburger Haushalts (45 Min.)
+        \item Zivilklausel/Transparenzklausel (45 Min.)
+        \item Etwas Besseres: Feuer und Flamme für soziale, ökologische und friedliche Stadt (V1617-031) (45 Min.)
+        \item Unterstützung bundesweiter Friedensdemo (V1617-032) (45 Min.)
+        \item Fernmeldeamt für Uni nutzen (V1617-033) (45 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \textit{Ramon eröffnet die Sitzung um 18.22 Uhr.}
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    Ramon stellt den vorgeschlagenen Sitzungsplan für den Wintersemester
+    vor.
+
+    Die Post wurde kontaktiert, um Sonderpostleitzahl zu beantragen.
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    F: Wann ist die Abgabe für Kandidierendenlisten?
+    A: 46. KW, 8. Dezember Briefwahlabgabe
+
+    F: Warum nicht schon Sitzung Mitte Oktober?
+    A: Damit erste Sitzung nicht schon in der 1. VL-Woche ist.
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    Franzi hält Bericht
+
+    gegen Zwangsexmatrikulation, Zahlung Semesterbeitrag Ausdruck des Wille
+    weiter studieren zu wollen
+
+    Raumverteilung soll wieder in Präsidialverwaltung eingegliedert werden
+
+    es soll Ausschuss zu Religion im AS gegründet werden
+    AStA hat sich mit dem Thema Religion beschäftigt
+
+    AS fand statt. Bericht über den Hamburger Abendblatt Artikel.
+    Es wird weiteren Dies Academicus geben. Mena wird RPO vorschlagen.
+
+    Landes Asten konferenz unterstützt HCU bei Absicht..
+
+    Mena erzählt über den aktuellen Stand zur RPO. ALSt-Entwurf der RPO
+    wird in einzelne Fakultäten und Fachbereiche zur Stellungnahme gegeben.
+    FSRe sollen sich beteiligen, damit möglichst weitestgehende RPO
+    am Ende steht. Kritische Punkte könnten sein: Anwesenheitspflicht,
+    Modulbegrenzung, unbegrenzte Wiederholung von Prüfungen.
+    Gegenargument zu unbegrenzter Wiederholung ist häufig eine höhere
+    Prüfungslast. Konter: Insgesamt werden Prüfungen zurückgefahren.
+
+    AStA wird erarbeitete Stellungnahmen zusammenstellen. Stellungnahme
+    des AStA zum vorliegenden Entwurf soll erarbeitet werden. Möglicherweise
+    könnte auch ein Video gemacht werden.
+
+    Im September soll ein größeres gemeinsames Diskussionstreffen stattfinden.
+
+    Droll erzählt über die Veranstaltung zu libertären Mauerkaninchen und
+    totalitären Schäferhunden.
+
+    Artur erzählt über einen Artikel im Hamburger Abendblatt, in dem
+    Schinnenburg seine große Anfrage zusammenfasst und gegen das Studierendenwerk
+    schießt. Einige Leute aus dem Studierendenwerk erklären jetzt, was
+    die Aufgabe des Studierendenwerks ist (Stellungnahme).
+
+    Vertreterversammlung am 6.7.
+    165 Studierende (153 international) stehen noch auf Warteliste
+    für Studierendenheime. Einige internationale Studierende haben
+    davon erzählt, dass Studierende gewisser Nationalitäten nicht mehr
+    aufgenommen werden, weil die Quote für diese Nationalitäten bereits
+    voll sei. AStA hat zwei Anträge eingebracht. Der Antrag sich im WS
+    an Protesten zu beteiligen wurde mit 7:8 abgelehnt. (7 Personen:1 Person Präsidium)
+
+    \subsubsection{Anfragen an den AStA}
+
+    Till fragt, wie es aussieht mit Zugang zu Räumen in Erzwiss außerhalb
+    der Öffnungszeiten.
+
+    Droll antwortet: Es gab noch kein Treffen diesbezüglich. AStA hakt noch
+    einmal nach.
+
+    Till fragt, wie Auswertung des AStA-Fußballturniers aussieht.
+    Eine Refugee-Mannschaft ist auf eigene Kosten von Köln nach Hamburg
+    gekommen. Einige Mannschaften kamen direkt von zentralen
+    Erstaufnahmen. War eine gute Sache, aber Zelebrierung von Toren
+    und Aggressivität war schade. Aber kein Vorwurf an einzelne Personen.
+    Sollte jedoch wiederholt werden. Aber es muss ein kulturelles
+    Zentrum geben.
+
+    A: Es gab noch keine gesamte Auswertung. Morgen auf der AStA-Sitzung
+    wird darüber geredet. Man hätte mehr über die Schiedsrichter sprechen
+    müssen und nach welchen Regeln gepfiffen wird. Feedback war, dass es
+    einen großen Bedarf gibt und bestenfalls regelmäßig stattfinden sollte.
+    Es gab jedoch auch "eine Tonne" Verbesserungsvorschläge für die Veranstalter.
+
+    Till fragt, welche Schlussfolgerungen sich aus der Situation im
+    Wissenschaftsbetrieb ziehen lassen. Was hat die Mauerkaninchen-Veranstaltung
+    für Erkenntnisse gebracht?
+
+    A: Man kann Spaß haben und kritisch sein. Florian Peters habe viel Zuspruch
+    bekommen, auch von Leuten die sonst Anträge schreiben. Es gibt aber keinen
+    organisierten zusammenhang von Wissenschaftlern, die solche einzelne
+    Kritik aufnehmen und Schlussfolgerungen ziehen könnten. Es gibt viel Kritik,
+    aber kaum jemand im wiss. System macht etwas. Daher viel Potential Leute
+    wachzurütteln.
+
+    Katharina fragt, wo das beworben wurde? Vorschlag beim nächsten Mal
+    auch Workshops anzubieten.
+
+    A: AStA hat auf Campus geworben. RefugeeWelcome Karoviertel hat in der Stadt
+    geworben. Vielleicht hätte die Resonanz größer sein können. Zunächst waren 16
+    Mannschaften geplant, es sind dann 20 geworden.
+
+    Gunhild fand das Turnier richtig und wichtig und ein gutes Gegenprogramm
+    zur EM. Ihrer Meinung hätte es deutlich politischer gestaltet werden können.
+    Vorstellung der Mannschaften und gegenseitiges Kennenlernen sollte in
+    Zukunft besser gemacht werden.
+
+    Gunhild fragt, ob der AStA dem fzs schon beigetreten ist und ob es erste
+    Erkenntnisse diesbezüglich gibt.
+
+    A: Offiziell wird die VS erst im Oktober Mitglied werden. Am ersten WE im August
+    ist die nächste MV des fzs in Hannover. AStA wird teilnehmen.
+
+    ---
+
+    Katharina fände es toll, wenn einmal im Semester ein Raum geschaffen wird,
+    um sich mit Geflüchteten auseinanderzusetzen.
+
+    Till ist sich sicher, dass alle Flüchtlingsunterkünfte erreicht wurden.
+    5 Unterkünfte waren mit einer eigenen Mannschaft anwesend. AStA kann kein
+    Turnier mit mehr Mannschaften wuppen. Till ist sehr für Workshops und dafür,
+    dass man solche Turniere mehr auf den Breitensportaspekt des Fußballs konzentriert.
+    Es sollte kein Gegenprogramm zum Turnier geben.
+    Till findet es bekloppt, wenn Leute, die sich als links bezeichnen,
+    Gegner als Lusche bezeichnen. Man könnte eine kulturelle Setzung machen.
+
+    Katharina begründet noch einmal ihre Workshopidee.
+
+    Artur begründet, warum Leute womöglich kein Interesse an Fußball haben.
+    Es sollte eine alternative Fußballkultur gelebt werden.
+
+    Tobias findet es wichtig, dass sowohl das Fußballspielen als auch Workshops
+    bzw. weitere Aktivitäten in einem kulturellen Zentrum nicht gegenläufig
+    sein sollten. Es sollte nicht auf ein Endspiel hinauslaufen. Das Spielen
+    sollte weniger athletisch, sondern mehr als Zusammenspielen gelten.
+
+    Katharina fragt, ob jeder eine Medaille bekommen hat? Jeder Spieler,
+    der am Ende noch anwesend war, hat eine Medaille bekommen. Die Medaille
+    zeigt zwei Männer, wo der eine dem anderen irgendwo hinfasst. Es wird
+    nicht sonderlich einfach bei den aktuellen Gegebenheiten in den
+    ZEAs ein Breitensportturnier zu organisieren. Till wundert sich, warum
+    es von den Sportministern noch keine Liga für Refugee-Mannschaften gibt.
+    Der AStA könnte das mal anregen.
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    Keine.
+
+    \subsubsection{Aktuelle Stunde (falls entsprechender Antrag vorliegt)}
+
+    Keine.
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    \textit{Mit 19 ParlamentarierInnen nicht beschlussfähig. Sitzung wird damit
+    offiziell abgebrochen.}
+
+    Sitzung um 19.21 beendet.
+
+\end{document}
