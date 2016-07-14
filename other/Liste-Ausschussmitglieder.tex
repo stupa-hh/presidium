@@ -1,0 +1,96 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    \section*{Liste der Ausschussmitglieder}
+
+    \begin{multicols}{2}
+    \subsection*{Haushaltsausschuss}
+    \begin{itemize}
+        \item Melf Johannsen (Vorsitzender)
+        \item Claas-Friso Hente
+        \item Tobias Berking (stellv. Vorsitzender)
+        \item Malte Jahn
+        \item Ajdina Karahasan
+        \item Nico Scharfe
+        \item Oliver Vornfeld
+    \end{itemize}
+
+    \subsection*{SWOGA}
+    \begin{itemize}
+        \item Laura Franzen
+        \item Matthias Krupse
+        \item Vincent Orth (Vorsitzender)
+        \item Melf Johannsen (stellv. Vorsitzender)
+        \item Kevin Högy
+        \item Artur Brückmann
+        \item Mirzo Khatamov
+        \item Kolja Kolb
+    \end{itemize}
+    \subsection*{Ausschuss gegen Rechts}
+    \begin{itemize}
+        \item Oliver Vornfeld (Vorsitzener)
+        \item Timo Zeimet
+        \item Lejla Aztschakova
+        \item Charleen Lorenz
+        \item Ruben Hittmeyer
+        \item Marielle Hermstrüwer (stellv. Vorsitzende)
+        \item Tahnee Herzig
+        \item Annkathrin Löffler
+        \item Philipp Droll
+        \item Dustin el abdioni
+        \item Silas Mederer
+        \item Henri Weber
+        \item Vincent Orth (stellv. Vorsitzender)
+    \end{itemize}
+
+    \subsection*{Ältestenrat}
+    \begin{itemize}
+        \item Geoffrey Youett (Vorsitzender)
+        \item Ramin Shakiba
+        \item Till Petersen (Schriftführer)
+        \item Domenica Winkler
+        \item Philipp Droll
+        \item Ajdina Karahasan
+        \item Jacob Petersein
+        \item Jakob Pape
+        \item Vincent Orth (entsandt durch den AStA)
+        \item Gunhild Berdal (entsandt durch das Präsidium des StuPa)
+        \item Tatjana Witzgall (Ex-StuPa, vom Ältestenrat berufen)
+        \item N.N. (Ex-AStA, vom Ältestenrat berufen)
+        \item Prof. Lars Hummel (entsandt durch die Fakultät für Rechtswissenschaft)
+    \end{itemize}
+\end{multicols}
+
+\end{document}
