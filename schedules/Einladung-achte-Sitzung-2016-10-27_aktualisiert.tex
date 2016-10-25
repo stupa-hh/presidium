@@ -1,0 +1,83 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    \section*{Einladung zur achten Sitzung des Studierendenparlaments}
+
+    \textit{Liebe Parlamentarier*Innen,\\
+    liebe AStA-Referent*Innen,\\
+    liebe Interessierte,}
+
+    hiermit laden wir euch zur achten Sitzung des Studierendenparlaments
+    in der Legislatur 2016/2017 ein:
+
+    \textbf{Donnerstag, den 27. Oktober 2016\\
+    Um 18.00 Uhr c.t.\\
+    Im Raum 0079\\
+    Von-Melle-Park 5\\
+    20146 Hamburg}
+
+    Folgende \underline{Tagesordnung} schlagen wir vor:
+
+    \underline{TEIL A}\\
+    Top 0 Formalia (insgesamt 105 Min.)
+    \begin{enumerate}
+        \item Geschäftsbericht des Präsidiums
+        \item Anfragen an das Präsidium
+        \item Geschäftsbericht des AStA
+        \item Anfragen an den AStA
+        \item Dringlichkeitsanträge des AStA
+        \item Aktuelle Stunde (falls entsprechender Antrag vorliegt)
+        \item Feststellung der endgültigen Fassung des Teils B der Tagesordnung
+        \item Feststellung der Beschlussfähigkeit
+        \item Genehmigung der Protokolle der vorangegangenen Sitzungen
+    \end{enumerate}
+    \underline{TEIL B}\\
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \item Vorbereitung der Wahlen zum Studierendenparlament (60 Min.)
+        \begin{enumerate}
+            \item Diskussion über Konzeptvorschlag des Präsidiums (V1617-034)
+            \item Diskussion über die Steigerung der Wahlbeteiligung
+            \item Beschlussfassung über den Zeitplan und den Urnenplan
+            (V1617-035, V1617-036)
+        \end{enumerate}
+        \item Debatte über den Haushalt der Freien und Hansestadt Hamburg
+              2017/2018 (V1617-038) (60 Min.)
+        \item Aufruf zur Mahnwache zum 78. Jahrestag der Pogromnacht (V1617-037) (30 Min.)
+        \item Erhöhung Wochenarbeitszeit für Festanstellung im Finanzreferat des AStA (V1617-039) (15 Min.)
+        \item Kaffeeautomat im AStA-Infotreff (V1617-040) (15 Min.)
+        \item Debatte zu G20 (V1617-041) (60 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+\end{document}
