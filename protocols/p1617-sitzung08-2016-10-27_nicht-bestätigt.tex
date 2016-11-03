@@ -1,0 +1,300 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 8. Sitzung des Studierendenparlaments vom 27. Oktober 2016}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Ramon Weilinger}\\
+    \textbf{Ort: VMP5 0079}\\
+    \textbf{Beginn: 18.29 Uhr}\\
+    \textbf{Ende: 20.39 Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger, Ramin Shakiba, Jennifer Maack, Benjamin Welling \\
+             CampusGrün (14 Sitze): & Laura Franzen, Elena Rysikova, Philipp Droll, \\
+                                   & Yasemin Günther, Mario Moldenhauer, Christian Lagod, \\
+                                   & Jim Martens, Svenja Horn, Martin Sievert, \\
+                                   & Armin Günther \\
+             BGZM-Liste (2 Sitze) : & \\
+             WiWi (2 Sitze): & \\
+             Unicorns (5 Sitze): & Katharina Kucza, Johannes Peplow, Marielle Hermstrüwer \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): &  \\
+             MIN (4 Sitze): & \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Timo Zeimet \\
+             LHG (1 Sitz): & Tobias Heisig \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): & \\
+            & \\
+        Entschuldigt: & Antonia Niecke (RCDS), Geoffrey Youett, Melf Johannsen (CG), \\
+                      & Claas-Friso Hente (WiWi), Annkathrin Löffler, Andreas Hartkamp (Unicorns), \\
+                      & Ajdina Karahasan (HWP), Ailina Salten, Lotte Rullkötter, \\
+                      & Nabil Jabareen, Jan Detampel (MIN), Dominic Laumer (Bart), \\
+                      & Karima Schulze, Henri Weber (AL) \\
+                      &\\
+        Unentschuldigt abwesend: & Tahnee Herzig (CG), Jakob Pape, Karen Martirosian (BGZM), \\
+                                & Kay Zöllmer (WiWi), Samet Gunay (HWP), Johann Baumhoefener (Jura) \\
+                                &\\
+        Rücktritte: & \\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Vorbereitung der Wahlen zum Studierendenparlament (60 Min.)
+        \begin{enumerate}
+            \item Diskussion über Konzeptvorschlag des Präsidiums (V1617-034)
+            \item Diskussion über die Steigerung der Wahlbeteiligung
+            \item Beschlussfassung über den Zeitplan und den Urnenplan
+            (V1617-035, V1617-036)
+        \end{enumerate}
+        \item Debatte über den Haushalt der Freien und Hansestadt Hamburg
+              2017/2018 (V1617-038) (60 Min.)
+        \item Aufruf zur Mahnwache zum 78. Jahrestag der Pogromnacht (V1617-037) (30 Min.)
+        \item Erhöhung Wochenarbeitszeit für Festanstellung im Finanzreferat des AStA (V1617-039) (15 Min.)
+        \item Kaffeeautomat im AStA-Infotreff (V1617-040) (15 Min.)
+        \item Debatte zu G20 (V1617-041) (60 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \textit{Jim eröffnet die Sitzung um 18.29 Uhr.}
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    Jim berichtet von den Vorbereitungen der StuPa-Wahl für die Legislaturperiode
+    2017/2018:
+
+    \begin{itemize}
+        \item Eine Sonderpostleitzahl ist eingerichtet.
+        \item Hinsichtlich Druck und Gestaltung aller Dokumente sind erste Gespräche
+              geführt und Angebote eingeholt worden.
+        \item Die Formulare für die Kandidaturbögen sind veröffentlicht.
+        \item Wie in den vergangenen Jahren sind fünf Stellen für Wahlhelfer*innen
+              ausgeschrieben.
+    \end{itemize}
+
+    Ferner sei ein regelmäßiger E-Mail-Newsletter des StuPa-Präsidiums in
+    Vorbereitung. Außerdem gebe es Bestrebungen die Internetseite des StuPa in
+    Zukunft auch verschlüsselt abrufbar zu machen.
+
+    In der kommenden Woche sei das Präsidium zusätzlich mit der Durchführung der
+    Wahl zum FSR IGrLatPhil befasst.
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    Keine
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    Philipp berichtet von der "Welcome Week" des AStA und verweist darauf, dass
+    viele interessante Gespräche währenddessen geführt worden seien. Hinsichtlich
+    der Orientierungseinheiten der Fachbereiche bemängelt er, dass diese die
+    "Feierei" teilweise als Selbstzweck sehen. Der AStA werde daher einen Dialog
+    mit Fachbereichen und FSRen suchen, um sich über den Zweck der OEen
+    auszutauschen.
+
+    Franziska erklärt, dass die LAK ein gemeinsames Treffen mit den Leitern der
+    Stadtteilschulen organisieren wolle. Hintergrund sei das im Sommer von den
+    Schulleiterinnen und Schulleitern der Hamburger Stadtteilschulen beschlossene
+    Positionspapier. Darüber hinaus sei der AStA aktuell in intensiven Gesprächen
+    mit der Verwaltung der Universität bezüglich der Nutzungsmöglichkeiten der
+    Foyers. Abschließend weist Franziska daraufhin, dass gegen Esther Bender
+    keine öffentliche Klage wegen Untreue (Ausgaben der VS zugunsten einer
+    Beteiligung am Christopher Street Day) erhoben werde und die Staatsanwaltschaft
+    die Ermittlungen wegen Geringfügigkeit eingestellt habe.
+
+    Philipp ergänzt seinen Bericht um den Hinweis, dass noch in diesem Jahr eine
+    Veranstaltung mit Yanis Varoufakis durchgeführt werde.
+
+    Timo erklärt, dass der Haushalt 2015/2016 abgeschlossen sei und der Haushalt
+    2016/2017 erfolgreich vom Wirtschaftsrat genehmigt worden sei.
+
+    Artur führt aus zum Thema "Wissenschaftsfreiheit statt Berufsverbote -
+    ‚Verfassungsschutz‘ auflösen" (Anlage 1).  Aktuell erarbeite man überdies ein
+    Thesenpapier zu den psychischen Leiden im Bologna-Studium.
+
+    Armin erläutert, dass der Termin des G20-Gipfels in Hamburger näher rücke
+    und man zurzeit die Einordnung des AStA innerhalb des Widerstandes diskutiere.
+    Außerdem habe man sich mit dem Leistungsstipendium der Universität Hamburg
+    befasst und konnte hierbei erreichen, dass künftig das soziale Engagement
+    der Bewerberinnen und Bewerber stärker gewichtet werde.
+
+    Oliver berichtet, dass seit dem letzten Zusammentritt des StuPa zwei
+    "Stille Wörtchen" sowie der jährliche "KalendAStA" erschienen seien. Ferner
+    sei das Öffentlichkeitsreferat bei der Vorbereitung von zwei Veranstaltungen
+    involviert gewesen:
+
+    \begin{itemize}
+        \item "Gegen das Vergessen" - Veranstaltung des Auschwitz-Komitees zum
+        Gedenken an die Pogromnacht 1938 (Anlage 2)
+        \item Mahnwache anlässlich des 78. Jahrestages der Reichspogromnacht (Anlage 3)
+    \end{itemize}
+
+    Domenica berichtet über den Stand der Diskussion um die Rahmenprüfungsordnung.
+    Derzeit werden in allen Teilen der Universitäten Stellungnahmen zum
+    vorliegenden Entwurf erarbeitet. Ferner weist sie daraufhin, dass am
+    30. November 2016 der nächste Dies Academicus stattfindet.
+
+    Oliver ergänzt seinen Bericht dahingehend, dass auf Initiative des AStA
+    Werbung von/für die Bundeswehr aus den Mensen des Studierendenwerks
+    entfernt worden sei.
+
+    Jakob weist darauf hin, dass ab sofort wieder alle zwei Wochen, und zwar im
+    Wechsel zu den StuPa-Sitzungen, donnerstags eine Polit-Kneipe stattfinden
+    werde; die jeweiligen Orte würden noch bekanntgegeben. Ferner starte nun die
+    Veranstaltungsreihe "What´s left?". Hinsichtlich des Kulturkursprogrammes
+    sei man zwar im Verzug, weil der Aufwand sehr groß sei, aber auch es werde
+    demnächst starten.
+
+    Golnar gibt einen Rückblick über die Themen und Veranstaltungen des Referats
+    für internationale Studierende und weist daraufhin, dass demnächst eine
+    Veranstaltung zum Friedensprozess in Kolumbien geplant sei. Überdies berichtet
+    Golnar über die Auseinandersetzungen um das Studienkolleg:  Insbesondere
+    kämpfe man darum, dass eine andere Form von Sprachtest angeboten werde.
+    Künftig werde das Studienkolleg zudem nicht mehr zur Schulbehörde, sondern
+    zur Wissenschaftsbehörde zählen. Dies habe jedoch zur Folge, dass es aktuell
+    keine klaren rechtlichen Regelungen bezüglich des Studienkollegs gebe.
+
+    \subsubsection{Anfragen an den AStA}
+
+    Aufgrund vereinzelter Nachfragen wird eine allgemeine Diskussion über die
+    Beteiligung der Verfassten Studierendenschaft an der Friedensbewegung geführt.
+
+    Auf Nachfrage von Golnar erklärt Oliver, dass es aktuell keinen neuen Stand
+    bezüglich eines Tages gegen Rechts gebe. Er spricht sich jedoch dafür aus,
+    dass sich der Ausschuss gegen Rechts zeitnah treffen möge.
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    Keine.
+
+    \subsubsection{Aktuelle Stunde}
+
+    Es liegt kein Antrag vor.
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    Artur beantragt, dass die "Debatte zu G20" (V1617-041) [TOP-alt 6] vorgezogen
+    werden soll und als TOP-neu 1 zu behandeln ist.
+
+    Der Antrag wird mit zwölf Fürstimmen und zwölf Gegenstimmen, bei vier
+    Enthaltungen abgelehnt. Aufgrund einer Anzweiflung wird die Abstimmung
+    wiederholt: Dieses Mal entfielen 13 Fürstimmen und zwölf Gegenstimmen, bei
+    zwei Enthaltungen, für den Antrag. Die Abstimmung wird erneut angezweifelt.
+
+    Das Präsidium führt eine namentliche Abstimmung durch und verbindet dies mit
+    der Feststellung der Beschlussfähigkeit (Anlage 4). Im Ergebnis wird der
+    Antrag bei 14 Fürstimmen, elf Gegenstimmen und zwei Enthaltungen mehrheitlich
+    angenommen.
+
+    Die geänderte Tagesordnung wird bei einer Enthaltung einstimmig genehmigt.
+
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Debatte zu G20 (V1617-041) (60 Min.)
+        \item Vorbereitung der Wahlen zum Studierendenparlament (60 Min.)
+        \begin{enumerate}
+            \item Diskussion über Konzeptvorschlag des Präsidiums (V1617-034)
+            \item Diskussion über die Steigerung der Wahlbeteiligung
+            \item Beschlussfassung über den Zeitplan und den Urnenplan
+            (V1617-035, V1617-036)
+        \end{enumerate}
+        \item Debatte über den Haushalt der Freien und Hansestadt Hamburg
+              2017/2018 (V1617-038) (60 Min.)
+        \item Aufruf zur Mahnwache zum 78. Jahrestag der Pogromnacht (V1617-037) (30 Min.)
+        \item Erhöhung Wochenarbeitszeit für Festanstellung im Finanzreferat des AStA (V1617-039) (15 Min.)
+        \item Kaffeeautomat im AStA-Infotreff (V1617-040) (15 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+
+    \subsubsection{Feststellung der Beschlussfähigkeit}
+
+    \textit{Das StuPa ist mit 27 anwesenden Parlamentarier*innen beschlussfähig.}
+
+    \subsubsection{Genehmigung der Protokolle der vorangegangenen Sitzungen}
+
+    Das Protokoll der fünften Sitzung vom 16.06.2016 wird ohne Änderungen
+    einstimmig genehmigt.
+
+    Das Protokoll der sechsten Sitzung vom 30.06.2016 wird ohne Änderungen und
+    bei drei Enthaltungen einstimmig genehmigt.
+
+    Das Protokoll der siebten Sitzung vom 14.07.2016 wird ohne Änderungen
+    einstimmig genehmigt.
+
+    \textit{Präsidiumspause bis 20.24 Uhr}
+
+    \vspace{0.5cm}
+    {\Large \underline{Teil B}}
+
+    \subsection{Debatte zu G20}
+
+    Armin stellt den Antrag für die Antragsteller*innen vor.
+
+    Benjamin zweifelt die Beschlussfähigkeit des Studierendenparlamentes an.
+
+    \textit{Die Beschlussfähigkeit ist mit 19 von 47 Parlamentarier*innen nicht
+    gegeben.}
+
+    \textit{Jim erklärt die Sitzung um 20.39 Uhr für abgebrochen.}
+\end{document}
