@@ -1,0 +1,538 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 9. Sitzung des Studierendenparlaments vom 10. November 2016}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: VMP5 0079}\\
+    \textbf{Beginn: 18.29 Uhr}\\
+    \textbf{Ende: 23.55 Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): &  \\
+             CampusGrün (14 Sitze): & Laura Franzen, Geoffrey Youett, Elena Rysikova, \\
+                                   & Philipp Droll, Yasemin Günther, Melf Johannsen, \\
+                                   & Mario Moldenhauer, Christian Lagod, Jim Martens, \\
+                                   & Svenja Horn, Martin Sievert, Armin Günther \\
+             BGZM-Liste (2 Sitze) : & \\
+             WiWi (2 Sitze): & \\
+             Unicorns (5 Sitze): &  Johannes Peplow, Annkathrin Löffler \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): &  \\
+             MIN (4 Sitze): & Ailina Salten \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Timo Zeimet, Dominic Laumer \\
+             LHG (1 Sitz): & Tobias Heisig \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): & Karima Schulze, Henri Weber \\
+            & \\
+        Entschuldigt: & Ramon Weilinger, Antonia Niecke, Ramin Shakiba, \\
+                      & Jennifer Maack, Benjamin Welling (RCDS), Jakob Pape, \\
+                      & Karen Martirosian (BGZM), Charleen Lorenz (WiWi), Katharina Kucza, \\
+                      & Andreas Hartkamp, Marielle Hermstrüwer (Unicorns), \\
+                      & Jan Detampel (MIN) \\
+                      &\\
+        Unentschuldigt abwesend: & Tahnee Herzig (CG), Claas-Friso Hente (WiWi), Ajdina Karahasan,\\
+                                & Gökce Celik (HWP), Lotte Rullkötter, Nabil Jabareen (MIN), \\
+                                & Maurice Martens (Jura) \\
+                                &\\
+        Rücktritte: & \\
+        Mandatsverluste: & Kay Zöllmer \rightarrow Charleen Lorenz (WiWi), \\
+                         & Samet Gunay \rightarrow Gökce Celik (HWP), \\
+                         & Johann Baumhöfener \rightarrow Maurice Martens (Jura) \\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Debatte zu G20 (V1617-041) (60 Min.)
+        \item Vorbereitung der Wahlen zum Studierendenparlament (60 Min.)
+        \begin{enumerate}
+            \item Diskussion über Konzeptvorschlag des Präsidiums (V1617-034)
+            \item Diskussion über die Steigerung der Wahlbeteiligung
+            \item Beschlussfassung über den Zeitplan und den Urnenplan
+            (V1617-035, V1617-036)
+        \end{enumerate}
+        \item Debatte über den Haushalt der Freien und Hansestadt Hamburg
+              2017/2018 (V1617-038) (60 Min.)
+        \item Aufruf zur Mahnwache zum 78. Jahrestag der Pogromnacht (V1617-037) (30 Min.)
+        \item Erhöhung Wochenarbeitszeit für Festanstellung im Finanzreferat des AStA (V1617-039) (15 Min.)
+        \item Kaffeeautomat im AStA-Infotreff (V1617-040) (15 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \textit{Gunhild eröffnet die Sitzung um 18.35 Uhr.}
+
+    Tobias Heisig erklärt sich bereit die Redeliste zu führen in Abwesenheit
+    von Ramon Weilinger.
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    Gunhild berichtet aus dem Präsidium.
+
+    \begin{itemize}
+        \item Vertrag mit der Druckerei wurde abgeschlossen
+        \item Mandatsverlustregelung wird von Gunhild erklärt und Näheres zum Entschuldigen
+      gesagt.
+        \item Gunhild erwähnt die inhaltliche Veranstaltung, die in 2 Wochen stattfindet.
+        \item Jim erwähnt Veränderungen an den Kandidaturbögen und erinnert an die Fristen
+      zur Abgabe von den Bögen.
+        \item Gunhild erwähnt, dass wir über die US-Wahlen geredet haben.
+    \end{itemize}
+
+    Gunhild nennt die Personen, die ihr Mandat verloren haben und wer dafür nachrückt.
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    F: Till fragt, ob die nachgerückten Leute eingeladen wurden. \\
+    A: Ja.
+
+    F: Karima fragt, was die Relevanz der US-Wahl spezifisch für das StuPa
+    ist. \\
+    A: Gunhild antwortet mit ihrer persönlichen Meinung.
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    Franzi berichtet aus dem AStA. Der AStA hat sich weiter mit dem G20-Gipfel
+    beschäftigt. Es gab ein Treffen zur Schulpolitik in Hamburg. Vielleicht wird
+    ein Kongress für inklusive Bildung in Hamburg stattfinden. Es gab Veranstaltungen
+    zum Gedenken an die Pogromnacht mit Esther Bejarano am 3.11. und eine Mahnwache
+    am 9.11.
+
+    Philipp fährt mit dem Bericht vor. Es gab letzte Woche ein Treffen mit Herrn
+    Hecht und dem Architekten der Universität. Es wird sich mit der baulichen
+    Entwicklung des Unicampus in den nächsten 50 Jahren beschäftigt. Die Uni liegt
+    mitten in der Stadt, ist aber kaum mit ihr verbunden. Es gibt am 15.11. ein
+    von 13-20 Uhr dauerndes Symposium zu dem Thema.
+
+    Timo berichtet, dass der Jahresabschluss noch nicht ganz durch ist und in den
+    nächsten Wochen kommen soll.
+
+    Geoffrey war auf einem Freiraumtreffen und berichtet davon. Es gab außerdem
+    am Mittwoch anlässlich des US-Wahlergebnisses ein Treffen mit rund 20 Leuten
+    über die Konsequenzen der Wahl.
+
+    Karima berichtet über die Organisation der Politkneipe. Ebenfalls erzählt sie
+    über die neuen Gleichstellungsrichtlinien der Uni. Es ist geplant ein Filmabend
+    mit dem Film "Triumph des guten Gewissens" zu veranstalten.
+    Mario ergänzt, dass die Geschlechterangabe bereits im nächsten Semester auf
+    den Semesterunterlagen (Studierendenausweis, Semesterticket) entfallen
+    soll.
+
+    \subsubsection{Anfragen an den AStA}
+
+    Tobias Berking fragt Philipp über das Treffen zum Unibau (Sinn des Treffens
+    und Hintergrund der Einschätzungen) und ergänzt die Frage
+    mit inhaltlichen Anmerkungen.
+
+    \textit{Zeitansage: 19.10 Uhr}
+
+    Philipp antwortet, dass es keinen konkreten Anhaltspunkt für das Treffen gab.
+    Stattdessen soll es um die gesamtuniversitäre bauliche Entwicklung gehen.
+    Dabei geht es weniger um Schönheit der Gebäude, sondern um Funktionalität.
+
+    Tobias weist auf die geschichtliche Relevanz der Gebäude hin.
+
+    Till weist darauf hin, dass AStA-Leute vorbereitet zum Symposium gehen sollten.
+    Rückbau von Gebäuden kann viel erreichen. Transparenz ist ein wichtiger Punkt.
+
+    Franzi erwähnt, dass die Geschichte der Universität und des Grindelviertels
+    diskutiert wurde auf dem Treffen. Mit den Überlegungen wird sich von der
+    Beschränkung der Schuldenbremse gelöst und versucht Funktionalität, Ästhetik
+    und Geschichte miteinander zu verbinden.
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    Keine.
+
+    \subsubsection{Aktuelle Stunde zum US-Wahlergebnis}
+
+    Jim stellt einen Antrag eine Aktuelle Stunde zum Ausgang der US-Wahl zu machen.
+
+    Es gibt mehrere Redebeiträge.
+
+    \textit{Zeitansage: 20.28 Uhr}
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    Vorschlag vom Präsidium ein TOP zur Bestätigung der stellv. Referent*in des
+    Alle*Frauen-Referats einzufügen.
+    Es gibt keinen Widerspruch gegen die Aufnahme in die Tagesordnung.
+    Es wird mehrheitlich für Position 1 gestimmt.
+
+    Die AL stellt einen Änderungsantrag zur Tagesordnung. Aktuelle TOPs 5 und 6
+    sollen vor der Debatte zu G20 kommen. Dies wird mehrheitlich abgelehnt.
+
+    Tagesordnung wird mehrheitlich bei 3 Gegenstimmen und 2 Enthaltungen angenommen.
+
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        % folgende Zeile bei Sitzungsfortsetzungen einkommentieren und x durch
+        % die Zahl des zuletzt behandelten TOPs ersetzen
+        %\setcounter{enumi}{x}
+        \item Bestätigung der stellvertretenden Referent*in des Alle*Frauen-Referates
+        \item Debatte zu G20 (V1617-041) (60 Min.)
+        \item Vorbereitung der Wahlen zum Studierendenparlament (60 Min.)
+        \begin{enumerate}
+            \item Diskussion über Konzeptvorschlag des Präsidiums (V1617-034)
+            \item Diskussion über die Steigerung der Wahlbeteiligung
+            \item Beschlussfassung über den Zeitplan und den Urnenplan
+            (V1617-035, V1617-036)
+        \end{enumerate}
+        \item Debatte über den Haushalt der Freien und Hansestadt Hamburg
+              2017/2018 (V1617-038) (60 Min.)
+        \item Aufruf zur Mahnwache zum 78. Jahrestag der Pogromnacht (V1617-037) (30 Min.)
+        \item Erhöhung Wochenarbeitszeit für Festanstellung im Finanzreferat des AStA (V1617-039) (15 Min.)
+        \item Kaffeeautomat im AStA-Infotreff (V1617-040) (15 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+
+    \subsubsection{Feststellung der Beschlussfähigkeit}
+
+    \textit{Mit 27 Parlamentarier*innen ist das Parlament beschlussfähig.}
+
+    \subsubsection{Genehmigung der Protokolle der vorangegangenen Sitzungen}
+
+    Till merkt an, dass bei CampusGrün in der letzten Sitzung insgesamt nur 13
+    Personen in der Anwesenheitsliste stehen. Das Präsidium wird dies prüfen
+    und falls nötig korrigieren.
+
+    Das Protokoll wird mehrheitlich bei 0 Gegenstimmen und 3 Enthaltungen
+    angenommen.
+
+    \textit{Präsidiumspause bis 20.55 Uhr (dynamisch verlängert bis 21.05)}
+
+    \vspace{0.5cm}
+    {\Large \underline{Teil B}}
+
+    \subsection{Bestätigung der stellvertretenden Referent*in des Alle*Frauen-Referates}
+
+    Lisa Stamm wurde als neue stellvertretende Referent*in des Alle*Frauen-Referates
+    vom Sprecher*innenrat gewählt.
+
+    Lisa Stamm wird einstimmig bestätigt.
+
+    \subsection{Debatte zu G20}
+
+    Franziska stellt den Antrag unter Berücksichtigung der aktuellen Entwicklungen
+    vor. Am Sonntag trifft sich die AG, die den Alternativgipfel zu G20 organisiert.
+
+    Armin sagt, der Fokus liege auf der globalen Bedeutung von G20 statt den konkreten
+    Auswirkungen auf Hamburg.
+
+    Franziska berichtet vom Treffen des Jugendbündnisses in dieser Woche.
+
+    Elias ergänzt u.a. Infos zum Potsdamer Abkommen und dessen geschichtlicher
+    Relevanz.
+
+    \textit{Zeitansage: 21.17 Uhr}
+
+    Gunhild mahnt an, dass man sich angesichts von Trump frühzeitig engagieren
+    muss, um den Gipfel zu verhindern. Es sollte herausgestellt werden, dass
+    G20 eine Gegenorganisation zur UN und keine Friedensstiftende ist.
+
+    Johannes stellt den Änderungsantrag in Zeile 25 "japanischen" zu streichen.
+    Es gibt keinen Widerspruch.
+
+    Tobias Berking weist darauf hin, dass die G20 in der Tat eine Gegenorganisation
+    sind.
+
+    Till stellt den Antrag in Zeile 103 nach dem Wort "Protestbewegung" folgendes
+    einzufügen.
+
+    \begin{blockquote}
+        Dafür ist es erforderlich bei allen Aktivitäten - einschließlich den hier
+        zum Schluss des Antrags genannten - zu erarbeiten und deutlich zu machen,
+        was die fortschrittliche, friedenspolitische und soziale Alternative zu
+        den von den G20 repräsentierten Positionen ist. Diese Alternative muss
+        durch die Bevölkerungen international erwirkt werden.
+    \end{blockquote}
+
+    Der Antrag wird mehrheitlich mit einer Gegenstimme und einer Enthaltung angenommen.
+
+    \subsection{Vorbereitung der Wahlen zum Studierendenparlament}
+
+    \subsubsection{Diskussion über Konzeptvorschlag des Präsidiums}
+
+    Jim stellt das inhaltliche Konzept vor.
+
+    Gunhild ergänzt, dass sich das Präsidium bezüglich des Konzepts einig ist.
+
+    Philipp begrüßt das Konzept und appelliert an alle einen politischen Wahlkampf
+    zu machen.
+
+    Gunhild findet das veränderte Konzept der Wahlveranstaltungen besser als was
+    bisherige Präsidien gemacht haben.
+
+    Till erinnert an einen Antrag zu einem fairen Wahlkampf und fragt, ob an einen
+    solchen Antrag bereits gedacht wurde. Till schlägt vor selber eine Publikation
+    seitens des Präsidiums zu machen, um das Wahlmotto mit Inhalt zu füllen. Er
+    schlägt ebenfalls vor allen Listen die Möglichkeit zu geben auf vielleicht 2
+    Zeilen vorzustellen, wie sie die Universität entwickeln möchten.
+
+    Jim hat die Idee eine Publikation vor der Briefwahl zu machen und dort auf
+    die Wahl, die Termine und die Listen hinzuweisen.
+
+    Elias schlägt vor im Wahlmotto "selbstgestaltet" durch "selbstgestaltend"
+    zu ersetzen.
+
+    Gunhild redet darüber, dass aktuell viele Gespräche stattfinden und sich überlegt
+    werden muss, wie man Leute dazu bekommt sich aktiv einzubringen.
+
+    Timo Zeimet fragt, was Gunhild mit aktiv meint. Gunhild antwortet, dass aktiv
+    sich auf alles bezieht.
+
+    Till findet eine klare Positionierung und eine Authentizität für wichtig.
+    Allerdings ist es nicht so toll, wenn man sich gar nicht auf andere bezieht.
+    Es muss zwischen einer Diffamierung und einer authentischen Positierung
+    unterschieden werden.
+
+    Timo Zeimet stellt klar, dass er Schlammschlachten im Wahlkampf auch schlecht
+    findet, eine inhaltliche Positionierung jedoch nicht.
+
+    Jim äußert seine Hoffnung, dass die Listen sich in diesem Wahlkampf inhaltlicher
+    präsentieren.
+
+    \subsubsection{Diskussion über die Steigerung der Wahlbeteiligung}
+
+    Gunhild liest die Frage von Victoria Mader vor (siehe Anhang).
+
+    Geoffrey weist darauf hin, dass viele der Parlamentarier*innen, die letzte Sitzung
+    fehlten, auch diese Sitzung fehlen und die Frage daher an diese weitergeleitet
+    werden sollte. Das Präsidium wird dies tun.
+
+    Timo Zeimet merkt an, dass man vielleicht dem "Otto-Normalstudierenden"
+    besser erklären können sollte, was das StuPa konkret mit deren Studium zu tun
+    hat.
+
+    Franziska entgegnet, dass z.B. eine Studie gemacht wurde in Baden-Württemberg,
+    warum Studierende in die Gewerkschaft verdi eingetreten sind. Ergebnis war, dass
+    es hauptsächlich aufgrund der Solidarität und weniger wegen der konkreten
+    Auswirkungen auf Praktika geschah.
+
+    Timo Zeimet sagt, dass vor einer Solidarität eine Identifikation stehen muss.
+    Diese Identifikation fehle jedoch größtenteils.
+
+    Laura ist der Überzeugung, dass die gedankliche Verknüpfung zwischen StuPa
+    und dem eigenen Studium defacto kaum vorhanden ist. Diese Verknüpfung müsste
+    besser herausgestellt werden, damit Studierende sich damit identifizieren können.
+
+    Tobias Berking merkt an, dass einem das Ba/Ma-System dauerhaft nahelegt
+    egoistisch zu sein. Dagegen muss man argumentieren. Themen wie G20 gehen sehr
+    wohl alle Studierenden an, da es um die Entwicklung der Menschheit geht, deren
+    Teil sie sind.
+
+    Till weist darauf hin, dass es in ganz Deutschland unterschiedliche StuPas gibt,
+    deren Wahlbeteiligungen grundsätzlich bei maximal 20\% stehen. Früher war dies
+    jedoch anders und es haben über die Hälfte der Studierenden gewählt.
+    Der Kernpunkt ist, dass sich die Menschen früher ernster genommen haben als
+    politischen Faktor. Heute rechnen sie sich kaum eine Bedeutung aus.
+
+    Ein Gast der BART-Liste merkt an, dass unpolitischer Wahlkampf erfolgreich war
+    und den Menschen geholfen hat, überhaupt erst einmal die politische Meinung
+    zu äußern. Diese seien häufig bezüglich ihrer politischen Position verunsichert.
+
+    Franziska redet darüber, was die wirkliche Ursache der Verunsicherung ist.
+
+    Timo Zeimet ist der Meinung, dass den Studierenden bewusst gemacht werden muss,
+    dass u.a. das StuPa da und relevant ist.
+
+    Laura weist darauf hin, dass ein Zusammenhang zwischer Fachkultur und
+    gesamtuniversitärer Ebene geschaffen werden muss. Auch seien viele davon überzeugt
+    ohnehin wenig erreichen zu können. Neuen Menschen sind häufig die personellen
+    Beziehungen nicht bekannt und dies kann sehr einschüchternd wirken.
+    Diesbezüglich sei eine bessere Informationspolitik nötig.
+
+    Gunhild sagt, dass fast alle Präsidien sich bemühen den Zusammenhang zwischen
+    StuPa und dem Studienalltag klarzumachen. Sie ist der Überzeugung, dass
+    mehr Politik besser überzeugt als unpolitisches Handeln.
+
+    \textit{Zeitansage: 22.40 Uhr}
+
+    Till ist der Überzeugung, dass Leute Gesprächsbedarf haben und daher ins
+    Gespräch kommen, wenn sie angesprochen werden.
+
+    Ein Gast hält einen Redebeitrag.
+
+    Timo Zeimet sagt, dass Politik verständlich sein sollte für den Leser.
+
+    Mario fasst zusammen, dass er zwei Lager sieht. Er stellt die Frage, ob
+    die Strategie des "linken" Blocks die richtige ist, wenn sie seit Jahren die
+    gleiche ist und sich trotzdem die Wahlbeteiligung nicht erhöht.
+
+    Till ist der Meinung, dass es darum geht, was richtig und falsch ist. Die Position
+    der Linkspartei zu Bundeswehreinsätzen beispielsweise sei korrekt, auch wenn
+    sie nicht die Mehrheit der Stimmen hat.
+
+    \subsubsection{Beschlussfassung über den Zeitplan und den Urnenplan}
+
+    Wir kommen zum Zeitplan. Geoffrey fragt, ob das Präsidium vorhätte die Fristen
+    laxer zu handhaben. Gunhild antwortet, dass die Fristen fest eingehalten werden.
+
+    Der Zeitplan wird mehrheitlich bei einer Gegenstimme und einer Enthaltung
+    angenommen.
+
+    Wir kommen zum Urnenplan. Till beantragt Urne 6 zu streichen. Es gibt keinen
+    Widerspruch.
+
+    \textit{Geoffrey beantragt Verlängerung der Sitzung bis nach TOP 8. Der Antrag
+    wird mehrheitlich bei 2 Gegenstimmen und 3 Enthaltungen angenommen.}
+
+    Franziska weist darauf hin, dass in der Chemie so gut wie nichts im Foyer
+    möglich ist. Das Gleiche gilt auch für die HWP. Dies kann ebenso den
+    Pferdestall und das Rechtshaus betreffen.
+
+    Till überlegt, ob es Sinn macht die Urne der Holzwirtschaft wieder zu öffnen.
+
+    Despina weist darauf hin, dass in den Naturwissenschaften viele Leute nicht
+    zum Campus kommen.
+
+    Timo ist besorgt, dass eine neue Urne in der HoWi nicht besetzt werden kann.
+
+    Till schlägt vor eine 19. Urne an der Holzwirtschaft (nach Rücksprache mit
+    dem FSR) einzurichten. Es gibt keinen Widerspruch.
+
+    Der Urnenplan wird angenommen.
+
+    \textit{Präsidiumspause bis 23:20, dynamisch bis 23:23}
+
+    \subsection{Debatte über den Haushalt der Freien und Hansestadt Hamburg}
+
+    Jim stellt seinen Antrag vor.
+
+    Philipp stellt den Antrag des AStA vor.
+    Am 6.12. soll eine Vollversammlung zum Thema stattfinden.
+
+    Franziska ergänzt ihre Ansichten. Sie stellt mehrere Änderungsanträge an dem
+    Antrag des AStA vor, welche von den Antragsstellern übernommen werden.
+
+    Der Punkt hinter "Kritik" in Zeile 15 wird in einen Doppelpunkt geändert.
+    Direkt danach wird "Mit der Schuldenbremse soll der Eindruck erweckt werden,"
+    eingefügt. "Es fehlt" wird geändert in "es fehle" und "nur viel zu oft"
+    wird gestrichen.
+
+    In Zeile 21 wird "der gesellschaftlichen Missstände" ersetzt durch "für eine
+    humane Gesellschaftsentwicklung". In Zeile 22 wird "autonome" durch
+    "gesellschaftlich verantwortliche" ersetzt.
+
+    Nach Zeile 41 wird folgendes eingefügt.
+
+    \begin{blockquote}
+        Das Studierendenparlament beschließt zur Diskussion und Positionierung
+        zu dieser Auseinandersetzung am 6. Dezember eine Vollversammlung
+        einzuberufen.
+    \end{blockquote}
+
+    Bei der Abstimmung wird zuerst Jims Antrag und anschließend der vom AStA
+    abgestimmt.
+
+    Es ergeben sich 7 Stimmen für und 0 Stimmen gegen Jims Antrag bei einer
+    Mehrzahl an Enthaltungen. Damit ist der Antrag beschlossen.
+
+    Für den Antrag des AStA gibt es 11 Stimmen, bei einer Gegenstimme und vielen
+    Enthaltungen. Damit ist auch der Antrag beschlossen.
+
+    \subsection{Aufruf zur Mahnwache zum 78. Jahrestag der Pogromnacht}
+
+    Till stellt einen Änderungsantrag vor. Es gibt keinen Widerspruch.
+
+    Es soll ab Zeile 1 "Das SP möge" bis Zeile 2 "anschließen" durch folgenden
+    Text ersetzt werden.
+
+    \begin{blockquote}
+        Das StuPa begrüßt den Beschluss des Akademischen Senats vom 13. Oktober
+        2016 zum Aufruf zur Mahnwache zum 78. Jahrestag der Pogromnacht und das
+        Bemühen, daraus einen gemeinsamen Aufruf von StuPa und AS zu machen.
+        Das StuPa ist bestrebt, dass zur Mahnwache im nächsten Jahr ein gemeinsamer
+        Aufruf gelingt.
+    \end{blockquote}
+
+    Der Antrag wird entsprechend angenommen.
+
+    \subsection{Erhöhung Wochenarbeitszeit für Festanstellung im Finanzreferat des AStA}
+
+    Franziska stellt den Antrag vor.
+
+    Till stellt die Frage, ob in den erhöhten Arbeitsstunden vorgesehen ist,
+    dass die Festangestellten an den AStA-Sitzungen teilnehmen.
+
+    Franziska antwortet, dass es ein wöchentliches Treffen gibt zwischen AStA-Vorstand
+    und Festangestellten, aber die höheren Arbeitsstunden inkludieren nicht
+    die Teilnahme an den AStA-Sitzungen.
+
+    Der Antrag wird einstimmig angenommen.
+
+    \subsection{Kaffeeautomat im AStA-Infotreff}
+
+    Philipp stellt den Antrag vor.
+
+    Franziska erklärt, warum es den Antrag gibt.
+
+    Christian weist darauf hin, dass der Wirtschaftsrat dies bereits vorläufig
+    beschlossen hat.
+
+    Es gibt 13 Stimmen für den Antrag bei 3 Gegenstimmen und 7 Enthaltungen.
+    Damit ist der Antrag angenommen.
+
+    \subsection{Verschiedenes}
+
+    \textit{Gunhild schließt die Sitzung um 23.55 Uhr.}
+
+\end{document}
