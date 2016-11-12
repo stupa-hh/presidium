@@ -1,0 +1,59 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    \section*{Beschluss des Studierendenparlamentes vom 10. November 2016}
+    \subsection*{Zeitplan für die Wahl zum Studierendenparlament 2017/18}
+
+    \begin{tabular}{ll}
+        18.11.2016 & 17 Uhr: Listenabgabe (WO §6 (1) - (4)) \\
+                    &(ACHTUNG: Ausschlussfrist!!!) und \\
+                    & 18 Uhr: Losung (WO §6 (5)) \\
+        22.11.2016 & 24.00 Uhr: Ende der Einspruchsfrist (§6 (7)) \\
+                    &    (ACHTUNG: Ausschlussfrist!!!) \\
+        22.11.2016 & Ende der Bewerbungsfrist für Wahlhelferinnen/Wahlhelfer \\
+        25.11.2016 & 18 Uhr: Abgabefrist der Listendarstellung für die Briefwahlbroschüre \\
+                 & (ACHTUNG: Ausschlussfrist!!!) \\
+        02.12.2016 & 18 Uhr: Abgabefrist der Listendarstellung für die Wahlzeitung \\
+                & (ACHTUNG: Ausschlussfrist!!!) \\
+        bis zum 8.12.2016 & Verschickung der Briefwahlunterlagen (§10 (1)) \\
+        15.12.2016 & Wahlversammlung/Listenvorstellung (§8) \\
+        02.01.2017 & Ende der Briefwahl (§10 (2)) \\
+                   & (ACHTUNG: Ausschlussfrist!!!)\\
+        12.01.2017 & Zweite Listenvorstellung \\
+        09.-13.01.2017 & Erstellung Matrikelnummerliste (§10 (1)) \\
+        16.-20.01.2017 & Urnenwahl (§11) \\
+        20.01.2017 & Ab 20.00 Uhr: Auszählung der Wahl
+    \end{tabular}
+\end{document}
