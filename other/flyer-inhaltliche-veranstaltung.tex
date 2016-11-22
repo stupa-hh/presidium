@@ -1,0 +1,75 @@
+%!TEX program = lualatex
+\documentclass[a5paper,ngerman,headheight=80pt,10pt,DIV=calc]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[footskip=20pt,bottom=50pt]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.1cm}\includegraphics[scale=0.3]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[]{V.i.S.d.P. Gunhild Berdal, Jim Martens, Ramon Weilinger\\Von-Melle-Park 5, 20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg\\
+    Tel.: 040/450 204 39 · stupa@uni-hamburg.de
+
+    \subsection*{Von Brotgelehrten und philosophischen Köpfen: Fremdbestimmt oder
+    selbstgestaltend studieren?}
+
+    "Was heißt und zu welchem Ende studiert man Universalgeschichte?" war die
+    Frage und der Titel der Antrittsvorlesung von Friedrich Schiller im Jahr 1789.
+    Darin unterscheidet er zwischen dem "Brodgelehrten", der bemüht und brav für
+    gesellschaftliche Anerkennung studiert, und dem "philosophischen Kopf", der
+    für Wissenschaft und Wahrheit wirkt:
+
+    \blockquote{
+        Wie ganz anders verhält sich der
+        philosophische Kopf! – Eben so sorgfältig, als der seine Wissenschaft von
+        allen übrigen absondert, bestrebt sich jener, ihr Gebiet zu erweitern, und
+        ihren Bund mit den übrigen wieder herzustellen – herzustellen, sage ich,
+        denn nur der abstrahirende Verstand hat jene Grenzen gemacht, hat jene
+        Wissenschaften von einander geschieden. Wo der Brodgelehrte trennt,
+        vereinigt der philosophische Geist.
+    }
+
+    Ist dieser Gegensatz noch aktuell? Führt(e) die Bologna-Reform zur
+    Herausbildung von Fachidioten, die Zusammenhänge nicht begreifen und muss
+    ein Universalstudium für alle die wissenschaftlichen und gesellschaftlichen
+    Zusammenhänge stärker in den Fokus nehmen?
+
+    Fremdbestimmt oder selbstgestaltend studieren? – Um im Sinne Schillers den
+    Gesamtzusammenhang herzustellen, laden wir alle Interessierten zum
+    philosophisch-praktischen Diskurs ein.
+
+    Die Vizepräsidentin für Studium und Lehre, Frau Prof. Dr. Rupp, und eine
+    studentische Vertreterin werden jeweils einen Input geben.
+
+    \begin{center}
+        \textbf{
+        Donnerstag, 24. November 2016,\\
+        18 Uhr\\
+        im Raum 0079 des WiWi-Bunkers\\
+        (Von-Melle-Park 5, 20146 Hamburg)}
+    \end{center}
+\end{document}
