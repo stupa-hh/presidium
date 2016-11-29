@@ -1,0 +1,75 @@
+%!TEX program = lualatex
+\documentclass[a5paper,ngerman,headheight=80pt,10pt,DIV=calc]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[footskip=20pt,bottom=50pt]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.1cm}\includegraphics[scale=0.3]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[]{V.i.S.d.P. Gunhild Berdal, Jim Martens, Ramon Weilinger\\Von-Melle-Park 5, 20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg\\
+    Tel.: 040/450 204 39 · stupa@uni-hamburg.de
+
+    \subsection*{Infos zur Wahl zum Studierendenparlament 2017/18}
+
+    Nächste Woche bekommst Du per Post die Wahlunterlagen für die Briefwahl
+    zum Studierendenparlament 2017/18 zugeschickt. In dem Briefumschlag befinden
+    sich ein Anschreiben mit Wahlschein, eine
+    Wahlbroschüre mit Informationen zur Wahl und den Darstellungen der Listen,
+    ein gelber Stimmzettelumschlag, ein weißer Rückumschlag und ein gelber
+    Stimmzettel. Um eine gültige Stimme abzugeben, beachte bitte die Hinweise
+    in der Wahlbroschüre. Spätestens am 2. Januar 2017 muss der Rückumschlag
+    bei uns angekommen sein.
+
+    Vom 16. bis 20. Januar 2017 besteht die Möglichkeit auch persönlich an einer
+    Urne die Stimme für das Studierendenparlament abzugeben. Es kann insgesamt
+    nur \textbf{EINE} Stimme abgegeben werden -- entweder per Brief oder per
+    Urne.
+
+    Im Verlaufe des Dezembers wirst Du auch die Wahlunterlagen für die Wahl
+    zum Akademischen Senat bekommen. Die Wahl zum Akademischen Senat findet
+    als reine Briefwahl statt. Bitte achte auf die Inhalte und wirf nicht
+    versehentlich Wahlunterlagen -- und Deine Stimme -- weg.
+
+    Wenn Deine Eltern die Post bekommen, sage ihnen bitte Bescheid, sodass Du
+    die Wahlunterlagen bekommst und von Deinem Wahlrecht Gebrauch machen kannst.
+
+    Damit Du eine informierte Entscheidung treffen kannst, gibt es am 15. Dezember
+    eine Listenvorstellung, auf der die antretenden Listen zu grundsätzlichen
+    weltanschaulichen Fragen (z.B. "Wie soll Hamburg in zehn Jahren aussehen?",
+    "Wie soll die Gesellschaft aussehen?" und "Wie soll Hochschule aussehen?")
+    Rede und Antwort stehen.
+
+    \begin{center}
+        \textbf{
+        Erste Listenvorstellung\\
+        Donnerstag, 15. Dezember 2016,\\
+        18 Uhr\\
+        im Raum 0079 des WiWi-Bunkers\\
+        (Von-Melle-Park 5, 20146 Hamburg)}
+    \end{center}
+\end{document}
