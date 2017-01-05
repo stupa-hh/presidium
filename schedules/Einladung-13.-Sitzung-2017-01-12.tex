@@ -1,0 +1,72 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    \section*{Einladung zur 13. Sitzung des Studierendenparlaments}
+
+    \textit{Liebe Parlamentarier*Innen,\\
+    liebe AStA-Referent*Innen,\\
+    liebe Interessierte,}
+
+    hiermit laden wir euch zur 13. Sitzung des Studierendenparlaments
+    in der Legislatur 2016/2017 ein:
+
+    \textbf{Donnerstag, den 12. Januar 2017\\
+    Um 20.00 Uhr c.t.\\
+    Im Raum 0077\\
+    Von-Melle-Park 5\\
+    20146 Hamburg}
+
+    Folgende \underline{Tagesordnung} schlagen wir vor:
+
+    \underline{TEIL A}\\
+    Top 0 Formalia (insgesamt 45 Min.)
+    \begin{enumerate}
+        \item Geschäftsbericht des Präsidiums
+        \item Anfragen an das Präsidium
+        \item Geschäftsbericht des AStA
+        \item Anfragen an den AStA
+        \item Dringlichkeitsanträge des AStA
+        \item Aktuelle Stunde (falls entsprechender Antrag vorliegt)
+        \item Feststellung der endgültigen Fassung des Teils B der Tagesordnung
+        \item Feststellung der Beschlussfähigkeit
+        \item Genehmigung der Protokolle der vorangegangenen Sitzungen
+    \end{enumerate}
+    \underline{TEIL B}\\
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \item Beitragsordnung (V1617-046) (30 Min.)
+        \item VG-Wort (V1617-047) (30 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+\end{document}
