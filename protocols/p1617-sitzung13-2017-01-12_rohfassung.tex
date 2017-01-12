@@ -1,0 +1,439 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    %%% PAGE ONE (EDIT LATER) %%%%
+    % Hier den Titel des Protokolls eintragen
+    \section*{Protokoll der 13. Sitzung des Studierendenparlaments vom 12. Januar 2017}
+
+    % Protokollanten eintragen
+    \textbf{Protokoll: Jim Martens}\\
+    \textbf{Ort: VMP5 0077}\\
+    \textbf{Beginn: 20.54 Uhr}\\
+    \textbf{Ende: 23.55 Uhr}
+
+    % Wohl die komplizierteste Stelle im Protokoll
+    % Als Faustregel sollten nicht mehr als 3 Namen auf einer Zeile stehen
+    % Einfach an dieser Vorlage orientieren
+    % Im Idealfall ist hier nicht viel zu ändern, da kaum jemand fehlt.
+    % Rücktritte müssen natürlich pro Protokoll angepasst werden
+    \vspace{0.5cm}
+    \begin{tabular}{ll}
+        Anwesend: & \\
+            RCDS (5 Sitze): & Ramon Weilinger \\
+             CampusGrün (14 Sitze): & Laura Franzen, Geoffrey Youett, Philipp Droll, \\
+                                   & Yasemin Günther, Christian Lagod, Jim Martens, \\
+                                   & Svenja Horn, Martin Sievert, Armin Günther \\
+             BGZM-Liste (2 Sitze) : & \\
+             WiWi (2 Sitze): & \\
+             Unicorns (5 Sitze): &    \\
+             Liste LINKS (3 Sitze): & Gunhild Berdal, Till Petersen, Sinah Mielich \\
+             HWP (2 Sitze): &  \\
+             MIN (4 Sitze): &  \\
+             SDS* (3 Sitze): & Mena Winkler, Jacob Petersein, Artur Brückmann \\
+             Bart-LISTE (2 Sitze): & Timo Zeimet, Dominic Laumer \\
+             LHG (1 Sitz): & Tobias Heisig \\
+             harte zeiten (1 Sitz): & Tobias Berking \\
+             Jura (1 Sitz): & \\
+             AL (2 Sitze): &  \\
+            & \\
+        Entschuldigt: & Antonia Niecke, Ramin Shakiba, Jennifer Maack, \\
+                      & Benjamin Welling (RCDS), Mario Moldenhauer, Martin Sievert (CG) \\
+                      & Jakob Pape, Karen Martirosian (BGZM), Claas-Friso Hente, \\
+                      & Charleen Lorenz (WiWi), Katharina Kucza, Johannes Peplow, \\
+                      & Annkathrin Löffler, Andreas Hartkamp (Unicorns), Hakan Tasdemir, \\
+                      & Gökce Celik (HWP), Ailina Salten, Lotte Rullkötter, \\
+                      & Nabil Jabareen, Jan Detampel (MIN), Karima Schulze\\
+                      & Henri Weber (AL) \\
+                      &\\
+        Unentschuldigt abwesend: & Elena Rysikova, Melf Johannsen, Ines Friedrich \\
+                                & Dean Haltmeyer (CG), Marielle Hermstrüwer (Unicorns), \\
+                                & Maurice Martens (Jura)\\
+        Rücktritte: & \\
+        Mandatsverluste: & \\
+    \end{tabular}
+    \newpage
+    %%% Vorgeschlagene Tagesordnung %%%
+    \underline{Vorgeschlagene Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \item Beitragsordnung (V1617-046) (30 Min.)
+        \item VG-Wort (V1617-047) (30 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+
+    \newpage
+
+    % Hier beginnt Teil A. Bei Fortsetzungen kommt hier nur der Teil über
+    % die Feststellung der endgültigen Fassung der Tagesordnung.
+    % Für sonstige Sitzungen ist dies bereits das Gerüst für die Formalia.
+    % Man muss nur noch die protokollierten Inhalte eintragen.
+
+    {\Large \underline{Teil A}}
+
+    \subsection{Formalia}
+
+    \textit{
+    Gunhild eröffnet die Sitzung um 20.54 Uhr. Ramin vertritt Ramon im Präsidium.
+    }
+
+    \subsubsection{Geschäftsbericht Präsidium}
+
+    Gunhild berichtet aus dem Präsidium. Beschäftigung mit der Wahlvorbereitung.
+    Wahlhelfer*innen haben viele Dinge verteilt - auch an Außenstandorte und
+    Wohnheime. Letzte Woche wurden die fristgerechten Briefe von der Briefwahl
+    gezählt. <Zahlen einfügen> Starke Beteiligung bei der Urnenwahl wichtig.
+    Es ist wichtig Leute zu informieren, dass sie an der Urne überprüfen, ob
+    ihre Briefwahlstimme angekommen ist.
+
+    Urnen werden morgen zusammen mit Drexler versiegelt. Montag geht es mit der
+    Urnenwahl los.
+
+    Sonderproblem mit dem Studienkolleg. Infomaterial wurde dort hingebracht
+    und am Freitag, 14.1., findet ein Infotreff dort statt.
+
+    Gunhild ruft zu Besetzung von Urnen auf. Wenn Leute in FSRen aktiv sind, sollte
+    dort für die Wahl mobilisiert werden. Nehmt auch an der Wahl zum AS statt.
+
+    Ungefähr 10 Briefumschläge wurden in Briefen gefunden. AS-Briefwahlumschläge
+    können auch an den Urnen abgegeben werden. Am Dienstag, 17.1., werden die
+    Briefe um 13 Uhr zum Wahlamt gebracht.
+
+    Jim verliest die Rücktritte. Vorschlag Rücktrittsanteil in Wahlzeitung
+    aufzunehmen.
+
+    \subsubsection{Anfragen an das Präsidium}
+
+    Philipp merkt an, dass viele Plakate zerstört wurden und fragt, ob auch andere
+    Gruppen betroffen sind.
+
+    Karima merkt an, dass auch bei ihnen Plakate kaputt gegangen sind. Sie vermutet
+    jedoch eher eine betrunkene Bande.
+
+    Tobias hat auch einige Verluste zu beklagen, aber nichts systematisches.
+
+    Laura merkt an, dass z.B. um das Geomatikum alle Plakate restlos verschwunden
+    sind.
+
+    Melf weist auf Orte hin, wo Hausmeister Plakate wegräumen. Um das Geomatikum
+    ist das jedoch eher nicht der Fall.
+
+    Paula merkt an, dass Richtung Dammtor und Hauptcampus alles um Silvester
+    weg war.
+
+    Karima merkt an, dass man aufpassen sollte, ob Plakate von gewissen Listen
+    gezielt entfernt werden.
+
+    Gunhild bietet an, dass der Beschluss ``Fairer Wahlkampf'' stärker auf der
+    Website platziert werden kann. Die Hausmeister könnten wir informieren.
+
+    Franzi weist darauf hin, dass die Hausmeister der HWP über die bestellten
+    Tische informiert haben. Gunhild klärt auf, dass die Tische nicht vom
+    Präsidium zu den Gebäuden geschleppt werden müssen, sondern direkt zu den
+    Gebäuden geliefert werden.
+
+    \subsubsection{Geschäftsbericht AStA}
+
+    21:15
+
+    Franzi:
+    Dies im WS 17/18 wird über Finanzen stattfinden. Der AStA soll der Uni sagen,
+    mit welchen Leuten diese Vorbereitung zum Dies stattfinden soll. Die Gruppe
+    wollte sich bereits im Januar konstituieren.
+
+    Vertrag mit Sprickenhof AG und Behörde für Wissenschaft, Forschung und
+    Gleichstellung unterzeichnet:
+    Überseering 35 wird die Interimsunterbringung für den Philturm sein. Bautermin
+    bzgl. Philturm Sommer 2017 steht. Bibliotheken und gesamter Philturm kann
+    in das Interimsgebäude ziehen. Herausforderung für studentische und politische
+    Kultur mit großer Entfernung zum Hauptcampus.
+
+    Kantine im Gebäude wird privatwirtschaftlich betrieben. Dem Studierendenwerk
+    entfällt die Philmensa. Im Januar wird es Vollversammlung des Philturms
+    unter Leitung der Uni geben.
+
+    RPO kontrovers im AS diskutiert. ``Rechter Pol'' musste beteuern, dass sie
+    nichts gegen Studienreform haben. Ritter und Rupp haben versprochen einen Entwurf
+    für eine General Studies Umsetzung bis zur RPO-Tagung zur Verfügung zu stellen.
+
+    AS hat beschlossen, dass in 2. Sitzung der neuen Legislatur erneut eine 1.
+    Lesung eines RPO-Entwurfs stattfindet. Dies zur Studienreform im Mai gibt
+    es weiterhin. Lenzen hat betont, dass eine RPO notwendig ist und dass es sie
+    geben wird.
+
+    Armin:
+    Am Dienstag hat die 3. Sitzung der G20-Plattform stattgefunden. Es wurde
+    in G20-Plattform konkrete Arbeitsweise entwickelt.
+
+    Demo in April, bis dahin Mobilisierung.
+
+    Information über Chancen eines Volksentscheids. Am 24.1. um 19 Uhr nächstes
+    Treffen.
+
+    Artur:
+    Hinweis auf Veranstaltung namens ``Putsch im Putsch in der Türkei und
+    Berufsverbote in Deutschland'' (Name des Gastes ergänzen)
+    Datum: 21. Januar 19 Uhr
+
+    Geoffrey:
+    Das neue Stille Wörtchen ist fertig mit Schwerpunkt Wahlen, Rückblick, AS
+    und was so gewählt wird. Anwesende von Außenstandorten sind eingeladen das
+    StiWö mitzunehmen und aufzuhängen.
+
+    \subsubsection{Anfragen an den AStA}
+
+    @Armin
+    Tobias ist nicht klar geworden, wie die Gesellschaft überzeugt werden soll.
+    Welche Bündnispartner sind angedacht? Wie wird mit DGB-Entscheidung umgegangen?
+
+    Armin:
+    Manifest ist guter Start, um es in die Gesellschaft zu tragen.
+    AStA-Infobroschüre zum G20 kann auch hilfreich dahingehend sein. Langer Weg
+    bis gesamtgesellschaftlichem Widerstand. Mitglieder in DGB und Parteien
+    motivieren gegen Vorstandsentscheidung anzugehen.
+
+    Franzi:
+    Es wird in irgendeiner Form eine Unterschriftenkampagne geben.
+
+    \subsubsection{Dringlichkeitsanträge des AStA}
+
+    Keine.
+
+    \subsubsection{Feststellung der endgültigen Fassung des Teils B der Tagesordnung}
+
+    \newpage
+    %%% BESCHLOSSENE TAGESORDNUNG %%%
+    \underline{Endgültige Fassung der Tagesordnung}
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \item Beitragsordnung (V1617-046) (30 Min.)
+        \item Manifest zu G20 (V1617-049) (45 Min.)
+        \item VG-Wort (V1617-047) (30 Min.)
+        \item Englischsprachige Wahlwerbung (V1617-048) (30 Min.)
+        \item Verschiedenes (5 Min.)
+    \end{enumerate}
+
+    Mehrheit zu 0 zu 2 angenommen.
+
+    \subsubsection{Feststellung der Beschlussfähigkeit}
+
+    \textit{Mit 28 Parlamentarier*innen beschlussfähig.}
+
+    \subsubsection{Genehmigung der Protokolle der vorangegangenen Sitzungen}
+
+    Keine Protolle zu genehmigen.
+
+    \vspace{0.5cm}
+    {\Large \underline{Teil B}}
+
+    21.43
+
+    \subsection{Beitragsordnung}
+
+    Philipp stellt den Antrag vor.
+
+    Franzi stellt vor, dass 0,10€ Verringerung des AStA-Budgets eine Veränderung
+    von ca. 8400€ bedeutet.
+
+    Tobias fragt, ob der AStA sich überlegt hat, die Forderungen des HVV nicht
+    zu bedienen. Philipp sagt, dass der AStA frühzeitiger sich engagiert hat,
+    dies aber nicht gefruchtet hat.
+
+    Gunhild - frühere Asten, offensive in der Frage
+
+    Artur merkt an, dass nach längerer Diskussion die Vertreter des HVV die
+    Punkte des AStA im HVV intern diskutieren wollten. Bei einer Busbeschleunigungsfahrt
+    wurde mit dem zuständigen Staatsrat gesprochen und der hat sich gegen die Verteilung
+    des Senatsprozents an die Studierenden ausgesprochen, weil dann ja alle kommen
+    könnten
+
+    Jennifer bittet, dass in der Debatte um Beitragsordnung sich nicht über
+    kostenlosen ÖPNV unterhalten wird.
+
+    Tobias findet, dass man sich zusammen mit den anderen ASten ab sofort
+    zusammenschließen sollte, um eine Mobilisierung gegen die Erhöhungen zu
+    erreichen. Tobias fragt, warum in der Vergangenheit nichts dahingegend passiert
+    ist.
+
+    Jennifer fragt, warum denn kein entsprechender Antrag gestellt wurde.
+
+    Till erinnert an aktivere Zeiten. Es muss durch Öffentlichkeitsarbeit und
+    Skandalisierung kontinuierlich auf das Problem hingewiesen wird. Die Botschaft
+    sollte lauten: Semesterticket ja, aber nicht um jeden Preis.
+    In der Vergangenheit gab es dazu Anträge und Beschlüsse. Die sollte man
+    wieder herausholen.
+
+    Gunhild merkt an, dass es mal einen Ausschuss zu dem Semesterticket gab.
+
+    Philipp sagt, dass es den Versuch von allen Hamburger ASten gab am Ball zu
+    bleiben, dies aber auf der Strecke geblieben ist. Es gibt bereits Arbeit,
+    an der angedockt werden kann.
+
+    Artur merkt an, dass ein Begründungsteil erreicht wurde in dem Beitragsbescheid,
+    der Infos zum Senatsprozent enthält.
+
+    Mehrheitlich bei einer Gegenstimme und keiner Enthaltung angenommen.
+
+    \subsection{Manifest zu G20}
+
+    Artur stellt den Antrag vor.
+
+    Yasemin fragt, warum gefordert wird die Tarife und Personalmittel im
+    öffentlichen Dienst zu erhöhen, wo es durchaus Menschen gibt, die weit mehr
+    als Mindestlohn verdienen.
+
+    Tobias entgegnet, dass eine Erhöhung dort allen Beschäftigten zugute kommen
+    und ein Verteilungskampf nicht gestartet werden sollte.
+
+    22.11
+
+    Franzi merkt an, dass Bezahlung im öffentlichen Dienst eher unter dem Einfluss
+    von Aktiven steht als privatwirtschaftliche Verhältnisse. Es kann als Vorbild
+    fungieren.
+
+    Artur weist darauf hin, dass Personalmittel auch für mehr Einstellungen
+    steht und dies sinnvoll ist, weil diese Gruppen in der Vergangenheit eine
+    große Arbeitsverdichtung erfahren haben.
+
+    Tobias fragt, warum Yasemin die geäußerte Position hat.
+
+    Yasemin merkt an, dass der Satz unvermittelt wird.
+
+    Tobias merkt an, dass die Stadt der größte Arbeitgeber in der Stadt ist.
+    Die Bundesbank fordert mittlerweile bereits, dass Gewerkschaften echte
+    Lohnforderungen stellen sollen. Ebenfalls weist er darauf hin, dass Deutschland
+    ein Exportüberschuss von rund 200 Mrd. Euro hat und die in Lohnforderungen
+    umgesetzt werden sollten.
+
+    Franzi ...
+
+    Timo hat nachgerechnet, dass für die Elbphilharmonie allen Kindern 2,5 Jahre
+    Musikunterricht hätte gegeben werden können. Diese Menge Geld sollte daher
+    jetzt nicht auch noch in den G20-Gipfel gesteckt werden.
+
+    Franzi meint, dass Großteil der Bevölkerung Ahnung hat, wo Geld investiert
+    werden könnte.
+
+    Tobias stellt die Frage in den Raum, wie Staatswesen verfasst sein sollte.
+    Prestige oder echte Arbeit an Verbesserung? Man müsste verstehen, dass
+    der Topf Personalmittel einer Stadt wichtig ist, da wichtige Dinge Geld
+    kosten und die Arbeitenden ihre Aufmerksamkeit auf sinnvolle Arbeit lenken
+    können sollten und nicht auf ihren eigenen Haushalt.
+    Tobias erwähnt ferner, dass es wert ist das Geld an anderer Stelle wegzunehmen.
+
+    Franzi erwähnt, dass alle aufgerufen sind mit dem Manifest weitere Unterstützer
+    zu suchen.
+
+    Tobias fragt, wie man sich auf das Manifest beziehen kann.
+
+    Franzi antwortet, dass das Manifest für Demomobilisierung verwendet werden soll.
+    Pressekonferenz wird es dann im März geben.
+
+    Mehrheitlich bei einer Gegenstimme und 3 Enthaltungen angenommen.
+
+    22.29
+    \subsection{VG-Wort}
+
+    Geoffrey stellt den Antrag vor.
+
+    Till wiederholt seinen Senf vom letzten Mal. Er hat noch immer Probleme
+    mit dem Antrag. Er liest seine Alternativversion vor. Till schlägt vor
+    für die nächste Sitzung einen Konsensvorschlag einzureichen.
+
+    Karima findet Angriff auf Digitalisierung problematisch.
+
+    Till findet, dass eine Forderung fehlt, dass in Bibliotheken genügend
+    Materialien vorhanden sind.
+
+    \subsection{Englischsprachige Wahlwerbung}
+
+    Jim stellt seinen Antrag vor.
+
+    Artur weist auf Mail vom ``Präsidium'' hin und erwähnt, dass es ein Problem
+    ist, wenn Studierende hier nur zum Studieren herkommen. Außerdem sieht
+    er ein Problem in der Übersetzungskapazität.
+
+    Gunhild sieht ein Problem darin so alarmistisch englische Infos zu fordern.
+    Sie meint, dass man hier Deutsch sprechen solle und auch noch genügend andere
+    Dinge zu tun habe.
+
+    Franzi sieht das Problem im Mangel an Finanzierung für Deutsch als Fremdsprache.
+
+    Philipp sieht da kein Problem.
+
+    Timo findet, dass es internationalen Studierenden nicht zugemutet werden kann,
+    sich auf Deutsch zu informieren.
+
+    Armin pflichtet Philipp bei. Geoffrey hätte kein Problem zumindest die
+    allgemeinen Texte zu übersetzen.
+
+    Till schauspielert und stellt einen Änderungsantrag vor.
+
+    Es gibt eine Eskalation.
+
+    Franzi hält ein Plädoyer für Deutsch als Fremdsprache und zeigt Probleme
+    mit dem Studienkolleg und #uhhHilft auf. Die Studierenden müssten real in
+    die Lage versetzt werden, die Sprache der Macht in Deutschland zu sprechen
+    und sich an der politischen Diskussion zu beteiligen.
+    In der Urnenwahlwoche sollte man auf dem Campus
+
+    Melf stellt GO-Antrag zum Ende der Debatte. Alternative: Ende der Redeliste.
+
+    8:10:2
+
+    Die Redeliste wird abgearbeitet.
+
+    Karima beschwert sich über die Metadebatte.
+
+    Geoffrey stellt GO-Antrag die Sitzung nach dem TOP abzubrechen.
+
+    M:0:1
+
+    Laura beschwert sich über Redekultur. Sie empfiehlt Plakate aufzustellen,
+    die informieren, dass z.B. Doktoranden und ERASMUS-Studierende wahlberechtigt
+    sind. Außerdem sieht sie nicht den Konflikt der Diskussion.
+
+    Mario sieht den erzieherischen Gedanken in der Bevormundung von Studierenden:
+    Sie dürften nur wesentliche Infos in Englisch bekommen.
+
+    Finanz-Timo findet man kann beides machen.
+
+    Till sieht den Konflikt darin, ob man ein Problem einfach lösen kann oder
+    ob das Problem nicht ausreichend reflektiert ist. Er findet alle Menschen
+    in der Gesellschaft unmündig und will dies überwinden. Außerdem sieht er
+    es als notwendig an, nicht mehr Arbeit dem Präsidium zuzuschanzen. Zweckdienliche
+    Umsetzung.
+
+    Sitzung um 23:42 abgebrochen.
+
+
+    \subsection{Verschiedenes}
+\end{document}
