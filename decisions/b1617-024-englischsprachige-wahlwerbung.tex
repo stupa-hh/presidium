@@ -1,0 +1,53 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes,autostyle=true,strict=true]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    \section*{Beschluss des Studierendenparlamentes vom 26. Januar 2017}
+    \subsection*{Wahlinformationen und -werbung auf Englisch verfügbar machen --
+    Deutsch als Fremdsprache stärken}
+
+    Das Präsidium des Studierendenparlaments wird dazu aufgefordert, die
+    wichtigsten Wahlinformationen ab der Wahl zum Studierendenparlament 2018/19,
+    welche im Dezember/Januar 2017/18 stattfinden wird, auch in Englisch zumindest
+    auf der Website des Parlaments anzubieten. Den zum Studierendenparlament
+    kandidierenden Listen wird beginnend mit der gleichen Wahl angeboten zumindest
+    ihre kleinen Listendarstellungen auch in Englisch zumindest auf der Website
+    des Parlaments veröffentlichen zu lassen.
+
+    Ergänzend dazu wird die Universität Hamburg aufgefordert Angebote für Deutsch
+    als Fremdsprache auszubauen, damit internationale Studierende eine bessere
+    Möglichkeit bekommen, sich die Landessprache anzueignen, und in die Lage
+    versetzt werden an der (Hochschul-)Politik teilzunehmen.
+
+\end{document}
