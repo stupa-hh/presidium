@@ -1,0 +1,113 @@
+%!TEX program = lualatex
+\documentclass[ngerman,headheight=70pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+\usepackage[utf8]{luainputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{epigraph}
+\usepackage[german=quotes]{csquotes}
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+\setmainfont{Source Sans Pro}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\pagestyle{plain.scrheadings}
+\thispagestyle{scrheadings}
+\lohead{\vspace*{-1.5cm}\includegraphics[scale=0.4]{../../images/stupa_logo_rot.pdf}}
+\rohead{\\Präsidium des\\Studierendenparlaments}
+
+\lofoot[Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg]{Universität Hamburg · Präsidium des Studierendenparlaments\\\hrule Von-Melle-Park 5 · D-20146 Hamburg}
+\cofoot[]{}
+\cohead[\thepage]{}
+
+\renewcommand{\thesubsection}{TOP \arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}.}
+\setcounter{subsection}{-1}
+
+\begin{document}
+    UHH · StuPa-Präsidium · Von-Melle-Park 5 · D-20146 Hamburg
+
+    \section*{Einladung zur Fortsetzung der konstituierenden Sitzung des
+    Studierendenparlaments}
+
+    \textit{Liebe Parlamentarier*Innen,\\
+    liebe AStA-Referent*Innen,\\
+    liebe Interessierte,}
+
+    hiermit laden wir Euch zur Fortsetzung der konstituierenden Sitzung des
+    Studierendenparlaments in der Legislatur 2017/2018 ein:
+
+    \textbf{Donnerstag, den 20. April 2017\\
+    Um 18.00 Uhr c.t.\\
+    Im Raum S30 der ehemaligen HWP\\
+    Von-Melle-Park 9\\
+    20146 Hamburg}
+
+    Folgende \underline{Tagesordnung} schlagen wir vor:
+
+    \underline{TEIL A}\\
+    Top 0 Formalia (insgesamt 5 Min.)
+    \begin{enumerate}
+        \item Feststellung der Beschlussfähigkeit
+    \end{enumerate}
+    \underline{TEIL B}\\
+    \begin{enumerate}[label={\textbf{Top \theenumi}},leftmargin=*]
+        \item Geschäftsordnung (60 Min.)
+            \begin{enumerate}
+                \setcounter{enumii}{1}
+                \item Änderungen an der Geschäftsordnung
+                \item Diskussion über Notwendigkeit von GO-Reform und
+                Satzungsänderungen (V1718-001, V1718-003)
+            \end{enumerate}
+        \item Vollversammlung "Gemeinsam statt G20" (V1718-004) (30 Min.)
+        \item Wahl des StuPa-Präsidiums (60 Min.)
+        \item Wahl des Satzungs- Wahlordnungs- und  Geschäftsordnungsausschusses (15 Min.)
+        \item Wahl des Ausschusses gegen Rechts (15 Min.)
+        \item Wahl des Haushaltsausschusses (15 Min.)
+        \item Wahl des Wirtschaftsrats (15 Min.)
+        \item Wahl des Ältestenrats (45 Min.)
+            \begin{enumerate}
+                \item Verfahren zur Wahl zum Ältestenrat (15 Min.)
+                \item Wahl des Ältestenrats (30 Min.)
+            \end{enumerate}
+        \item RIS-Wahl (15 Min.)
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift
+                \item Bestätigung der Referentinnen
+            \end{enumerate}
+        \item Queer-Wahl (15 Min.)
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift
+                \item Bestätigung der Referentinnen
+            \end{enumerate}
+        \item RBCS-Wahl (15 Min.)
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift
+                \item Bestätigung der Referentinnen
+            \end{enumerate}
+        \item Alle Frauen*-Wahl (15 Min.)
+            \begin{enumerate}
+                \item Bestätigung der Wahlniederschrift
+                \item Bestätigung der Referentinnen
+            \end{enumerate}
+        \item Rechenschaftsbericht und Entlastung des amtierenden AStA (60 Min.)
+            \begin{enumerate}
+                \item Rechenschaftsbericht des amtierenden AStA
+                \item Fragen und Diskussion
+                \item Entlastung des AStA
+              \end{enumerate}
+        \item Wahl des neuen AStA-Vorstandes (60 Min.)
+            \begin{enumerate}
+                \item Diskussion VS-Thesen
+                \item Wahl des AStA-Vorstandes
+            \end{enumerate}
+        \item Bestätigung der AStA-Referent*innen (90 Min.)
+        \item Verschiedenes (10 Min.)
+    \end{enumerate}
+\end{document}
